@@ -10,6 +10,7 @@ public class PlayerControll : MonoBehaviour
     public float turnspeed;
     Vector2 moveVector;
     bool isSprinting;
+    public int gold;
 
     void Start()
     {

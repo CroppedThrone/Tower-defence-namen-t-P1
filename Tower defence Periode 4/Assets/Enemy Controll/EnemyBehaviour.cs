@@ -11,6 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     public int goldValue;
     public NavMeshAgent agent;
     public Transform target;
+    public PlayerControll playerGold;
 
     void Start()
     {
@@ -29,8 +30,13 @@ public class EnemyBehaviour : MonoBehaviour
     }
     private void OnDeath()
     {
-        //give gold
+        GiveGold();
         Destroy(gameObject);
+    }
+
+    void GiveGold()
+    {
+        playerGold.gold += goldValue;
     }
     private void OnCollisionEnter(Collision collision)
     {
