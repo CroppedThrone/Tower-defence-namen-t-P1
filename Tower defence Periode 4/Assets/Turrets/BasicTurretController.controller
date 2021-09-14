@@ -40,9 +40,6 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 6648957860197824075}
     m_Position: {x: 120, y: -130, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 3552339079449146050}
-    m_Position: {x: 597.52905, y: -138.51398, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 3344798790628987720}
@@ -125,8 +122,7 @@ AnimatorState:
   m_Name: turret deploy
   m_Speed: 0.6
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -7650255256181537330}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -213,7 +209,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.71428573
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1

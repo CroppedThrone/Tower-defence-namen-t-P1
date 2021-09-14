@@ -11,6 +11,7 @@ public class BasicTurretController : MonoBehaviour
     public Transform turretRotate;
     public Transform barrelRotate;
     public Transform dummyRotate;
+    bool isActive;
 
     public bool canShoot;
     public int damage;
@@ -26,27 +27,30 @@ public class BasicTurretController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (targetEnemy == null)
+        if (isActive == true)
         {
-            AquireTarget();
-        }
-        else if (Vector3.Distance(transform.position, targetEnemy.transform.position) > range)
-        {
-            targetEnemy = null;
-        }
-        else if (Vector3.Dot(transform.forward, targetEnemy.transform.position - transform.position) > 0.9f)
-        {
+            if (targetEnemy == null)
+            {
+                AquireTarget();
+            }
+            else if (Vector3.Distance(transform.position, targetEnemy.transform.position) > range)
+            {
+                targetEnemy = null;
+            }
+            else if (Vector3.Dot(transform.forward, targetEnemy.transform.position - transform.position) > 0.9f)
+            {
 
-        }
-        if (targetEnemy)
-        {
-            Vector3 relativePos = targetEnemy.transform.position - dummyRotate.position;
+            }
+            if (targetEnemy)
+            {
+                Vector3 relativePos = targetEnemy.transform.position - dummyRotate.position;
 
-            turretRotate.localRotation = Quaternion.LookRotation(relativePos, Vector3.up);
-            barrelRotate.rotation = Quaternion.LookRotation(-relativePos, Vector3.right);
-            Vector3 angles = barrelRotate.eulerAngles;
-            angles.z = 90f;
-            barrelRotate.rotation = Quaternion.Euler(angles);
+                turretRotate.localRotation = Quaternion.LookRotation(relativePos, Vector3.up);
+                barrelRotate.rotation = Quaternion.LookRotation(-relativePos, Vector3.right);
+                Vector3 angles = barrelRotate.eulerAngles;
+                angles.z = 90f;
+                barrelRotate.rotation = Quaternion.Euler(angles);
+            }
         }
     }
     void AquireTarget()
@@ -72,9 +76,10 @@ public class BasicTurretController : MonoBehaviour
     IEnumerator TurretSetup()
     {
         boxAnimator.SetTrigger("open");
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(2f);
         animator.SetTrigger("setup");
         yield return new WaitForSeconds(1f);
+        isActive = true;
         canShoot = true;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
