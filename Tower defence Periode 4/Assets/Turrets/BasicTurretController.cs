@@ -24,7 +24,7 @@ public class BasicTurretController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-    void Update()
+    void FixedUpdate()
     {
         if (targetEnemy == null)
         {
@@ -40,9 +40,13 @@ public class BasicTurretController : MonoBehaviour
         }
         if (targetEnemy)
         {
-            dummyRotate.LookAt(targetEnemy.transform);
-            turretRotate.rotation = new Quaternion(turretRotate.rotation.x, dummyRotate.rotation.y, turretRotate.rotation.z, turretRotate.rotation.w);
-            barrelRotate.rotation = new Quaternion(-dummyRotate.rotation.x, barrelRotate.rotation.y, barrelRotate.rotation.z, barrelRotate.rotation.w);
+            Vector3 relativePos = targetEnemy.transform.position - dummyRotate.position;
+
+            turretRotate.localRotation = Quaternion.LookRotation(relativePos, Vector3.up);
+            barrelRotate.rotation = Quaternion.LookRotation(-relativePos, Vector3.right);
+            Vector3 angles = barrelRotate.eulerAngles;
+            angles.z = 90f;
+            barrelRotate.rotation = Quaternion.Euler(angles);
         }
     }
     void AquireTarget()
@@ -59,8 +63,11 @@ public class BasicTurretController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        StartCoroutine(TurretSetup());
-        print("setup");
+        if (collision.collider.tag == "Ground")
+        {
+            StartCoroutine(TurretSetup());
+            print("setup");
+        }
     }
     IEnumerator TurretSetup()
     {
