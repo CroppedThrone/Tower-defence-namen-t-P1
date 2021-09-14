@@ -9,6 +9,9 @@ ModelImporter:
   - first:
       74: -2629349864260250483
     second: ArmatureMissileTurret|MissileTurretDeployment
+  - first:
+      74: -4520289704753173624
+    second: ArmatureMissileTurret|MissileTurretReload
   externalObjects: {}
   materials:
     materialImportMode: 2
