@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-   public GameObject dropdown;
-    public GameObject button;
-
+    public Dropdown fuck;
     // Update is called once per frame
-    public void Dropdown()
+    void OnMouseOver()
     {
-        dropdown.SetActive(true);
-        button.SetActive(false);
+        if (fuck.options = ){
+
+        }
 
     }
+
+
 }
