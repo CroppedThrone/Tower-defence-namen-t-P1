@@ -4,11 +4,8 @@ ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 3981793389456464
-    second: ArmatureStartTurret|Fire
-  - first:
-      74: 4172067935716097905
-    second: ArmatureStartTurret|TurretDeplyment
+      74: 7768458819285907243
+    second: StartTurretOnder|TurretDeplyment
   externalObjects: {}
   materials:
     materialImportMode: 2

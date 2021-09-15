@@ -1,17 +1,11 @@
 fileFormatVersion: 2
-guid: 4232d550bb8014d4da32d043b303c18e
+guid: a3cd28474a118c44eb326b094ecc5690
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 8073047223456765928
-    second: ArmatureMissileTurret|MissileLuikOpen
-  - first:
-      74: -2629349864260250483
-    second: ArmatureMissileTurret|MissileTurretDeployment
-  - first:
-      74: -4520289704753173624
-    second: ArmatureMissileTurret|MissileTurretReload
+      74: -1454945658755968623
+    second: ArmatureMissileGun|MissileLuikOpen
   externalObjects: {}
   materials:
     materialImportMode: 2
