@@ -10,12 +10,18 @@ public class Shop : MonoBehaviour
     public GameObject starter;
     public GameObject elite;
     public GameObject sniper;
+    public GameObject missle;
+    public GameObject machine;
     public Dropdown shop;
     public GameObject currentSelected;
+    public GameObject conf;
 
     
     void Update()
     {
+        
+
+
 
 
         currentSelected = EventSystem.current.currentSelectedGameObject;
@@ -45,11 +51,30 @@ public class Shop : MonoBehaviour
         {
             sniper.SetActive(false);
         }
-
+        if (currentSelected.name == "Item 4: Machine Gun Turret")
+        {
+            machine.SetActive(true);
+        }
+        else
+        {
+            machine.SetActive(false);
+        }
+        if (currentSelected.name == "Item 5: Missile Turret")
+        {
+            missle.SetActive(true);
+        }
+        else
+        {
+            missle.SetActive(false);
+        }
 
     }
 
 
+    public void confirm()
+    {
+        conf.SetActive(true);
+    }
 
     
         
