@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyBehaviour : MonoBehaviour
 {
     public int maxHP;
-    public int currentHP;
+    public float currentHP;
     public float moveSpeed;
     public int goldValue;
     public NavMeshAgent agent;
@@ -18,26 +18,27 @@ public class EnemyBehaviour : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.speed = moveSpeed;
         agent.SetDestination(target.position);
+        currentHP = maxHP - 0.1f;
     }
 
     public void OnTakeDamage(int damageTaken)
     {
         currentHP -= damageTaken;
-        if (currentHP <= 0)
+        if (currentHP <= 1)
         {
             OnDeath();
         }
     }
     private void OnDeath()
     {
-        GiveGold();
+        playerGold.gold += goldValue;
         Destroy(gameObject);
     }
 
-    void GiveGold()
-    {
-        playerGold.gold += goldValue;
-    }
+    //void GiveGold()
+    //{
+    //    playerGold.gold += goldValue;
+    //}
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Finish")
