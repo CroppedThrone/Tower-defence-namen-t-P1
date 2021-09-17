@@ -58,7 +58,23 @@ public class Shop : MonoBehaviour
         {
            machine.SetActive(false);
         }
-        
+        if (currentSelected.name == "Sniper Turret")
+        {
+            sniper.SetActive(true);
+        }
+        else
+        {
+            sniper.SetActive(false);
+        }
+        if (currentSelected.name == "Missile Turret")
+        {
+            missle.SetActive(true);
+        }
+        else
+        {
+            missle.SetActive(false);
+        }
+
     }
 
 
