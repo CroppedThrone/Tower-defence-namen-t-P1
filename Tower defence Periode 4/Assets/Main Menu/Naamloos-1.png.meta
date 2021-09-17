@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: aaad9e8c37b71464b9991ed2bfa57d8c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6960170313663380849
+    second: Naamloos-1_0
+  - first:
+      213: 1134499252747522094
+    second: Naamloos-1_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,11 +95,53 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Naamloos-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5716
+        width: 11339
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dff12160e779060800000000000000
+      internalID: 6960170313663380849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Naamloos-1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4841
+        width: 11339
+        height: 642
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2056fd3f0d8ebf00800000000000000
+      internalID: 1134499252747522094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 18ae64065d631b34184a0c33341a7e9b
     internalID: 0
     vertices: []
     indices: 
