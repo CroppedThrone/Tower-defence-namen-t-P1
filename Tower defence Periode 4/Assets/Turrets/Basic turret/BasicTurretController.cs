@@ -25,7 +25,6 @@ public class BasicTurretController : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         currentAmmo = maxAmmo;
     }
     void FixedUpdate()
@@ -40,14 +39,6 @@ public class BasicTurretController : MonoBehaviour
             {
                 targetEnemy = null;
             }
-            else if (Vector3.Dot(barrelPoint.forward, targetEnemy.transform.position - transform.position) > 0.9f)
-            {
-                if (currentAmmo > 0 && canShoot == true)
-                {
-                    StartCoroutine(Fire());
-                    canShoot = false;
-                }
-            }
             if (targetEnemy)
             {
                 turretRotate.localRotation = Quaternion.LookRotation(targetEnemy.transform.position - turretRotate.position, Vector3.up);
@@ -60,6 +51,14 @@ public class BasicTurretController : MonoBehaviour
                 barrelAngles.y = turretRotate.eulerAngles.y;
                 barrelAngles.z = 0f;
                 barrelRotate.rotation = Quaternion.Euler(barrelAngles);
+                if (Vector3.Dot(barrelPoint.forward, targetEnemy.transform.position - transform.position) > 0.95f)
+                {
+                    if (currentAmmo > 0 && canShoot == true)
+                    {
+                        StartCoroutine(Fire());
+                        canShoot = false;
+                    }
+                }
             }
         }
     }
@@ -78,23 +77,26 @@ public class BasicTurretController : MonoBehaviour
     IEnumerator Fire()
     {
         print(currentAmmo.ToString());
-        gunAnimator.SetTrigger("Fire");
+        animator.SetTrigger("Fire");
         if (Physics.Raycast(barrelPoint.position, barrelPoint.forward, out hit, range))
         {
             if (hit.collider.GetComponent<EnemyBehaviour>())
             {
-                print("hit!");
+                print(hit.transform.name);
                 hit.collider.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
+                currentAmmo -= 1;
+                print("finished firing");
+                yield return new WaitForSeconds(1f / rateOfFire);
+                canShoot = true;
             }
         }
         else
         {
             print("miss...");
+            yield return new WaitForFixedUpdate();
+            targetEnemy = null;
+            canShoot = true;
         }
-        currentAmmo -= 1;
-        print("finished firing");
-        yield return new WaitForSeconds(1f / rateOfFire);
-        canShoot = true;
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -112,7 +114,7 @@ public class BasicTurretController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         isActive = true;
         canShoot = true;
-        animator.enabled = false;
+        //animator.enabled = false;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
     }

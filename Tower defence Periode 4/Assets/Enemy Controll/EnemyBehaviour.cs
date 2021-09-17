@@ -26,12 +26,14 @@ public class EnemyBehaviour : MonoBehaviour
         currentHP -= damageTaken;
         if (currentHP <= 1)
         {
+            print("die");
             OnDeath();
         }
     }
     private void OnDeath()
     {
         playerGold.gold += goldValue;
+        print("ded");
         Destroy(gameObject);
     }
 

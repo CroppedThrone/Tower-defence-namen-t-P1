@@ -234,7 +234,7 @@ MonoBehaviour:
   supplyBox: {fileID: 1453830132}
   animator: {fileID: 1014043616352564672}
   boxAnimator: {fileID: 1453830134}
-  gunAnimator: {fileID: 8185584146887126782}
+  gunAnimator: {fileID: 2082188236158136420}
   ammoBox: {fileID: 6856676106634792375}
   turretRotate: {fileID: 2475408052654460467}
   barrelRotate: {fileID: 7233003876625120776}
@@ -2250,6 +2250,7 @@ GameObject:
   - component: {fileID: 8929586996288862283}
   - component: {fileID: 247354002255825831}
   - component: {fileID: 1757088048}
+  - component: {fileID: 2082188236158136420}
   m_Layer: 0
   m_Name: StartTurretHolder
   m_TagString: Untagged
@@ -2257,6 +2258,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &2082188236158136420
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082188236158136419}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd12f13cf6b38b242847520f0d85df16, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2097899294746378967
 Transform:
   m_ObjectHideFlags: 0
@@ -2707,7 +2727,6 @@ GameObject:
   - component: {fileID: 3441262832982837524}
   - component: {fileID: 6771479211255728395}
   - component: {fileID: 767292353}
-  - component: {fileID: 8185584146887126782}
   m_Layer: 0
   m_Name: StartTurretGunHolder
   m_TagString: Untagged
@@ -2715,25 +2734,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &8185584146887126782
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8185584146887126781}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd12f13cf6b38b242847520f0d85df16, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!33 &8929586996288862283
 MeshFilter:
   m_ObjectHideFlags: 0

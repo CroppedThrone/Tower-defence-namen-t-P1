@@ -25,6 +25,7 @@ public class WaveController : MonoBehaviour
                 GameObject spawnedEnemy = Instantiate(waves[w].enemySpawner[e].enemyToSpawn, spawnLocation + actualDeviation, Quaternion.identity);
                 spawnedEnemy.GetComponent<EnemyBehaviour>().target = target;
                 spawnedEnemy.GetComponent<EnemyBehaviour>().playerGold = player.GetComponent<PlayerControll>();
+                spawnedEnemy.transform.name = "enemy" + e.ToString();
                 yield return new WaitForSeconds(waves[w].enemySpawner[e].spawnDelay);
             }
             yield return new WaitForSeconds(10);
