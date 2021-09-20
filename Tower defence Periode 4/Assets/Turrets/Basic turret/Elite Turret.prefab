@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 7188133577405741765}
   - component: {fileID: 5770551835091615233}
   m_Layer: 0
-  m_Name: StartTurret
+  m_Name: Elite Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,11 +381,11 @@ MonoBehaviour:
   turretRotate: {fileID: 4727385313559727548}
   barrelRotate: {fileID: 549909553500618119}
   barrelPoint: {fileID: 7188133575855103293}
-  damage: 2
+  damage: 5
   rateOfFire: 2.5
   maxAmmo: 150
   currentAmmo: 0
-  range: 12
+  range: 15
 --- !u!1 &6222259817292518286
 GameObject:
   m_ObjectHideFlags: 0

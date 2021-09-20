@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e081d26e62d142d4b93e49ee4bf073d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 10
-  currentHP: 10
+  maxHP: 50
+  currentHP: 25
   moveSpeed: 3.5
   goldValue: 2
   agent: {fileID: 0}
