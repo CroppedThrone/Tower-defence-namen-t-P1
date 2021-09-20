@@ -14,7 +14,7 @@ public class Shop : MonoBehaviour
     public GameObject machine;
     public GameObject drop;
     public int lastPressed;
-    GameObject currentSelected;
+    public GameObject currentSelected;
     public GameObject mapCanvas;
     public GameObject setting;
     public SettingsMenu settingsMenu;
@@ -45,7 +45,7 @@ public class Shop : MonoBehaviour
     void Update()
     {
         currentSelected = EventSystem.current.currentSelectedGameObject;
-        if (lastPressed == 1)
+        if (drop==true)
         {
             
 
@@ -91,9 +91,12 @@ public class Shop : MonoBehaviour
             }
         }
         
+
+     }   
+        
         
 
-    }
+    
 
 
 
