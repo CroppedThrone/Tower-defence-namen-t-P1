@@ -15,13 +15,22 @@ public class MissileTurretController : MonoBehaviour
 
     public int damage;
     public float rateOfFire;
+    public float reloadTimer;
     public int maxAmmo;
     public int currentAmmo;
     public int range;
 
+    public MissileArray[] missileArray = new MissileArray[2];
+    public GameObject missile;
+    public int loadedMissile;
+
     void Start()
     {
         currentAmmo = maxAmmo;
+        for (int i = 0; i < missileArray.Length; i++)
+        {
+            missileArray[i].missile = Instantiate(missile, missileArray[i].spawnPoint.position, missileArray[i].spawnPoint.rotation, missileArray[i].spawnPoint);
+        }
     }
     void FixedUpdate()
     {
@@ -35,19 +44,22 @@ public class MissileTurretController : MonoBehaviour
             {
                 targetEnemy = null;
             }
-            //if (targetEnemy)
-            //{
-            //    turretRotate.localRotation = Quaternion.LookRotation(targetEnemy.transform.position - turretRotate.position, Vector3.up);
-            //    Vector3 angles = turretRotate.eulerAngles;
-            //    angles.x = 0f;
-            //    angles.z = 0f;
-            //    turretRotate.rotation = Quaternion.Euler(angles);
-            //    barrelRotate.rotation = Quaternion.LookRotation(-targetEnemy.transform.position + barrelRotate.position, Vector3.up);
-            //    Vector3 barrelAngles = barrelRotate.eulerAngles;
-            //    barrelAngles.y = turretRotate.eulerAngles.y;
-            //    barrelAngles.z = 0f;
-            //    barrelRotate.rotation = Quaternion.Euler(barrelAngles);
-            //}
+            if (targetEnemy)
+            {
+                turretRotate.localRotation = Quaternion.LookRotation(targetEnemy.transform.position - turretRotate.position, Vector3.up);
+                Vector3 angles = turretRotate.eulerAngles;
+                angles.x = 0f;
+                angles.z = 0f;
+                turretRotate.rotation = Quaternion.Euler(angles);
+                if (Vector3.Dot(turretRotate.forward, targetEnemy.transform.position - transform.position) > 0.9f)
+                {
+                    if (canShoot == true && currentAmmo > 0)
+                    {
+                        canShoot = false;
+                        StartCoroutine(Fire());
+                    }
+                }
+            }
         }
     }
     void AquireTarget()
@@ -64,13 +76,40 @@ public class MissileTurretController : MonoBehaviour
     }
     IEnumerator Fire()
     {
-        print(currentAmmo.ToString());
-        animator.SetTrigger("Fire");
-        targetEnemy.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
-        currentAmmo -= 1;
-        print("finished firing");
+        missileArray[loadedMissile].missile.GetComponent<MissileController>().Launch(targetEnemy, damage);
+        missileArray[loadedMissile].missile = null;
+        loadedMissile++;
         yield return new WaitForSeconds(1f / rateOfFire);
+        if (loadedMissile == 2 & currentAmmo > 1)
+        {
+            StartCoroutine(Reload());
+        }
+        else if (loadedMissile == 2 & currentAmmo == 1)
+        {
+            isActive = false;
+            gunAnimator.SetTrigger("Start reload");
+        }
+        else
+        {
+            canShoot = true;
+        }
+    }
+    IEnumerator Reload()
+    {
+        isActive = false;
+        gunAnimator.SetTrigger("Start reload");
+        yield return new WaitForSeconds(1.5f);
+        for (int i = 0; i < missileArray.Length; i++)
+        {
+            missileArray[i].missile = Instantiate(missile, missileArray[i].spawnPoint.position, missileArray[i].spawnPoint.rotation, missileArray[i].spawnPoint);
+        }
+        yield return new WaitForSeconds(reloadTimer);
+        gunAnimator.SetTrigger("Finish reload");
+        yield return new WaitForSeconds(1.8f);
+        loadedMissile = 0;
+        currentAmmo--;
         canShoot = true;
+        isActive = true;
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -90,8 +129,15 @@ public class MissileTurretController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         isActive = true;
         canShoot = true;
-        //animator.enabled = false;
+        animator.enabled = false;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
     }
+}
+
+[System.Serializable]
+public class MissileArray
+{
+    public GameObject missile;
+    public Transform spawnPoint;
 }
