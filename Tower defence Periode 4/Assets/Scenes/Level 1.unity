@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &481187686
+--- !u!1001 &1010048263
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -132,19 +132,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.15223
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 111.12422
+      value: 80.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 146.18947
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -174,7 +174,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 882129737928793925, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+    - target: {fileID: -3828847427660674261, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 460317516bd215742b681e55b17cd986, type: 2}
@@ -182,10 +182,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DamWorldTowerDef
       objectReference: {fileID: 0}
-    - target: {fileID: 7339356831882890532, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 460317516bd215742b681e55b17cd986, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
 --- !u!1 &1612130357
@@ -362,5 +358,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
