@@ -82,7 +82,7 @@ public class MissileTurretController : MonoBehaviour
         yield return new WaitForSeconds(1f / rateOfFire);
         if (loadedMissile == 2 & currentAmmo > 1)
         {
-            StartCoroutine(Reload());
+            StartCoroutine(Resupply());
         }
         else if (loadedMissile == 2 & currentAmmo == 1)
         {
@@ -94,7 +94,7 @@ public class MissileTurretController : MonoBehaviour
             canShoot = true;
         }
     }
-    IEnumerator Reload()
+    IEnumerator Resupply()
     {
         isActive = false;
         gunAnimator.SetTrigger("Start reload");
@@ -132,6 +132,20 @@ public class MissileTurretController : MonoBehaviour
         animator.enabled = false;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
+    }
+    public IEnumerator Reload()
+    {
+        for (int i = 0; i < missileArray.Length; i++)
+        {
+            missileArray[i].missile = Instantiate(missile, missileArray[i].spawnPoint.position, missileArray[i].spawnPoint.rotation, missileArray[i].spawnPoint);
+        }
+        yield return new WaitForSeconds(reloadTimer);
+        gunAnimator.SetTrigger("Finish reload");
+        yield return new WaitForSeconds(1.8f);
+        loadedMissile = 0;
+        currentAmmo = maxAmmo;
+        canShoot = true;
+        isActive = true;
     }
 }
 
