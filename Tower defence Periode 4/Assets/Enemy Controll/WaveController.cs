@@ -9,6 +9,7 @@ public class WaveController : MonoBehaviour
     public Vector3 spawnLocation;
     public Vector2 spawnDeviation;
     public Wave[] waves;
+    public Vector3[] pathWaypoints;
 
     void OnFire()
     {
@@ -23,8 +24,8 @@ public class WaveController : MonoBehaviour
             {
                 Vector3 actualDeviation = new Vector4(Random.Range(-spawnDeviation.x, spawnDeviation.x), 0, Random.Range(-spawnDeviation.y, spawnDeviation.y));
                 GameObject spawnedEnemy = Instantiate(waves[w].enemySpawner[e].enemyToSpawn, spawnLocation + actualDeviation, Quaternion.identity);
-                spawnedEnemy.GetComponent<EnemyBehaviour>().target = target;
                 spawnedEnemy.GetComponent<EnemyBehaviour>().playerGold = player.GetComponent<PlayerControll>();
+                spawnedEnemy.GetComponent<EnemyPathfinding>().FindPath(pathWaypoints, spawnDeviation);
                 spawnedEnemy.transform.name = "enemy" + e.ToString();
                 yield return new WaitForSeconds(waves[w].enemySpawner[e].spawnDelay);
             }

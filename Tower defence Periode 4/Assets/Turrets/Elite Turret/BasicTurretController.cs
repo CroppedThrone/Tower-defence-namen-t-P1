@@ -22,11 +22,13 @@ public class BasicTurretController : MonoBehaviour
     public int currentAmmo;
     public int range;
 
+    public GameObject ball;
+
     void Start()
     {
         currentAmmo = maxAmmo;
     }
-    void FixedUpdate()
+    void Update()
     {
         if (isActive == true)
         {
@@ -45,7 +47,7 @@ public class BasicTurretController : MonoBehaviour
                 angles.x = 0f;
                 angles.z = 0f;
                 turretRotate.rotation = Quaternion.Euler(angles);
-                barrelRotate.rotation = Quaternion.LookRotation(-targetEnemy.transform.position + barrelRotate.position, Vector3.up);
+                barrelRotate.rotation = Quaternion.LookRotation(targetEnemy.transform.position - barrelRotate.position, Vector3.up);
                 Vector3 barrelAngles = barrelRotate.eulerAngles;
                 barrelAngles.y = turretRotate.eulerAngles.y;
                 barrelAngles.z = 0f;
@@ -76,8 +78,27 @@ public class BasicTurretController : MonoBehaviour
     IEnumerator Fire()
     {
         print(currentAmmo.ToString());
-        animator.SetTrigger("Fire");
-        targetEnemy.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
+        //animator.SetTrigger("Fire");
+        //targetEnemy.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
+        RaycastHit hit;
+        Debug.DrawRay(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position) * 15, Color.red, 2);
+        if (Physics.Raycast(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position), out hit, range))
+        {
+            print("hit");
+            if (hit.collider.GetComponent<EnemyBehaviour>())
+            {
+                print("enemy hit");
+                hit.collider.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
+            }
+            else
+            {
+                Instantiate(ball, hit.point, Quaternion.identity);
+            }
+        }
+        else
+        {
+            print("miss");
+        }
         currentAmmo -= 1;
         print("finished firing");
         yield return new WaitForSeconds(1f / rateOfFire);
@@ -103,7 +124,7 @@ public class BasicTurretController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         isActive = true;
         canShoot = true;
-        //animator.enabled = false;
+        animator.enabled = false;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
     }

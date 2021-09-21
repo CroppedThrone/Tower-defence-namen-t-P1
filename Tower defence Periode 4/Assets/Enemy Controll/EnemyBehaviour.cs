@@ -7,17 +7,11 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public int maxHP;
     public float currentHP;
-    public float moveSpeed;
     public int goldValue;
-    public NavMeshAgent agent;
-    public Transform target;
     public PlayerControll playerGold;
 
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        agent.speed = moveSpeed;
-        agent.SetDestination(target.position);
         currentHP = maxHP - 0.1f;
     }
 
@@ -37,10 +31,6 @@ public class EnemyBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
-    //void GiveGold()
-    //{
-    //    playerGold.gold += goldValue;
-    //}
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Finish")
