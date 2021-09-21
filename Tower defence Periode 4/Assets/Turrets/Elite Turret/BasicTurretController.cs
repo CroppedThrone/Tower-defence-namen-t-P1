@@ -82,6 +82,10 @@ public class BasicTurretController : MonoBehaviour
         print("finished firing");
         yield return new WaitForSeconds(1f / rateOfFire);
         canShoot = true;
+        if (currentAmmo == 0)
+        {
+            ammoBox.SetActive(false);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -102,5 +106,11 @@ public class BasicTurretController : MonoBehaviour
         //animator.enabled = false;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
+    }
+    public void Reload()
+    {
+        ammoBox.SetActive(true);
+        currentAmmo = maxAmmo;
+        canShoot = true;
     }
 }
