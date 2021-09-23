@@ -39,9 +39,6 @@ public class Birdscript : MonoBehaviour
         }
 
 
-        if(transform.position.y >= )
-        {
 
-        }
     }
 }
