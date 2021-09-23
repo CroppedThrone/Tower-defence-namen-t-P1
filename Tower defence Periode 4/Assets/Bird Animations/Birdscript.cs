@@ -27,7 +27,7 @@ public class Birdscript : MonoBehaviour
         positionBirdPlus.x = transform.position.x;
 
         positionBirdPlus.y++;
-        positionBirdPlus.z++;
+        positionBirdPlus.z += 10;
         positionBirdPlus.x++;
         positionBirdMin.y--;
         positionBirdMin.z--;
@@ -40,6 +40,8 @@ public class Birdscript : MonoBehaviour
 
         transform.Translate(move * birdSpeed * Time.deltaTime);
         move.y = birdLevel.y;
+        move.z = birdLevel.z;
+        move.x = birdLevel.x;
 
         if (dumbBird == true)
         {
@@ -52,7 +54,7 @@ public class Birdscript : MonoBehaviour
                 birdLevel.y = 0.5f;
             }
         }
-
+        // dit zorgt er voor dat als een object een 1f te ver gaan dat ze dan de omgekeerde richting om gaan.
         if (smartBird == true)
         {
             if (transform.position.y >= positionBirdPlus.y)
@@ -63,9 +65,21 @@ public class Birdscript : MonoBehaviour
             {
                 birdLevel.y = 0.5f;
             }
-            if (transform.position.x >= positionBirdPlus.y)
+            if (transform.position.x >= positionBirdPlus.x)
             {
-                birdLevel.x = 0.25f;
+                birdLevel.x = -0.25f;
+            }
+            if (transform.position.x <= positionBirdMin.x)
+            {
+                birdLevel.x = 0.50f;
+            }
+            if (transform.position.z >= positionBirdPlus.z)
+            {
+                birdLevel.z = -1f;
+            }
+            if(transform.position.z <= positionBirdMin.z)
+            {
+                birdLevel.z = 1f;
             }
         }
     }
