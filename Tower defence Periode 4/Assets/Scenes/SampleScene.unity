@@ -216,7 +216,7 @@ Transform:
   m_LocalScale: {x: 100.00003, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &255194984
 GameObject:
@@ -347,9 +347,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdSpeed: 1
-  birdLevel: 0.5
+  birdLevel: {x: 0, y: 0, z: 0}
   move: {x: 1, y: 0, z: 1}
-  dumbBird: 1
+  dumbBird: 0
+  smartBird: 1
+  positionBirdMin: {x: 0, y: 0, z: 0}
+  positionBirdPlus: {x: 0, y: 0, z: 0}
 --- !u!65 &331141961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -898,7 +901,7 @@ Transform:
   m_LocalScale: {x: 100.00003, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &789433024
 GameObject:
