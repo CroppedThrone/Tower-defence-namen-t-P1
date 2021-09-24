@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 5770551835091615233}
   m_Layer: 0
   m_Name: Elite Turret
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,6 +386,7 @@ MonoBehaviour:
   maxAmmo: 150
   currentAmmo: 0
   range: 15
+  ball: {fileID: 0}
 --- !u!1 &6222259817292518286
 GameObject:
   m_ObjectHideFlags: 0

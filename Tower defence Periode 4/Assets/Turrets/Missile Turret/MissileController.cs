@@ -82,4 +82,8 @@ public class MissileController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject.transform.parent.gameObject);
+    }
 }

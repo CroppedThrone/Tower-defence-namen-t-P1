@@ -22,8 +22,6 @@ public class BasicTurretController : MonoBehaviour
     public int currentAmmo;
     public int range;
 
-    public GameObject ball;
-
     void Start()
     {
         currentAmmo = maxAmmo;
@@ -90,14 +88,6 @@ public class BasicTurretController : MonoBehaviour
                 print("enemy hit");
                 hit.collider.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
             }
-            else
-            {
-                Instantiate(ball, hit.point, Quaternion.identity);
-            }
-        }
-        else
-        {
-            print("miss");
         }
         currentAmmo -= 1;
         print("finished firing");
@@ -133,5 +123,9 @@ public class BasicTurretController : MonoBehaviour
         ammoBox.SetActive(true);
         currentAmmo = maxAmmo;
         canShoot = true;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject.transform.parent.gameObject);
     }
 }
