@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class WaveController : MonoBehaviour
 {
-    public Transform target;
     public GameObject player;
-    public Vector3 spawnLocation;
+    public Transform spawnLocation;
     public Vector2 spawnDeviation;
     public Wave[] waves;
     public Transform[] pathWaypoints;
 
-    void OnFire()
+    void Start()
     {
         print("start wave");
         StartCoroutine(StartWave());
@@ -23,7 +22,7 @@ public class WaveController : MonoBehaviour
             for (int e = 0; e < waves[w].enemySpawner.Length; e++)
             {
                 Vector3 actualDeviation = new Vector4(Random.Range(-spawnDeviation.x, spawnDeviation.x), 0, Random.Range(-spawnDeviation.y, spawnDeviation.y));
-                GameObject spawnedEnemy = Instantiate(waves[w].enemySpawner[e].enemyToSpawn, spawnLocation + actualDeviation, Quaternion.identity);
+                GameObject spawnedEnemy = Instantiate(waves[w].enemySpawner[e].enemyToSpawn, spawnLocation.position + actualDeviation, Quaternion.identity);
                 spawnedEnemy.GetComponent<EnemyBehaviour>().playerGold = player.GetComponent<PlayerControll>();
                 spawnedEnemy.GetComponent<EnemyPathfinding>().FindPath(pathWaypoints);
                 spawnedEnemy.transform.name = "enemy" + e.ToString();
