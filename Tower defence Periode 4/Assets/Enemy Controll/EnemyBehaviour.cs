@@ -9,6 +9,7 @@ public class EnemyBehaviour : MonoBehaviour
     public float currentHP;
     public int goldValue;
     public PlayerControll playerGold;
+    public int damageToBase;
 
     void Start()
     {
