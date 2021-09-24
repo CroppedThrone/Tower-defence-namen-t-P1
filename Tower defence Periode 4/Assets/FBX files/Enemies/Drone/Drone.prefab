@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4005730085547900492
+--- !u!1 &73203702573306959
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1640707854349501089}
-  - component: {fileID: 6478601245499433833}
-  - component: {fileID: 1937636525515900431}
+  - component: {fileID: 4053431818030229308}
+  - component: {fileID: 1870728696344062096}
+  - component: {fileID: 2021526761583365130}
   m_Layer: 0
-  m_Name: Drone.Big.Propellor
+  m_Name: Drone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1640707854349501089
+--- !u!4 &4053431818030229308
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4005730085547900492}
+  m_GameObject: {fileID: 73203702573306959}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.104910046, y: 0.36310032, z: -0.000000023283064}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4685826544759625773}
-  m_RootOrder: 1
+  m_Father: {fileID: 2578731542940481004}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6478601245499433833
+--- !u!33 &1870728696344062096
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4005730085547900492}
-  m_Mesh: {fileID: -7836506722002362154, guid: 0b6fd31266975f64a891069ab62ecf9e, type: 3}
---- !u!23 &1937636525515900431
+  m_GameObject: {fileID: 73203702573306959}
+  m_Mesh: {fileID: 2403283451262950110, guid: 0b6fd31266975f64a891069ab62ecf9e, type: 3}
+--- !u!23 &2021526761583365130
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4005730085547900492}
+  m_GameObject: {fileID: 73203702573306959}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -81,7 +81,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5353855022546158231
+--- !u!1 &2919086825370791766
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,8 +89,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4685826544759625773}
-  - component: {fileID: 5083964844412190656}
+  - component: {fileID: 2578731542940481004}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -98,43 +97,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4685826544759625773
+--- !u!4 &2578731542940481004
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353855022546158231}
+  m_GameObject: {fileID: 2919086825370791766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.9072895, y: 112.06, z: 5.121784}
+  m_LocalPosition: {x: 25.943657, y: 112.52791, z: -7.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6525353045675772669}
-  - {fileID: 1640707854349501089}
-  - {fileID: 8610975478998332149}
+  - {fileID: 4053431818030229308}
+  - {fileID: 8361759400393944928}
+  - {fileID: 1535248454160932660}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &5083964844412190656
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5353855022546158231}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &5425912536533187103
+--- !u!1 &2991144910550702046
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,9 +122,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8610975478998332149}
-  - component: {fileID: 3509584246888938577}
-  - component: {fileID: 6988677497244746167}
+  - component: {fileID: 1535248454160932660}
+  - component: {fileID: 5943225942899855760}
+  - component: {fileID: 158432897403694198}
   m_Layer: 0
   m_Name: Drone.Small.Propellor
   m_TagString: Untagged
@@ -152,35 +132,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8610975478998332149
+--- !u!4 &1535248454160932660
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5425912536533187103}
+  m_GameObject: {fileID: 2991144910550702046}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6729136, y: 0.18028812, z: -0.03750632}
+  m_LocalPosition: {x: 0.037506342, y: 0.1802881, z: -1.6729136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4685826544759625773}
+  m_Father: {fileID: 2578731542940481004}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3509584246888938577
+--- !u!33 &5943225942899855760
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5425912536533187103}
+  m_GameObject: {fileID: 2991144910550702046}
   m_Mesh: {fileID: -5691061774441797492, guid: 0b6fd31266975f64a891069ab62ecf9e, type: 3}
---- !u!23 &6988677497244746167
+--- !u!23 &158432897403694198
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5425912536533187103}
+  m_GameObject: {fileID: 2991144910550702046}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -215,7 +195,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7190571470434711950
+--- !u!1 &6149997947604751245
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,45 +203,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6525353045675772669}
-  - component: {fileID: 8878900614374229329}
-  - component: {fileID: 9134425014679822795}
+  - component: {fileID: 8361759400393944928}
+  - component: {fileID: 4262240639289396904}
+  - component: {fileID: 8659796332002880462}
   m_Layer: 0
-  m_Name: Drone
+  m_Name: Drone.Big.Propellor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6525353045675772669
+--- !u!4 &8361759400393944928
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7190571470434711950}
+  m_GameObject: {fileID: 6149997947604751245}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.000000029802322, y: 0.34948954, z: -0.104910046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4685826544759625773}
-  m_RootOrder: 0
+  m_Father: {fileID: 2578731542940481004}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8878900614374229329
+--- !u!33 &4262240639289396904
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7190571470434711950}
-  m_Mesh: {fileID: 2403283451262950110, guid: 0b6fd31266975f64a891069ab62ecf9e, type: 3}
---- !u!23 &9134425014679822795
+  m_GameObject: {fileID: 6149997947604751245}
+  m_Mesh: {fileID: -7836506722002362154, guid: 0b6fd31266975f64a891069ab62ecf9e, type: 3}
+--- !u!23 &8659796332002880462
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7190571470434711950}
+  m_GameObject: {fileID: 6149997947604751245}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
