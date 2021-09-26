@@ -5407,7 +5407,7 @@ ParticleSystem:
   m_GameObject: {fileID: 868335501}
   serializedVersion: 7
   lengthInSec: 1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -5534,7 +5534,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.7794002
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6026,7 +6026,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 59.169525
+    angle: 72.678246
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -17288,7 +17288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3008223103394715499, guid: dee9bfc69110f794d985c67c5d6ace00, type: 3}
       propertyPath: simulationSpeed
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3008223103394715499, guid: dee9bfc69110f794d985c67c5d6ace00, type: 3}
       propertyPath: ColorModule.enabled
@@ -17321,6 +17321,10 @@ PrefabInstance:
     - target: {fileID: 3008223103394715499, guid: dee9bfc69110f794d985c67c5d6ace00, type: 3}
       propertyPath: ShapeModule.alignToDirection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008223103394715499, guid: dee9bfc69110f794d985c67c5d6ace00, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3008223103394715499, guid: dee9bfc69110f794d985c67c5d6ace00, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
