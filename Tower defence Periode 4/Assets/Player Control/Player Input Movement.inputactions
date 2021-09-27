@@ -1,5 +1,5 @@
 {
-    "name": "Tower defence Periode 4",
+    "name": "Player Input Movement",
     "maps": [
         {
             "name": "Player",
@@ -33,6 +33,14 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "0856a7e3-42df-41dd-a765-afc5609311d0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "OpenMenu",
+                    "type": "Button",
+                    "id": "8fbaae94-f29f-4274-80b6-1eef18609df0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -267,6 +275,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3122e025-844e-493e-b072-d4eb2ccfc6e0",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "OpenMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
