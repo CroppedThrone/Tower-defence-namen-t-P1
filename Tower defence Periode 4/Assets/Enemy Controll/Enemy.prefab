@@ -211,6 +211,7 @@ MonoBehaviour:
   currentHP: 10
   goldValue: 2
   playerGold: {fileID: 0}
+  damageToBase: 0
 --- !u!54 &730057434289409549
 Rigidbody:
   m_ObjectHideFlags: 0

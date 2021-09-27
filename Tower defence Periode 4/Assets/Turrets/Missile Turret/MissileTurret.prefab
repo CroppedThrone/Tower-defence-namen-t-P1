@@ -253,12 +253,12 @@ MonoBehaviour:
   boxAnimator: {fileID: 887512827649294180}
   gunAnimator: {fileID: 887512827612224536}
   turretRotate: {fileID: 3662227724702298914}
-  damage: 20
+  damage: 100
   rateOfFire: 2
   reloadTimer: 1.5
   maxAmmo: 10
   currentAmmo: 0
-  range: 45
+  range: 50
   missileArray:
   - missile: {fileID: 0}
     spawnPoint: {fileID: 5498502580175303725}

@@ -23,11 +23,11 @@ public class EnemyPathfinding : MonoBehaviour
             
             {
                 print("turn");
-                if (Vector3.Dot(transform.right, moveTo - transform.position) > 0.05f)
+                if (Vector3.Dot(transform.right, moveTo - transform.position) > 0.1f)
                 {
                     transform.Rotate(new Vector3(0, 180, 0) * Time.fixedDeltaTime);
                 }
-                else if(Vector3.Dot(transform.right, moveTo - transform.position) < -0.05f)
+                else if(Vector3.Dot(transform.right, moveTo - transform.position) < -0.1f)
                 {
                     transform.Rotate(new Vector3(0, -180, 0) * Time.fixedDeltaTime);
                 }
@@ -37,6 +37,7 @@ public class EnemyPathfinding : MonoBehaviour
                 waypointCounter++;
                 moveTo = waypoints[waypointCounter].position;
                 moveTo.x += Random.Range(-4, 4);
+                moveTo.y = transform.position.y;
                 moveTo.z += Random.Range(-4, 4);
             }
         }
@@ -47,6 +48,7 @@ public class EnemyPathfinding : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         moveTo = waypoints[0].position;
         moveTo.x += Random.Range(-4, 4);
+        moveTo.y = transform.position.y;
         moveTo.z += Random.Range(-4, 4);
         canMove = true;
     }

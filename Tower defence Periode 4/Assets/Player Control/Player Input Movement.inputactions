@@ -22,6 +22,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "f021ef34-f18b-4734-a812-ef6a0ca8c2f6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Fire",
                     "type": "Button",
                     "id": "ffceedcd-9665-49af-9320-d83cc66d648d",
@@ -41,6 +49,14 @@
                     "name": "OpenMenu",
                     "type": "Button",
                     "id": "8fbaae94-f29f-4274-80b6-1eef18609df0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DevKey",
+                    "type": "Button",
+                    "id": "f7636578-73ce-4339-b8e8-d15e1f991180",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -242,6 +258,28 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "OpenMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed49631b-0202-4c6e-8b89-4a7451575a9a",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "DevKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c433f60e-086b-40ed-9a6d-adbec647df93",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

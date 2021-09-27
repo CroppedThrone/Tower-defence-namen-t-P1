@@ -385,8 +385,7 @@ MonoBehaviour:
   rateOfFire: 2.5
   maxAmmo: 150
   currentAmmo: 0
-  range: 15
-  ball: {fileID: 0}
+  range: 25
 --- !u!1 &6222259817292518286
 GameObject:
   m_ObjectHideFlags: 0

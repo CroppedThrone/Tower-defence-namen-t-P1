@@ -147,6 +147,10 @@ public class MissileTurretController : MonoBehaviour
         canShoot = true;
         isActive = true;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject.transform.parent.gameObject);
+    }
 }
 
 [System.Serializable]

@@ -675,7 +675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7.5
   turnSpeed: 1
-  gold: 1700
+  gold: 10000
   playerCamera: {fileID: 1990819147}
   moneyText: {fileID: 528093366}
 --- !u!114 &742779262
@@ -2177,7 +2177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1490585253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2195,41 +2195,13 @@ MonoBehaviour:
   spawnDeviation: {x: 4, y: 4}
   waves:
   - enemySpawner:
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 8838677368921124459, guid: b25201f7f042fe547ad82b69f62ce492, type: 3}
       spawnDelay: 1
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 1
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 1
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 1
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 1
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0
   - enemySpawner:
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 8838677368921124459, guid: b25201f7f042fe547ad82b69f62ce492, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 3
   - enemySpawner:
-    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 8838677368921124459, guid: b25201f7f042fe547ad82b69f62ce492, type: 3}
       spawnDelay: 4
   pathWaypoints:
   - {fileID: 586532340}
@@ -2248,7 +2220,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1490585255
@@ -2540,7 +2512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1576459602
 MeshCollider:
   m_ObjectHideFlags: 0

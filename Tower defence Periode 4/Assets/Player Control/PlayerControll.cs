@@ -22,6 +22,10 @@ public class PlayerControll : MonoBehaviour
         GetMoney(0);
     }
 
+    void OnDevKey()
+    {
+        GetMoney(1000);
+    }
     void OnMove(InputValue movementValue)
     {
         moveVector = movementValue.Get<Vector2>();
@@ -33,6 +37,10 @@ public class PlayerControll : MonoBehaviour
         angles.x -= lookVector.y * turnSpeed;
         angles.x = Mathf.Clamp(angles.x, -90f, 90f);
         playerCamera.localRotation = Quaternion.Euler(angles);
+    }
+    void OnJump()
+    {
+        rb.AddForce(0, 500f, 0);
     }
     void OnSprint()
     {
