@@ -9,6 +9,7 @@ public class SettingMenumain : MonoBehaviour
     Resolution[] resolutions;
     public Dropdown resolutionDropdown;
     public GameObject settingCanvas;
+    public int lastPressed;
     void Start()
     {
         resolutions = Screen.resolutions;
@@ -60,7 +61,17 @@ public class SettingMenumain : MonoBehaviour
 
     public void SettingsButton()
     {
-        settingCanvas.SetActive(true);
+        lastPressed++;
+        if (lastPressed == 1)
+        {
+            settingCanvas.SetActive(true);
+            
+        }
+        else
+        {
+            lastPressed = 0;
+            settingCanvas.SetActive(false);
+        }
     }
 
 
