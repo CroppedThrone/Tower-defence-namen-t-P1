@@ -1264,6 +1264,11 @@ Transform:
   m_Father: {fileID: 586532340}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &904243925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2506478032672452703, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+  m_PrefabInstance: {fileID: 1964950040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &942443184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1490585253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2938,6 +2943,7 @@ MonoBehaviour:
   myFunctionCalled: 0
   myFunctionCalled1: 0
   myFunctionCalled2: 0
+  uiScreen: {fileID: 1112184309}
   player: {fileID: 742779260}
   choice: 0
   supplyBeacon: {fileID: 8369401146968833211, guid: e4e3281984e76e344884e56e2d60085d, type: 3}
@@ -3067,6 +3073,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: No
       objectReference: {fileID: 0}
+    - target: {fileID: 1419836638845911884, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_Name
+      value: No
+      objectReference: {fileID: 0}
     - target: {fileID: 1419836639094933310, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: cost
       value: 1200
@@ -3079,6 +3089,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 742779260}
+    - target: {fileID: 1419836639094933310, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: noMoney
+      value: 
+      objectReference: {fileID: 904243925}
     - target: {fileID: 1419836639122243332, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: m_MoveAction
       value: 
@@ -3188,6 +3202,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1419836639610704415, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419836639610704415, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 361.58
       objectReference: {fileID: 0}
@@ -3207,6 +3225,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Yes
       objectReference: {fileID: 0}
+    - target: {fileID: 1419836639854057934, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_Name
+      value: Yes
+      objectReference: {fileID: 0}
     - target: {fileID: 1419836639882088022, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: cost
       value: 4000
@@ -3219,6 +3241,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 742779260}
+    - target: {fileID: 1419836639882088022, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: noMoney
+      value: 
+      objectReference: {fileID: 904243925}
     - target: {fileID: 1419836639882088041, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3239,6 +3265,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 742779260}
+    - target: {fileID: 1419836640389581544, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: noMoney
+      value: 
+      objectReference: {fileID: 904243925}
     - target: {fileID: 1419836640389581547, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3259,6 +3289,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 742779260}
+    - target: {fileID: 1419836640399938070, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: noMoney
+      value: 
+      objectReference: {fileID: 904243925}
     - target: {fileID: 1419836640399938089, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3275,6 +3309,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 742779260}
+    - target: {fileID: 1419836640400678418, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: noMoney
+      value: 
+      objectReference: {fileID: 904243925}
     - target: {fileID: 1419836640400678421, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3283,8 +3321,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: conf
       objectReference: {fileID: 0}
+    - target: {fileID: 1419836640412206100, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.9102764
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419836640412206100, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419836640412206100, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506478032672452703, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985786962245657909, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1419836639854057929, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
+    - {fileID: 1419836638845911863, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9748d5b763c0ac8498fda512d562826f, type: 3}
 --- !u!1 &1990819144
 GameObject:

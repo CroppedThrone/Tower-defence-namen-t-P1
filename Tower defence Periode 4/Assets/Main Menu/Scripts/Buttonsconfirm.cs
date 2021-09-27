@@ -14,6 +14,7 @@ public class Buttonsconfirm : MonoBehaviour
     public bool myFunctionCalled = false;
     public bool myFunctionCalled1 = false;
     public bool myFunctionCalled2 = false;
+    public GameObject uiScreen;
 
     public GameObject player;
     public TurretChoice choice;
@@ -45,6 +46,7 @@ public class Buttonsconfirm : MonoBehaviour
         spawnedBeacon.GetComponent<DropTurret>().turretChoice = choice;
         player.GetComponent<PlayerControll>().GetMoney(-toPay);
         conf.SetActive(false);
+        uiScreen.SetActive(false);
         shop.enabled = true;
         if (myFunctionCalled1 == false)
         {
