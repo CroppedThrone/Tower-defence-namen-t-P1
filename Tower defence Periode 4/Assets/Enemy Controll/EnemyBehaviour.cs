@@ -27,7 +27,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     private void OnDeath()
     {
-        playerGold.gold += goldValue;
+        playerGold.GetMoney(goldValue);
         print("ded");
         Destroy(gameObject);
     }

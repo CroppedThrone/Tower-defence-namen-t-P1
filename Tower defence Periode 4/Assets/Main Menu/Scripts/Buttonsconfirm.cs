@@ -14,6 +14,11 @@ public class Buttonsconfirm : MonoBehaviour
     public bool myFunctionCalled = false;
     public bool myFunctionCalled1 = false;
     public bool myFunctionCalled2 = false;
+
+    public GameObject player;
+    public TurretChoice choice;
+    public GameObject supplyBeacon;
+    public int toPay;
     void Update()
     {
         
@@ -36,6 +41,9 @@ public class Buttonsconfirm : MonoBehaviour
 
     public void Yes()
     {
+        GameObject spawnedBeacon = Instantiate(supplyBeacon, player.transform.position + player.transform.forward * 2.5f, Quaternion.identity);
+        spawnedBeacon.GetComponent<DropTurret>().turretChoice = choice;
+        player.GetComponent<PlayerControll>().GetMoney(-toPay);
         conf.SetActive(false);
         shop.enabled = true;
         if (myFunctionCalled1 == false)
