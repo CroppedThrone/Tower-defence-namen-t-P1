@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368789055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 823143128}
@@ -274,7 +274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586532339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: -3, z: 0}
+  m_LocalPosition: {x: 17.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 876854453}
@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606293143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 586532340}
@@ -1068,7 +1068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823143127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 30}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 368789056}
@@ -1198,7 +1198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876854452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 368789056}
@@ -2104,48 +2104,42 @@ MonoBehaviour:
   spawnDeviation: {x: 4, y: 4}
   waves:
   - enemySpawner:
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 1
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 1
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 1
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 1
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 1
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0
   - enemySpawner:
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 1012518774929036811, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
-      spawnDelay: 1.5
-    - enemyToSpawn: {fileID: 6234530195367118231, guid: 5f8db138d7e74ae45845eb650e9a11cc, type: 3}
-      spawnDelay: 0
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+      spawnDelay: 3
   - enemySpawner:
-    - enemyToSpawn: {fileID: 6234530195367118231, guid: 5f8db138d7e74ae45845eb650e9a11cc, type: 3}
-      spawnDelay: 3
-    - enemyToSpawn: {fileID: 6234530195367118231, guid: 5f8db138d7e74ae45845eb650e9a11cc, type: 3}
-      spawnDelay: 3
-    - enemyToSpawn: {fileID: 6234530195367118231, guid: 5f8db138d7e74ae45845eb650e9a11cc, type: 3}
-      spawnDelay: 0
+    - enemyToSpawn: {fileID: 232873015024631075, guid: 4741b5caa73711140abc84690f82bfa5, type: 3}
+      spawnDelay: 4
   pathWaypoints:
   - {fileID: 586532340}
   - {fileID: 876854453}
@@ -2223,8 +2217,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490585252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -15, y: -1, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 3}
   m_Children:
   - {fileID: 606293144}
   m_Father: {fileID: 0}
@@ -2449,7 +2443,7 @@ MeshCollider:
   m_GameObject: {fileID: 1576459601}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
