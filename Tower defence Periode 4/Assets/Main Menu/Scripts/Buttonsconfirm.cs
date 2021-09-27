@@ -48,6 +48,8 @@ public class Buttonsconfirm : MonoBehaviour
         conf.SetActive(false);
         uiScreen.SetActive(false);
         shop.enabled = true;
+        player.GetComponent<OpenScreen>().menuActive = false;
+
         if (myFunctionCalled1 == false)
         {
             myFunctionCalled = true;

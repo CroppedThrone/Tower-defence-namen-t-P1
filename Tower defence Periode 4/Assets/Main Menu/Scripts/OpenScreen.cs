@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class OpenScreen : MonoBehaviour
 {
     public GameObject canvas;
-    bool menuActive;
+    public bool menuActive;
     // Start is called before the first frame update
     void Start()
     {
