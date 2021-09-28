@@ -16,6 +16,7 @@ public class PlayerControll : MonoBehaviour
     public int gold;
     public Transform playerCamera;
     public Text moneyText;
+    bool canJump;
 
     void Start()
     {
@@ -47,7 +48,11 @@ public class PlayerControll : MonoBehaviour
     }
     void OnJump()
     {
-        rb.AddForce(0, 500f, 0);
+        if (canJump == true)
+        {
+            rb.AddForce(0, 50f, 0, ForceMode.Impulse);
+            canJump = false;
+        }
     }
     void OnSprint()
     {
@@ -72,15 +77,22 @@ public class PlayerControll : MonoBehaviour
     {
         if (isSprinting == false)
         {
-            rb.AddRelativeForce(moveVector.x * moveSpeed * 3, 0, moveVector.y * moveSpeed * 3);
+            rb.AddRelativeForce(moveVector.x * moveSpeed * 3, 0, moveVector.y * moveSpeed * 3, ForceMode.Acceleration);
         }
         else
         {
-            rb.AddRelativeForce(moveVector.x * moveSpeed * 9, 0, moveVector.y * moveSpeed * 9);
+            rb.AddRelativeForce(moveVector.x * moveSpeed * 9, 0, moveVector.y * moveSpeed * 9, ForceMode.Acceleration);
         }
         if (moveVector.x == 0 && moveVector.y == 0 && isSprinting == true)
         {
             isSprinting = false;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Ground" || collision.collider.tag == "Path")
+        {
+            canJump = true;
         }
     }
 }

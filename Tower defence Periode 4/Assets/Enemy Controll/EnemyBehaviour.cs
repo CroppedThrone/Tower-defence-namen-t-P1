@@ -36,6 +36,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag == "Finish")
         {
+            collision.gameObject.GetComponent<BaseHealth>().TakeBaseHealth(damageToBase);
             Destroy(gameObject);
         }
     }
