@@ -270,11 +270,23 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: afbc1ea223a3c03499a99ee507ffbd71, type: 2}
+    - target: {fileID: -3398655777298578189, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -156334398573857018, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 336980b06e8b7e24e88530a9744f9878, type: 2}
     - target: {fileID: 919132149155446097, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_Name
       value: DamWorldTowerDef
       objectReference: {fileID: 0}
     - target: {fileID: 3548658865882659223, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7841265091099251282, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
