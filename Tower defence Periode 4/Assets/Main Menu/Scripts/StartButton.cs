@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
-   public void ButtonStart()
+    private void Start()
+    {
+        Cursor.visible = true;
+    }
+    public void ButtonStart()
     {
         SceneManager.LoadScene(1);
     }
