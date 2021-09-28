@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WaveController : MonoBehaviour
 {
@@ -10,9 +11,8 @@ public class WaveController : MonoBehaviour
     public Wave[] waves;
     public Transform[] pathWaypoints;
 
-    void Start()
+    void OnFire()
     {
-        print("start wave");
         StartCoroutine(StartWave());
     }
     IEnumerator StartWave()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerControll : MonoBehaviour
 {
@@ -19,9 +20,15 @@ public class PlayerControll : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         GetMoney(0);
     }
 
+    void OnFuckGoBack()
+    {
+        SceneManager.LoadScene(1);
+    }
     void OnDevKey()
     {
         GetMoney(1000);

@@ -32,7 +32,7 @@ public class EnemyPathfinding : MonoBehaviour
                     transform.Rotate(new Vector3(0, -180, 0) * Time.fixedDeltaTime);
                 }
             }
-            if (Vector3.Distance(transform.position, moveTo) < 1f)
+            if (Vector3.Distance(transform.position, moveTo) < 1.5f)
             {
                 waypointCounter++;
                 moveTo = waypoints[waypointCounter].position;

@@ -19,6 +19,8 @@ public class Shop : MonoBehaviour
     public GameObject setting;
     public SettingsMenu settingsMenu;
     public MapButton mapButton;
+
+
     public void Drop()
     {
         
@@ -33,19 +35,21 @@ public class Shop : MonoBehaviour
             mapCanvas.SetActive(false);
             settingsMenu.lastPressed = 0;
             mapButton.lastPressed = 0;
+            
 
         }
         else
         {
             lastPressed = 0;
             drop.SetActive(false);
+            
         }
     }
 
     void Update()
     {
         currentSelected = EventSystem.current.currentSelectedGameObject;
-        if (drop==true)
+        if (drop ==true)
         {
             
 
@@ -90,7 +94,7 @@ public class Shop : MonoBehaviour
                 missle.SetActive(false);
             }
         }
-        
+       
 
      }   
         
