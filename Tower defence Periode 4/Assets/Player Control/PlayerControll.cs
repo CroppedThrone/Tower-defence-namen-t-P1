@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PlayerControll : MonoBehaviour
 {
@@ -16,6 +15,7 @@ public class PlayerControll : MonoBehaviour
     public int gold;
     public Transform playerCamera;
     public Text moneyText;
+    public Animator arm;
     bool canJump;
 
     void Start()
@@ -26,10 +26,6 @@ public class PlayerControll : MonoBehaviour
         GetMoney(0);
     }
 
-    void OnFuckGoBack()
-    {
-        SceneManager.LoadScene(1);
-    }
     void OnDevKey()
     {
         GetMoney(1000);
@@ -46,14 +42,6 @@ public class PlayerControll : MonoBehaviour
         angles.x = Mathf.Clamp(angles.x, -90f, 90f);
         playerCamera.localRotation = Quaternion.Euler(angles);
     }
-    void OnJump()
-    {
-        if (canJump == true)
-        {
-            rb.AddForce(0, 50f, 0, ForceMode.Impulse);
-            canJump = false;
-        }
-    }
     void OnSprint()
     {
         if (isSprinting == false)
@@ -63,6 +51,18 @@ public class PlayerControll : MonoBehaviour
         else
         {
             isSprinting = false;
+        }
+    }
+    void OnOpenMenu()
+    {
+        print("blah");
+        if (arm.GetBool("Screen on") == true)
+        {
+            arm.SetBool("Screen on", false);
+        }
+        else
+        {
+            arm.SetBool("Screen on", true);
         }
     }
 
