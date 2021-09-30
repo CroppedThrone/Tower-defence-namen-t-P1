@@ -14,12 +14,12 @@ public class Buttonsconfirm : MonoBehaviour
     public bool myFunctionCalled = false;
     public bool myFunctionCalled1 = false;
     public bool myFunctionCalled2 = false;
-   
-
     public GameObject player;
     public TurretChoice choice;
     public GameObject supplyBeacon;
     public int toPay;
+
+    
     void Update()
     {
         

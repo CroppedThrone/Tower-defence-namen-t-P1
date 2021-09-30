@@ -49,11 +49,11 @@ public class Shop : MonoBehaviour
     void Update()
     {
         currentSelected = EventSystem.current.currentSelectedGameObject;
-        if (drop ==true)
+        if (drop == true)
         {
-            
 
-            if (currentSelected.name == "Starter Turret")
+
+            if (currentSelected.name == "Basic Turret")
             {
                 starter.SetActive(true);
             }
@@ -61,7 +61,7 @@ public class Shop : MonoBehaviour
             {
                 starter.SetActive(false);
             }
-            if (currentSelected.name == "Elite Turret")
+            if (currentSelected.name == "Machine Gun Turret")
             {
                 elite.SetActive(true);
             }
@@ -69,7 +69,7 @@ public class Shop : MonoBehaviour
             {
                 elite.SetActive(false);
             }
-            if (currentSelected.name == "Machine Gun Turret")
+            if (currentSelected.name == "Hacker Turret")
             {
                 machine.SetActive(true);
             }
@@ -94,13 +94,13 @@ public class Shop : MonoBehaviour
                 missle.SetActive(false);
             }
         }
-       
 
-     }   
-        
-        
 
-    
+    }
+
+
+
+
 
 
 
