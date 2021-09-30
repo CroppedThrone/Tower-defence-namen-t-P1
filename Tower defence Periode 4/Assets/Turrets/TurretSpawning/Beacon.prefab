@@ -113,10 +113,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretChoice: 1
   turrets:
-  - {fileID: 0}
   - {fileID: 5770551835091615234, guid: fc9ba230729847446b7f60ee013c0ec2, type: 3}
-  - {fileID: 3618378321047882414, guid: c29dcd43e96dd4f46ad520b4b43b3d07, type: 3}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 3618378321047882414, guid: c29dcd43e96dd4f46ad520b4b43b3d07, type: 3}
   - {fileID: 0}
 --- !u!1 &9146653837085138086
 GameObject:

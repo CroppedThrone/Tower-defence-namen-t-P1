@@ -3540,7 +3540,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6261414904619377167}
-  - {fileID: 6261414904325417881}
   m_Father: {fileID: 6261414904636021443}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3658,7 +3657,7 @@ MonoBehaviour:
   conff: {fileID: 6261414904768430443}
   player: {fileID: 4994850739965496983}
   cost: 2300
-  choice: 2
+  choice: 3
   noMoney: {fileID: 7465149818690885036}
 --- !u!1 &6261414903753987817
 GameObject:
@@ -4194,7 +4193,7 @@ MonoBehaviour:
   conff: {fileID: 6261414904768430443}
   player: {fileID: 4994850739965496983}
   cost: 1750
-  choice: 3
+  choice: 1
   noMoney: {fileID: 7465149818690885036}
 --- !u!1 &6261414903801677864
 GameObject:
@@ -5926,16 +5925,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6261414904325417880}
   m_LocalRotation: {x: 0.000000014901161, y: 0.000000029802322, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0007324219}
+  m_LocalPosition: {x: 0, y: 0, z: 0.001953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6261414904923203887}
-  m_Father: {fileID: 6261414903750848287}
-  m_RootOrder: 1
+  m_Father: {fileID: 6261414904636021443}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000091552734, y: -59.999866}
+  m_AnchoredPosition: {x: -199.99948, y: -99.99983}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6261414904325417892
@@ -7033,6 +7032,7 @@ RectTransform:
   - {fileID: 6261414903777195993}
   - {fileID: 6261414904745435841}
   - {fileID: 6261414903750848287}
+  - {fileID: 6261414904325417881}
   m_Father: {fileID: 6261414904119425705}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7546,7 +7546,7 @@ MonoBehaviour:
   conff: {fileID: 6261414904768430443}
   player: {fileID: 4994850739965496983}
   cost: 1200
-  choice: 1
+  choice: 2
   noMoney: {fileID: 7465149818690885036}
 --- !u!1 &6261414904751823605
 GameObject:

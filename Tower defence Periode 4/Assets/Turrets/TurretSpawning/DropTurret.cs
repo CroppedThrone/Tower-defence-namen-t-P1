@@ -22,9 +22,9 @@ public class DropTurret : MonoBehaviour
 [System.Serializable]
 public enum TurretChoice
 {
-    Starter = 0,
-    Elite = 1,
-    Missile = 2,
-    Sniper = 3,
+    Basic = 0,
+    Sniper = 1,
+    Machine_Gun = 2,
+    Missile = 3,
     Support = 4
 }
