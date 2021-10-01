@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da9475ad4092ec94392649b429ee069b
+guid: c77e89bad1e9fdb49987a5312add034c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Dodger
+  - Counter-Strike
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
