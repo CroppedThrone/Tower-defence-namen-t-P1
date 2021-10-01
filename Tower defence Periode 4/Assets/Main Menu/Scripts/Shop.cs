@@ -8,14 +8,14 @@ using UnityEngine.Events;
 public class Shop : MonoBehaviour
 {
     public GameObject starter;
-    public GameObject elite;
+    public GameObject dakka;
     public GameObject sniper;
     public GameObject missle;
-    public GameObject machine;
+    public GameObject hacker;
     public GameObject drop;
     public int lastPressed;
     public GameObject currentSelected;
-    public GameObject mapCanvas;
+    
     public GameObject setting;
     public SettingsMenu settingsMenu;
     public MapButton mapButton;
@@ -32,9 +32,9 @@ public class Shop : MonoBehaviour
         {
             drop.SetActive(true);
             setting.SetActive(false);
-            mapCanvas.SetActive(false);
+
             settingsMenu.lastPressed = 0;
-            mapButton.lastPressed = 0;
+
             
 
         }
@@ -61,22 +61,6 @@ public class Shop : MonoBehaviour
             {
                 starter.SetActive(false);
             }
-            if (currentSelected.name == "Machine Gun Turret")
-            {
-                elite.SetActive(true);
-            }
-            else
-            {
-                elite.SetActive(false);
-            }
-            if (currentSelected.name == "Hacker Turret")
-            {
-                machine.SetActive(true);
-            }
-            else
-            {
-                machine.SetActive(false);
-            }
             if (currentSelected.name == "Sniper Turret")
             {
                 sniper.SetActive(true);
@@ -84,6 +68,22 @@ public class Shop : MonoBehaviour
             else
             {
                 sniper.SetActive(false);
+            }
+            if (currentSelected.name == "Hacker Turret")
+            {
+                hacker.SetActive(true);
+            }
+            else
+            {
+                hacker.SetActive(false);
+            }
+            if (currentSelected.name == "Machine Gun Turret")
+            {
+                dakka.SetActive(true);
+            }
+            else
+            {
+                dakka.SetActive(false);
             }
             if (currentSelected.name == "Missile Turret")
             {

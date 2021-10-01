@@ -12,7 +12,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject settingCanvas;
     public int lastPressed;
     public GameObject drop;
-    public GameObject mapCanvas;
+  
     public MapButton mapButton;
     public Shop shop;
 
@@ -75,7 +75,7 @@ public class SettingsMenu : MonoBehaviour
         if (lastPressed == 1)
         {
             settingCanvas.SetActive(true);
-            mapCanvas.SetActive(false);
+
             drop.SetActive(false);
             shop.lastPressed = 0;
             mapButton.lastPressed = 0;
