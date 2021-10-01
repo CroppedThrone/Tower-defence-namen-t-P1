@@ -239,7 +239,7 @@ Animator:
   m_GameObject: {fileID: 2878375740890150407}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 90e21deb745842d4cab5bbd19d5e763c, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 20
   currentHP: 0
-  goldValue: 225
+  goldValue: 25
   playerGold: {fileID: 0}
   damageToBase: 2
 --- !u!114 &7619898709688566783
@@ -279,7 +279,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   waypointCounter: 0
-  movespeed: 30
+  movespeed: 10
+  height: 3
+  turnspeed: 200
 --- !u!54 &5534357906609311409
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -294,7 +296,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &6496877803038345948
 GameObject:
