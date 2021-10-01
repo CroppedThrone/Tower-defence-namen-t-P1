@@ -16,7 +16,6 @@ public class PlayerControll : MonoBehaviour
     public Transform playerCamera;
     public Text moneyText;
     public Animator arm;
-    bool canJump;
 
     void Start()
     {
@@ -86,13 +85,6 @@ public class PlayerControll : MonoBehaviour
         if (moveVector.x == 0 && moveVector.y == 0 && isSprinting == true)
         {
             isSprinting = false;
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == "Ground" || collision.collider.tag == "Path")
-        {
-            canJump = true;
         }
     }
 }
