@@ -10,12 +10,31 @@ public class EnemyBehaviour : MonoBehaviour
     public int goldValue;
     public PlayerControll playerGold;
     public int damageToBase;
+    public bool isStunned;
 
     void Start()
     {
         currentHP = maxHP - 0.1f;
     }
 
+    public IEnumerator Stun(float duration)
+    {
+        isStunned = true;
+        float speed = GetComponent<EnemyPathfinding>().movespeed;
+        for (int i = 0; i < 10; i++)
+        {
+            GetComponent<EnemyPathfinding>().movespeed -= speed * Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+        yield return new WaitForSeconds(duration);
+        for (int i = 0; i < 10; i++)
+        {
+            GetComponent<EnemyPathfinding>().movespeed += speed * Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+        yield return new WaitForSeconds(0.5f);
+        isStunned = false;
+    }
     public void OnTakeDamage(int damageTaken)
     {
         currentHP -= damageTaken;
