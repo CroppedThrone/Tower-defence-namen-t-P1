@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
+  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -238,6 +238,22 @@ PrefabInstance:
     - target: {fileID: 967685070645288347, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
       propertyPath: m_Drag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994850739965496936, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994850739965496936, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 328.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994850739965496936, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994850739965496936, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 378.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
@@ -907,9 +923,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133330328}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 458.1, y: 283.3, z: 302.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
