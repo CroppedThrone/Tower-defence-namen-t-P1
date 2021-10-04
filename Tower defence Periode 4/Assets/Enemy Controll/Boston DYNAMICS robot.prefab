@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 265412567032256273}
   m_Layer: 0
   m_Name: Boston DYNAMICS robot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,6 +250,7 @@ MonoBehaviour:
   goldValue: 420
   playerGold: {fileID: 0}
   damageToBase: 5
+  isStunned: 0
 --- !u!54 &265412567032256273
 Rigidbody:
   m_ObjectHideFlags: 0

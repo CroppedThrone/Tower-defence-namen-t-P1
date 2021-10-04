@@ -111,13 +111,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d14fa84156a2b489ac3b4d965dfac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretChoice: 1
+  turretChoice: 0
   turrets:
   - {fileID: 5770551835091615234, guid: fc9ba230729847446b7f60ee013c0ec2, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 3618378321047882414, guid: c29dcd43e96dd4f46ad520b4b43b3d07, type: 3}
-  - {fileID: 0}
+  - {fileID: 2527281021502891704, guid: b4166566b8181934eb92163a8682abbc, type: 3}
 --- !u!1 &9146653837085138086
 GameObject:
   m_ObjectHideFlags: 0
