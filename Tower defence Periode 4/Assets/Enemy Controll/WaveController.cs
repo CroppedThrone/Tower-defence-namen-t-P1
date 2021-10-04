@@ -17,6 +17,7 @@ public class WaveController : MonoBehaviour
     }
     IEnumerator StartWave()
     {
+        yield return new WaitForSeconds(5f);
         for (int w = 0; w < waves.Length; w++)
         {
             for (int e = 0; e < waves[w].enemySpawner.Length; e++)

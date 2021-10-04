@@ -55,6 +55,7 @@ public class EnemyPathfinding : MonoBehaviour
         moveTo.x += Random.Range(-4, 4);
         moveTo.y = transform.position.y;
         moveTo.z += Random.Range(-4, 4);
+        height = transform.position.y;
         canMove = true;
     }
 }

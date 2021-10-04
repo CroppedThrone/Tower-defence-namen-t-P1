@@ -67,7 +67,7 @@ public class MissileTurretController : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, range);
         foreach (Collider collider in colliders)
         {
-            if (collider.gameObject.tag == "Enemy")
+            if (collider.gameObject.GetComponent<EnemyBehaviour>())
             {
                 targetEnemy = collider.gameObject;
                 return;

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3864364877477561296}
   m_Layer: 0
   m_Name: APC
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   goldValue: 1000
   playerGold: {fileID: 0}
   damageToBase: 10
+  isStunned: 0
 --- !u!114 &3864364877477561296
 MonoBehaviour:
   m_ObjectHideFlags: 0
