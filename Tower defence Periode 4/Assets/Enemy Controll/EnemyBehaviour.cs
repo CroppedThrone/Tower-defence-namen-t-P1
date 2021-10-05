@@ -27,7 +27,9 @@ public class EnemyBehaviour : MonoBehaviour
             GetComponent<EnemyPathfinding>().movespeed -= speed * 0.1f;
             yield return new WaitForFixedUpdate();
         }
+        GetComponent<Animator>().enabled = false;
         yield return new WaitForSeconds(duration);
+        GetComponent<Animator>().enabled = true;
         for (int i = 0; i < 10; i++)
         {
             GetComponent<EnemyPathfinding>().movespeed += speed * 0.1f;

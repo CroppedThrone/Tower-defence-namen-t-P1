@@ -208,7 +208,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e91ec78f27043ea4ba241fb6a3d87ab9, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   waypointCounter: 0
-  movespeed: 7
+  movespeed: 5
   height: -0.5
   turnspeed: 160
 --- !u!114 &983556047891497381
@@ -266,7 +266,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &3086240767835624290
 GameObject:
   m_ObjectHideFlags: 0
