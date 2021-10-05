@@ -81,7 +81,7 @@ public class BasicTurretController : MonoBehaviour
         print(currentAmmo.ToString());
         RaycastHit hit;
         Debug.DrawRay(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position) * 15, Color.red, 2);
-        gunAnimator.SetBool("Fire 0", true);
+        gunAnimator.SetTrigger("Fire");
         if (Physics.Raycast(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position), out hit, range))
         {
             print("hit");
@@ -94,7 +94,6 @@ public class BasicTurretController : MonoBehaviour
         currentAmmo -= 1;
         print("finished firing");
         yield return new WaitForSeconds(1f / rateOfFire);
-        //gunAnimator.SetBool("Fire", false);
         canShoot = true;
         if (currentAmmo == 0)
         {
