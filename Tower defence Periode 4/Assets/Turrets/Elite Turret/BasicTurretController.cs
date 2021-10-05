@@ -66,27 +66,28 @@ public class BasicTurretController : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, range);
         foreach (Collider collider in colliders)
         {
-            if (collider.gameObject.tag == "Enemy")
+            if (collider.transform.parent)
             {
-                targetEnemy = collider.gameObject;
-                return;
+                if (collider.transform.parent.GetComponent<EnemyBehaviour>())
+                {
+                    targetEnemy = collider.transform.parent.gameObject;
+                    return;
+                }
             }
         }
     }
     IEnumerator Fire()
     {
         print(currentAmmo.ToString());
-        //animator.SetTrigger("Fire");
-        //targetEnemy.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
         RaycastHit hit;
         Debug.DrawRay(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position) * 15, Color.red, 2);
         if (Physics.Raycast(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position), out hit, range))
         {
             print("hit");
-            if (hit.collider.GetComponent<EnemyBehaviour>())
+            if (hit.collider.GetComponentInParent<EnemyBehaviour>())
             {
                 print("enemy hit");
-                hit.collider.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
+                hit.collider.GetComponentInParent<EnemyBehaviour>().OnTakeDamage(damage);
             }
         }
         currentAmmo -= 1;

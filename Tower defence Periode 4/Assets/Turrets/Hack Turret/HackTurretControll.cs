@@ -39,7 +39,7 @@ public class HackTurretControll : MonoBehaviour
     IEnumerator AttemptHack()
     {
         print("hack");
-        targetEnemy.GetComponent<EnemyBehaviour>().Stun(StunDuration);
+        StartCoroutine(targetEnemy.GetComponent<EnemyBehaviour>().Stun(StunDuration));
         yield return new WaitForSeconds(1f / rateOfFire);
         targetEnemy = null;
         canShoot = true;
@@ -50,10 +50,16 @@ public class HackTurretControll : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, range);
         foreach (Collider collider in colliders)
         {
-            if (collider.gameObject.GetComponent<EnemyBehaviour>().isStunned == false)
+            if (collider.transform.parent)
             {
-                targetEnemy = collider.gameObject;
-                return;
+                if (collider.transform.parent.GetComponent<EnemyBehaviour>())
+                {
+                    if (collider.transform.GetComponentInParent<EnemyBehaviour>().isStunned == false)
+                    {
+                        targetEnemy = collider.transform.parent.gameObject;
+                        return;
+                    }
+                }
             }
         }
     }

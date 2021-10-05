@@ -24,11 +24,14 @@ public class MissileController : MonoBehaviour
             Collider[] colliders = Physics.OverlapSphere(transform.position, detectRadius);
             foreach (Collider collider in colliders)
             {
-                if (collider.gameObject.tag == "Enemy")
+                if (collider.transform.parent)
                 {
-                    target = collider.gameObject;
-                    detectRadius = 5;
-                    return;
+                    if (collider.transform.parent.GetComponent<EnemyBehaviour>())
+                    {
+                        target = collider.transform.parent.gameObject;
+                        detectRadius = 5;
+                        return;
+                    }
                 }
             }
             detectRadius++;
@@ -74,9 +77,9 @@ public class MissileController : MonoBehaviour
             Collider[] colliders = Physics.OverlapSphere(targetPos, explosionRadius);
             foreach (Collider collider in colliders)
             {
-                if (collider.GetComponent<EnemyBehaviour>())
+                if (collider.GetComponentInParent<EnemyBehaviour>())
                 {
-                    collider.gameObject.GetComponent<EnemyBehaviour>().OnTakeDamage(damage);
+                    collider.gameObject.GetComponentInParent<EnemyBehaviour>().OnTakeDamage(damage);
                 }
             }
             Destroy(gameObject);

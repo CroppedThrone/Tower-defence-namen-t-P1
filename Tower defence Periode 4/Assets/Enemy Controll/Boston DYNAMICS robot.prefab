@@ -493,7 +493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2328247643849412252}
   - component: {fileID: 1882266815661021129}
-  - component: {fileID: 8043534890392128421}
+  - component: {fileID: 5880031050394307930}
   m_Layer: 0
   m_Name: DogoRobot
   m_TagString: Untagged
@@ -580,8 +580,8 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.41665602, y: -0.05085069, z: 0.0011779517}
     m_Extent: {x: 0.6877904, y: 1.0782397, z: 0.4703964}
   m_DirtyAABB: 0
---- !u!64 &8043534890392128421
-MeshCollider:
+--- !u!65 &5880031050394307930
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -590,10 +590,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 2.1, z: 1.3}
+  m_Center: {x: -0.0011767859, y: 0.15612584, z: -0.36106554}
 --- !u!1 &5649372743012842550
 GameObject:
   m_ObjectHideFlags: 0

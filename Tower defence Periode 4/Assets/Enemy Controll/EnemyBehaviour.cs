@@ -20,16 +20,17 @@ public class EnemyBehaviour : MonoBehaviour
     public IEnumerator Stun(float duration)
     {
         isStunned = true;
+        print("Is Being Hacked");
         float speed = GetComponent<EnemyPathfinding>().movespeed;
         for (int i = 0; i < 10; i++)
         {
-            GetComponent<EnemyPathfinding>().movespeed -= speed * Time.fixedDeltaTime;
+            GetComponent<EnemyPathfinding>().movespeed -= speed * 0.1f;
             yield return new WaitForFixedUpdate();
         }
         yield return new WaitForSeconds(duration);
         for (int i = 0; i < 10; i++)
         {
-            GetComponent<EnemyPathfinding>().movespeed += speed * Time.fixedDeltaTime;
+            GetComponent<EnemyPathfinding>().movespeed += speed * 0.1f;
             yield return new WaitForFixedUpdate();
         }
         yield return new WaitForSeconds(0.5f);
