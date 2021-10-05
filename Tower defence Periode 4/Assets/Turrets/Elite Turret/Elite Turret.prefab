@@ -376,7 +376,7 @@ MonoBehaviour:
   supplyBox: {fileID: 7998402519941010294}
   animator: {fileID: 7913944039467939407}
   boxAnimator: {fileID: 7188133576227662969}
-  gunAnimator: {fileID: 6222259817292518285}
+  gunAnimator: {fileID: 3731646415869774193}
   ammoBox: {fileID: 4388388333661457976}
   turretRotate: {fileID: 4727385313559727548}
   barrelRotate: {fileID: 549909553500618119}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 8233622293425235318}
   - component: {fileID: 3838770789059042932}
   - component: {fileID: 7188133576204662097}
-  - component: {fileID: 6222259817292518285}
+  - component: {fileID: 3731646415869774193}
   m_Layer: 0
   m_Name: StartTurretGun
   m_TagString: Untagged
@@ -483,7 +483,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8609501537669123052, guid: 5cc622040993df84da3b90b9d930e856, type: 3}
---- !u!95 &6222259817292518285
+--- !u!95 &3731646415869774193
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
