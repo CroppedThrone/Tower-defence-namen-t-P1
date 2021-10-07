@@ -2,30 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MissileTurretController : MonoBehaviour
+public class MissileTurretController : AttackTurretController
 {
-    public GameObject supplyBox;
-    public Animator animator;
-    public Animator boxAnimator;
-    public Animator gunAnimator;
-    public Transform turretRotate;
-    GameObject targetEnemy;
-    bool isActive;
-    bool canShoot;
-
-    public int damage;
-    public float rateOfFire;
-    public float reloadTimer;
-    public int maxAmmo;
-    public int currentAmmo;
-    public int range;
-
     public MissileArray[] missileArray = new MissileArray[2];
     public GameObject missile;
     public int loadedMissile;
+    public float reloadTimer;
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         currentAmmo = maxAmmo;
         for (int i = 0; i < missileArray.Length; i++)
         {
@@ -58,21 +44,6 @@ public class MissileTurretController : MonoBehaviour
                         canShoot = false;
                         StartCoroutine(Fire());
                     }
-                }
-            }
-        }
-    }
-    void AquireTarget()
-    {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, range);
-        foreach (Collider collider in colliders)
-        {
-            if (collider.transform.parent)
-            {
-                if (collider.transform.parent.GetComponent<EnemyBehaviour>())
-                {
-                    targetEnemy = collider.transform.parent.gameObject;
-                    return;
                 }
             }
         }
@@ -114,29 +85,11 @@ public class MissileTurretController : MonoBehaviour
         canShoot = true;
         isActive = true;
     }
-    private void OnCollisionEnter(Collision collision)
+    public override void Reload()
     {
-        if (collision.collider.tag == "Ground")
-        {
-            StartCoroutine(TurretSetup());
-            print("setup");
-        }
+        StartCoroutine(Reloading());
     }
-    IEnumerator TurretSetup()
-    {
-        boxAnimator.SetTrigger("Open");
-        yield return new WaitForSeconds(0.45f);
-        animator.SetTrigger("Setup");
-        yield return new WaitForSeconds(0.5f);
-        gunAnimator.SetTrigger("Setup");
-        yield return new WaitForSeconds(2f);
-        isActive = true;
-        canShoot = true;
-        animator.enabled = false;
-        yield return new WaitForSeconds(4f);
-        Destroy(supplyBox);
-    }
-    public IEnumerator Reload()
+    public IEnumerator Reloading()
     {
         for (int i = 0; i < missileArray.Length; i++)
         {
@@ -149,10 +102,6 @@ public class MissileTurretController : MonoBehaviour
         currentAmmo = maxAmmo;
         canShoot = true;
         isActive = true;
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(other.gameObject.transform.parent.gameObject);
     }
 }
 

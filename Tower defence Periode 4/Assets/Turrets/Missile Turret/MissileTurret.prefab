@@ -251,11 +251,14 @@ MonoBehaviour:
   supplyBox: {fileID: 40670828287035451}
   animator: {fileID: 3618378321047882413}
   boxAnimator: {fileID: 887512827649294180}
+  isActive: 0
+  canShoot: 0
   gunAnimator: {fileID: 887512827612224536}
   turretRotate: {fileID: 3662227724702298914}
+  barrelRotate: {fileID: 0}
+  targetEnemy: {fileID: 0}
   damage: 100
   rateOfFire: 2
-  reloadTimer: 1.5
   maxAmmo: 10
   currentAmmo: 0
   range: 100
@@ -266,6 +269,7 @@ MonoBehaviour:
     spawnPoint: {fileID: 3013902976190022757}
   missile: {fileID: 2855696845347515566, guid: fd2647f453a980d4d8acf76e0ec5fa2d, type: 3}
   loadedMissile: 0
+  reloadTimer: 3.5
 --- !u!1 &7606511325211005686
 GameObject:
   m_ObjectHideFlags: 0
