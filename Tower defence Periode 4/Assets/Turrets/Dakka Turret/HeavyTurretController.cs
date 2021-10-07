@@ -2,28 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeavyTurretController : MonoBehaviour
+public class HeavyTurretController : AttackTurretController
 {
-    public GameObject supplyBox;
-    public Animator animator;
-    public Animator boxAnimator;
-    public Transform turretRotate;
-    public Transform barrelRotate;
     public Transform barrelPoint;
-    GameObject targetEnemy;
-    bool isActive;
-    bool canShoot;
 
-    public int damage;
-    public float rateOfFire;
-    public int maxAmmo;
-    public int currentAmmo;
-    public int range;
-
-    void Start()
-    {
-        currentAmmo = maxAmmo;
-    }
     void Update()
     {
         if (isActive == true)
@@ -59,21 +41,7 @@ public class HeavyTurretController : MonoBehaviour
             }
         }
     }
-    void AquireTarget()
-    {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, range);
-        foreach (Collider collider in colliders)
-        {
-            if (collider.transform.parent)
-            {
-                if (collider.transform.parent.GetComponent<EnemyBehaviour>())
-                {
-                    targetEnemy = collider.transform.parent.gameObject;
-                    return;
-                }
-            }
-        }
-    }
+    
     IEnumerator Fire()
     {
         print(currentAmmo.ToString());
@@ -95,35 +63,5 @@ public class HeavyTurretController : MonoBehaviour
         {
             
         }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag == "Ground")
-        {
-            StartCoroutine(TurretSetup());
-            print("setup");
-        }
-    }
-    IEnumerator TurretSetup()
-    {
-        boxAnimator.SetTrigger("Open");
-        yield return new WaitForSeconds(0.45f);
-        animator.SetTrigger("Setup");
-        yield return new WaitForSeconds(2f);
-        isActive = true;
-        canShoot = true;
-        animator.enabled = false;
-        yield return new WaitForSeconds(4f);
-        Destroy(supplyBox);
-    }
-    public void Reload()
-    {
-        
-        currentAmmo = maxAmmo;
-        canShoot = true;
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(other.gameObject.transform.parent.gameObject);
     }
 }
