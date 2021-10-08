@@ -113,6 +113,7 @@ public class MissileTurretController : AttackTurretController
         yield return new WaitForSeconds(2f);
         isActive = true;
         canShoot = true;
+        animator.enabled = false;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
     }

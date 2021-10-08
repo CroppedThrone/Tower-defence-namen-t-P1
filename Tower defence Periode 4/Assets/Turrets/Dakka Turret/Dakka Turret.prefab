@@ -298,16 +298,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   supplyBox: {fileID: 4322543032526542065}
+  dropSmoke: {fileID: 5270772349064124376, guid: 48bd250c6bc451446a6a81db35114a77, type: 3}
   animator: {fileID: 8546694792972346758}
   boxAnimator: {fileID: 2037682975379790345}
+  isActive: 0
+  canShoot: 0
+  gunAnimator: {fileID: 0}
   turretRotate: {fileID: 5337560911351823242}
   barrelRotate: {fileID: 5846133619077501172}
-  barrelPoint: {fileID: 6659154371910220240}
+  targetEnemy: {fileID: 0}
   damage: 1
   rateOfFire: 30
   maxAmmo: 5000
   currentAmmo: 0
   range: 25
+  barrelPoint: {fileID: 6659154371910220240}
 --- !u!1 &7537733186094080224
 GameObject:
   m_ObjectHideFlags: 0

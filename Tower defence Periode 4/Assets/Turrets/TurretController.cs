@@ -5,6 +5,7 @@ using UnityEngine;
 public class TurretController : MonoBehaviour
 {
     public GameObject supplyBox;
+    public GameObject dropSmoke;
     public Animator animator;
     public Animator boxAnimator;
     public bool isActive;
@@ -14,6 +15,7 @@ public class TurretController : MonoBehaviour
     {
         if (collision.collider.tag == "Ground")
         {
+            Instantiate(dropSmoke, transform.position + transform.up * 0.1f, Quaternion.identity);
             StartCoroutine(TurretSetup());
             print("setup");
         }

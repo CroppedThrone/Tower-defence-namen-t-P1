@@ -350,6 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   supplyBox: {fileID: 6899543775967701448}
+  dropSmoke: {fileID: 5270772349064124376, guid: 48bd250c6bc451446a6a81db35114a77, type: 3}
   animator: {fileID: 2933096045903939420}
   boxAnimator: {fileID: 4010276618794878965}
   isActive: 0
