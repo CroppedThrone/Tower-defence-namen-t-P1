@@ -40,6 +40,18 @@ public class HackTurretControll : TurretController
         canShoot = true;
 
     }
+    public override IEnumerator TurretSetup()
+    {
+        boxAnimator.SetTrigger("Open");
+        yield return new WaitForSeconds(0.45f);
+        animator.SetTrigger("Setup");
+        yield return new WaitForSeconds(2f);
+        isActive = true;
+        canShoot = true;
+        animator.SetTrigger("IsActive");
+        yield return new WaitForSeconds(4f);
+        Destroy(supplyBox);
+    }
     void AquireTarget()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, range);

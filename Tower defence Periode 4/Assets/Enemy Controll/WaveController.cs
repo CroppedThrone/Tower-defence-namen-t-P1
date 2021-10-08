@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class WaveController : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class WaveController : MonoBehaviour
     public Vector2 spawnDeviation;
     public Wave[] waves;
     public Transform[] pathWaypoints;
+    public Text waveCounter;
+    public Text waveTimer;
+    public Text waveTimerText;
 
     void Start()
     {
@@ -17,9 +21,23 @@ public class WaveController : MonoBehaviour
     }
     IEnumerator StartWave()
     {
-        yield return new WaitForSeconds(5f);
         for (int w = 0; w < waves.Length; w++)
         {
+            waveTimerText.gameObject.SetActive(true);
+            for (int i = 30; i > 0; i--)
+            {
+                if (i > 9)
+                {
+                    waveTimer.text = i.ToString();
+                }
+                else
+                {
+                    waveTimer.text = "0" + i.ToString();
+                }
+                yield return new WaitForSeconds(1);
+            }
+            waveTimerText.gameObject.SetActive(false);
+            waveCounter.text = (w + 1).ToString();
             for (int e = 0; e < waves[w].enemySpawner.Length; e++)
             {
                 Vector3 actualDeviation = new Vector4(Random.Range(-spawnDeviation.x, spawnDeviation.x), 0, Random.Range(-spawnDeviation.y, spawnDeviation.y));
@@ -29,7 +47,6 @@ public class WaveController : MonoBehaviour
                 spawnedEnemy.transform.name = "enemy" + e.ToString();
                 yield return new WaitForSeconds(waves[w].enemySpawner[e].spawnDelay);
             }
-            yield return new WaitForSeconds(10);
         }
         print("done");
     }
