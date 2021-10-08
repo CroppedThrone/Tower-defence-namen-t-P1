@@ -18,6 +18,7 @@ public class Buttonsconfirm : MonoBehaviour
     public TurretChoice choice;
     public GameObject supplyBeacon;
     public int toPay;
+    public GameObject turretIndicator;
 
     
     void Update()
@@ -49,8 +50,8 @@ public class Buttonsconfirm : MonoBehaviour
         conf.SetActive(false);
         
         shop.enabled = true;
-        
-       
+
+        turretIndicator.SetActive(false);
         if (myFunctionCalled1 == false)
         {
             myFunctionCalled = true;
@@ -64,6 +65,7 @@ public class Buttonsconfirm : MonoBehaviour
     {
         conf.SetActive(false);
         shop.enabled = true;
+        turretIndicator.SetActive(false);
         if (myFunctionCalled2 == false)
         {
             myFunctionCalled = true;
