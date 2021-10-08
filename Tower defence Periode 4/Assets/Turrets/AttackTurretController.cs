@@ -34,6 +34,18 @@ public class AttackTurretController : TurretController
             }
         }
     }
+    public override IEnumerator TurretSetup()
+    {
+        boxAnimator.SetTrigger("Open");
+        yield return new WaitForSeconds(0.45f);
+        animator.SetTrigger("Setup");
+        yield return new WaitForSeconds(2f);
+        isActive = true;
+        canShoot = true;
+        animator.enabled = false;
+        yield return new WaitForSeconds(4f);
+        Destroy(supplyBox);
+    }
     public virtual void Reload()
     {
 

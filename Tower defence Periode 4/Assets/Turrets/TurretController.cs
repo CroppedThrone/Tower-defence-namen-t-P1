@@ -18,7 +18,7 @@ public class TurretController : MonoBehaviour
             print("setup");
         }
     }
-    IEnumerator TurretSetup()
+    public virtual IEnumerator TurretSetup()
     {
         boxAnimator.SetTrigger("Open");
         yield return new WaitForSeconds(0.45f);
@@ -26,7 +26,6 @@ public class TurretController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         isActive = true;
         canShoot = true;
-        animator.SetTrigger("IsActive");
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
     }

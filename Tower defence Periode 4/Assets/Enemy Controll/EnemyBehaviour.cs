@@ -11,6 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     public PlayerControll playerGold;
     public int damageToBase;
     public bool isStunned;
+    public GameObject deathExplosion;
 
     void Start()
     {
@@ -49,6 +50,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     private void OnDeath()
     {
+        Instantiate(deathExplosion, transform.position, Quaternion.identity);
         playerGold.GetMoney(goldValue);
         print("ded");
         Destroy(gameObject);

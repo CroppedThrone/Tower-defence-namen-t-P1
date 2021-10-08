@@ -12,6 +12,7 @@ public class MissileController : MonoBehaviour
     public float explosionRadius;
     bool isInFlight;
     int detectRadius = 5;
+    public GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -82,6 +83,7 @@ public class MissileController : MonoBehaviour
                     collider.gameObject.GetComponentInParent<EnemyBehaviour>().OnTakeDamage(damage);
                 }
             }
+            Instantiate(explosion, transform.position + transform.forward * 1.3f, Quaternion.identity);
             Destroy(gameObject);
         }
     }
