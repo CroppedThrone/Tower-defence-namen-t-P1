@@ -9,6 +9,7 @@ public class Confirmscreen : MonoBehaviour
     public int cost;
     public TurretChoice choice;
     public GameObject noMoney;
+    public GameObject turretIndicator;
     
     public void conf()
     {
@@ -20,6 +21,7 @@ public class Confirmscreen : MonoBehaviour
         }
         else
         {
+            turretIndicator.SetActive(true);
             print("you've got moneys");
             conff.GetComponent<Buttonsconfirm>().choice = choice;
             conff.GetComponent<Buttonsconfirm>().toPay = cost;
