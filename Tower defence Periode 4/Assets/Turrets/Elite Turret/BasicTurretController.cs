@@ -64,11 +64,13 @@ public class BasicTurretController : AttackTurretController
         if (currentAmmo == 0)
         {
             ammoBox.SetActive(false);
+            EmptyMag();
         }
     }
-    public override void Reload()
+    public override IEnumerator Reload()
     {
         ammoBox.SetActive(true);
+        yield return null;
         base.Reload();
     }
 }

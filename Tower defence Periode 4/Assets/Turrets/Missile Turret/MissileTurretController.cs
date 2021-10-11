@@ -60,8 +60,9 @@ public class MissileTurretController : AttackTurretController
         }
         else if (loadedMissile == 2 & currentAmmo == 1)
         {
-            isActive = false;
             gunAnimator.SetTrigger("Start reload");
+            canShoot = false;
+            isActive = false;
         }
         else
         {
@@ -85,11 +86,7 @@ public class MissileTurretController : AttackTurretController
         canShoot = true;
         isActive = true;
     }
-    public override void Reload()
-    {
-        StartCoroutine(Reloading());
-    }
-    public IEnumerator Reloading()
+    public override IEnumerator Reload()
     {
         for (int i = 0; i < missileArray.Length; i++)
         {

@@ -61,7 +61,7 @@ public class HeavyTurretController : AttackTurretController
         canShoot = true;
         if (currentAmmo == 0)
         {
-            
+            EmptyMag();
         }
     }
 }
