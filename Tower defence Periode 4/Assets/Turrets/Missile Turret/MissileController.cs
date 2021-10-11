@@ -56,11 +56,11 @@ public class MissileController : MonoBehaviour
     }
     IEnumerator InAir()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 10; i++)
         {
             transform.position += transform.forward * speed * Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
-            speed += i;
+            speed += i * 0.6f;
         }
         isInFlight = true;
         animator.SetTrigger("Fly");

@@ -12,6 +12,7 @@ public class EnemyBehaviour : MonoBehaviour
     public int damageToBase;
     public bool isStunned;
     public GameObject deathExplosion;
+    bool canTakeDamage = true;
 
     private void Start()
     {
@@ -40,12 +41,22 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public void OnTakeDamage(int damageTaken)
     {
-        currentHP -= damageTaken;
-        if (currentHP < 1)
+        if (canTakeDamage == true)
         {
-            print("die");
-            OnDeath();
+            currentHP -= damageTaken;
+            if (currentHP < 1)
+            {
+                print("die");
+                OnDeath();
+            }
+            canTakeDamage = false;
+            StartCoroutine(Invultimer());
         }
+    }
+    IEnumerator Invultimer()
+    {
+        yield return null;
+        canTakeDamage = true;
     }
     private void OnDeath()
     {
