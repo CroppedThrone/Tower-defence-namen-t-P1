@@ -14,6 +14,7 @@ public class AttackTurretController : TurretController
     public int maxAmmo;
     public int currentAmmo;
     public int range;
+    public float reloadTime;
 
     public virtual void Start()
     {
@@ -46,10 +47,19 @@ public class AttackTurretController : TurretController
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
     }
-    public virtual void Reload()
+    public void EmptyMag()
     {
-
+        canShoot = false;
+        isActive = false;
+        animator.enabled = true;
+        animator.SetTrigger("Power Down");
+    }
+    public virtual IEnumerator Reload()
+    {
+        animator.SetTrigger("Power Up");
         currentAmmo = maxAmmo;
+        yield return new WaitForSeconds(reloadTime);
+        animator.enabled = false;
         canShoot = true;
     }
 }
