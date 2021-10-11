@@ -2,10 +2,7 @@ fileFormatVersion: 2
 guid: a46a9e9ebca61cb45a05fae11a78f617
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: 792669681134065229
-    second: ArmatureContainerSpawn|DoorOpenContainer
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
