@@ -259,7 +259,7 @@ MonoBehaviour:
   barrelRotate: {fileID: 0}
   targetEnemy: {fileID: 0}
   damage: 100
-  rateOfFire: 2
+  rateOfFire: 0.5
   maxAmmo: 10
   currentAmmo: 0
   range: 100

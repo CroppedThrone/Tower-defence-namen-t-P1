@@ -6,18 +6,17 @@ using UnityEngine.AI;
 public class EnemyBehaviour : MonoBehaviour
 {
     public int maxHP;
-    public float currentHP;
+    public int currentHP;
     public int goldValue;
     public PlayerControll playerGold;
     public int damageToBase;
     public bool isStunned;
     public GameObject deathExplosion;
 
-    void Start()
+    private void Start()
     {
-        currentHP = maxHP - 0.1f;
+        currentHP = maxHP;
     }
-
     public IEnumerator Stun(float duration)
     {
         isStunned = true;
@@ -42,7 +41,7 @@ public class EnemyBehaviour : MonoBehaviour
     public void OnTakeDamage(int damageTaken)
     {
         currentHP -= damageTaken;
-        if (currentHP <= 1)
+        if (currentHP < 1)
         {
             print("die");
             OnDeath();
