@@ -17,6 +17,10 @@ public class PlayerControll : MonoBehaviour
     public Text moneyText;
     public Animator arm;
 
+    public int moneyEarned;
+    public int enemiesKilled;
+    public int turretsBought;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -28,6 +32,8 @@ public class PlayerControll : MonoBehaviour
     void OnDevKey()
     {
         GetMoney(1000);
+        moneyEarned -= 1000;
+        enemiesKilled -= 1;
     }
     void OnMove(InputValue movementValue)
     {
@@ -69,6 +75,15 @@ public class PlayerControll : MonoBehaviour
     {
         gold += money;
         moneyText.text = "$" + gold.ToString();
+        if (money > 0)
+        {
+            moneyEarned += money;
+            enemiesKilled++;
+        }
+        if (money < 0)
+        {
+            turretsBought++;
+        }
     }
 
     // Update is called once per frame
