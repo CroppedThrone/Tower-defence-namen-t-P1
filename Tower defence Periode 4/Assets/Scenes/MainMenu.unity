@@ -754,7 +754,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1.6600367
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1246,7 +1246,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 0.6111129
+    angle: 0
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -4367,13 +4367,13 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 1
+    radiusScale: 0.2
     collidesWith:
       serializedVersion: 2
       m_Bits: 1
     maxCollisionShapes: 256
-    quality: 1
-    voxelSize: 0.5
+    quality: 0
+    voxelSize: 0.0001
     collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
@@ -8419,8 +8419,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0, z: 1}
-  m_Center: {x: 0, y: -0.50000095, z: 0}
+  m_Size: {x: 1.0000001, y: 0.99999994, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1301043960
 MeshRenderer:
   m_ObjectHideFlags: 0
