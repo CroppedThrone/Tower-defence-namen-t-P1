@@ -659,15 +659,15 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 18
+    type: 5
     angle: 75.8
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 0.46
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 0}
+    m_Position: {x: 0, y: 0.00005644917, z: 0.00000043519398}
+    m_Rotation: {x: 90, y: 0, z: 0}
+    m_Scale: {x: 1, y: 1, z: 1.0596323}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
