@@ -6,6 +6,7 @@ public class BasicTurretController : AttackTurretController
 {
     public GameObject ammoBox;
     public Transform barrelPoint;
+    public GameObject barrelFlash;
 
     void Update()
     {
@@ -45,6 +46,7 @@ public class BasicTurretController : AttackTurretController
     IEnumerator Fire()
     {
         print(currentAmmo.ToString());
+        Instantiate(barrelFlash, barrelPoint.position, barrelPoint.rotation);
         RaycastHit hit;
         Debug.DrawRay(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position) * 15, Color.red, 2);
         gunAnimator.SetTrigger("Fire");

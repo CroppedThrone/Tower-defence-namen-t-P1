@@ -114,7 +114,7 @@ MonoBehaviour:
   turretChoice: 0
   turrets:
   - {fileID: 5770551835091615234, guid: fc9ba230729847446b7f60ee013c0ec2, type: 3}
-  - {fileID: 0}
+  - {fileID: 6838468986174539554, guid: 27ae3b7b6742d1f42a2f2a0033fbc2b9, type: 3}
   - {fileID: 5227097783214383096, guid: 791068ac1964fb141ad094f241bd4bf4, type: 3}
   - {fileID: 3618378321047882414, guid: c29dcd43e96dd4f46ad520b4b43b3d07, type: 3}
   - {fileID: 2527281021502891704, guid: b4166566b8181934eb92163a8682abbc, type: 3}

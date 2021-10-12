@@ -309,10 +309,12 @@ MonoBehaviour:
   targetEnemy: {fileID: 0}
   damage: 1
   rateOfFire: 30
-  maxAmmo: 5000
+  maxAmmo: 100
   currentAmmo: 0
   range: 25
+  reloadTime: 0
   barrelPoint: {fileID: 6659154371910220240}
+  barrelFlash: {fileID: 3826216102538999844, guid: ac59b5829f7189c47931b4903ac08996, type: 3}
 --- !u!1 &7537733186094080224
 GameObject:
   m_ObjectHideFlags: 0

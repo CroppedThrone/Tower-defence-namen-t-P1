@@ -5,6 +5,7 @@ using UnityEngine;
 public class HeavyTurretController : AttackTurretController
 {
     public Transform barrelPoint;
+    public GameObject barrelFlash;
 
     void Update()
     {
@@ -45,6 +46,7 @@ public class HeavyTurretController : AttackTurretController
     IEnumerator Fire()
     {
         print(currentAmmo.ToString());
+        Instantiate(barrelFlash, barrelPoint.position, barrelPoint.rotation);
         RaycastHit hit;
         if (Physics.Raycast(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position), out hit, range))
         {
