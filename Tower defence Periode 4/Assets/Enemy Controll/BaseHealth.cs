@@ -12,5 +12,9 @@ public class BaseHealth : MonoBehaviour
     {
         health -= damage;
         healthBar.fillAmount = health / 100f;
+        if (health <1)
+        {
+            //game over
+        }
     }
 }
