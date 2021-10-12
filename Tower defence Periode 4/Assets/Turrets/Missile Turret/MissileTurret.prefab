@@ -263,7 +263,7 @@ MonoBehaviour:
   maxAmmo: 2
   currentAmmo: 0
   range: 100
-  reloadTime: 0
+  reloadTime: 8
   missileArray:
   - missile: {fileID: 0}
     spawnPoint: {fileID: 5498502580175303725}
