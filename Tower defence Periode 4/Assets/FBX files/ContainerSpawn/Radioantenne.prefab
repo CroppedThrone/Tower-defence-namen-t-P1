@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3805222320507045899}
   - component: {fileID: 1258703273649524167}
   - component: {fileID: 1034679017414301225}
+  - component: {fileID: 2357007125526279065}
   m_Layer: 0
   m_Name: Radioantenne
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2357007125526279065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941021241981955000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8086728390118339415, guid: 1f8e540211fca4344bc582ecca1bca51, type: 3}

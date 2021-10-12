@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 4518530316863459711}
   - component: {fileID: 3802251589275072465}
   - component: {fileID: 9295652689145155}
+  - component: {fileID: 3469803995083362914}
   m_Layer: 0
   m_Name: ContainerSpawn.002
   m_TagString: Untagged
@@ -112,6 +113,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3469803995083362914
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263233589914215251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4920586908619465001, guid: a46a9e9ebca61cb45a05fae11a78f617, type: 3}
 --- !u!1 &7409812990961827772
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +138,7 @@ GameObject:
   - component: {fileID: 174624645938708955}
   - component: {fileID: 2021815657195796958}
   - component: {fileID: 9043420177565960435}
+  - component: {fileID: 5915959028852026144}
   m_Layer: 0
   m_Name: ContainerSpawn.001
   m_TagString: Untagged
@@ -193,6 +209,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5915959028852026144
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409812990961827772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4178450106548443135, guid: a46a9e9ebca61cb45a05fae11a78f617, type: 3}
 --- !u!1 &9143446825173073079
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +234,7 @@ GameObject:
   - component: {fileID: 4385653044339056010}
   - component: {fileID: 8460209967229696515}
   - component: {fileID: 7767239533210908910}
+  - component: {fileID: 4005299694491910922}
   m_Layer: 0
   m_Name: ContainerSpawn
   m_TagString: Untagged
@@ -276,3 +307,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4005299694491910922
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9143446825173073079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7456683811083958394, guid: a46a9e9ebca61cb45a05fae11a78f617, type: 3}
