@@ -56,10 +56,20 @@ public class AttackTurretController : TurretController
     }
     public virtual IEnumerator Reload()
     {
-        animator.SetTrigger("Power Up");
+        isActive = false;
+        yield return new WaitForSeconds(reloadTime - 0.5f);
+        if (currentAmmo == 0)
+        {
+            animator.SetTrigger("Power Up");
+            yield return new WaitForSeconds(2.5f);
+            animator.enabled = false;
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
         currentAmmo = maxAmmo;
-        yield return new WaitForSeconds(reloadTime);
-        animator.enabled = false;
         canShoot = true;
+        isActive = true;
     }
 }

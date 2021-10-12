@@ -388,7 +388,7 @@ MonoBehaviour:
   maxAmmo: 20
   currentAmmo: 0
   range: 100
-  reloadTime: 0
+  reloadTime: 1
   ammoBox: {fileID: 4388388333661457976}
   barrelPoint: {fileID: 7188133575855103293}
   barrelFlash: {fileID: 3826216102538999844, guid: ac59b5829f7189c47931b4903ac08996, type: 3}
