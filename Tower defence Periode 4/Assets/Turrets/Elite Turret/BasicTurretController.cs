@@ -72,7 +72,6 @@ public class BasicTurretController : AttackTurretController
     public override IEnumerator Reload()
     {
         ammoBox.SetActive(true);
-        yield return null;
-        base.Reload();
+        return base.Reload();
     }
 }

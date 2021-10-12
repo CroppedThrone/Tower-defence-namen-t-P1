@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Turret
   - Path
+  - Base
   layers:
   - Default
   - TransparentFX

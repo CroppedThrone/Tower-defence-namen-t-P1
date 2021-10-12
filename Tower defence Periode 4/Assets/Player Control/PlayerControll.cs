@@ -16,14 +16,17 @@ public class PlayerControll : MonoBehaviour
     public Transform playerCamera;
     public Text moneyText;
     public Animator arm;
+    bool canAct = true;
 
     public int moneyEarned;
     public int enemiesKilled;
     public int turretsBought;
 
     public bool canGatherAmmo;
-    public int currentAmmo;
-    public float ammoGatheringTime;
+    public int currentAmmo = 3;
+    public Text ammoText;
+    public GameObject reloadImg;
+    public Image reloadBar;
 
     void Start()
     {
@@ -31,22 +34,9 @@ public class PlayerControll : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         GetMoney(0);
+        ammoText.text = currentAmmo.ToString();
     }
 
-    void OnFire()
-    {
-        if (canGatherAmmo)
-        {
-            if (currentAmmo < 3)
-            {
-
-            }
-        }
-        else
-        {
-
-        }
-    }
     void OnDevKey()
     {
         GetMoney(1000);
@@ -67,25 +57,31 @@ public class PlayerControll : MonoBehaviour
     }
     void OnSprint()
     {
-        if (isSprinting == false)
+        if (canAct == true)
         {
-            isSprinting = true;
-        }
-        else
-        {
-            isSprinting = false;
+            if (isSprinting == false)
+            {
+                isSprinting = true;
+            }
+            else
+            {
+                isSprinting = false;
+            }
         }
     }
     void OnOpenMenu()
     {
-        print("blah");
-        if (arm.GetBool("Screen on") == true)
+        if (canAct == true)
         {
-            arm.SetBool("Screen on", false);
-        }
-        else
-        {
-            arm.SetBool("Screen on", true);
+            print("blah");
+            if (arm.GetBool("Screen on") == true)
+            {
+                arm.SetBool("Screen on", false);
+            }
+            else
+            {
+                arm.SetBool("Screen on", true);
+            }
         }
     }
 
@@ -107,17 +103,20 @@ public class PlayerControll : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (isSprinting == false)
+        if (canAct == true)
         {
-            rb.AddRelativeForce(moveVector.x * moveSpeed * 3, 0, moveVector.y * moveSpeed * 3, ForceMode.Acceleration);
-        }
-        else
-        {
-            rb.AddRelativeForce(moveVector.x * moveSpeed * 9, 0, moveVector.y * moveSpeed * 9, ForceMode.Acceleration);
-        }
-        if (moveVector.x == 0 && moveVector.y == 0 && isSprinting == true)
-        {
-            isSprinting = false;
+            if (isSprinting == false)
+            {
+                rb.AddRelativeForce(moveVector.x * moveSpeed * 3, 0, moveVector.y * moveSpeed * 3, ForceMode.Acceleration);
+            }
+            else
+            {
+                rb.AddRelativeForce(moveVector.x * moveSpeed * 9, 0, moveVector.y * moveSpeed * 9, ForceMode.Acceleration);
+            }
+            if (moveVector.x == 0 && moveVector.y == 0 && isSprinting == true)
+            {
+                isSprinting = false;
+            }
         }
     }
 
@@ -125,11 +124,85 @@ public class PlayerControll : MonoBehaviour
     {
         if (other.tag == "Base")
         {
-
+            canGatherAmmo = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        
+        if (other.tag == "Base")
+        {
+            canGatherAmmo = false;
+        }
+    }
+    void OnFire()
+    {
+        if (canGatherAmmo)
+        {
+            if (currentAmmo < 3)
+            {
+                StartCoroutine(GatheringAmmo());
+            }
+        }
+        else
+        {
+            if (currentAmmo > 0)
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f))
+                {
+                    if (hit.collider.GetComponentInParent<AttackTurretController>())
+                    {
+                        StartCoroutine(hit.collider.GetComponentInParent<AttackTurretController>().Reload());
+                        StartCoroutine(Reloading(hit.collider.GetComponentInParent<AttackTurretController>().reloadTime));
+                    }
+                }
+            }
+        }
+    }
+    IEnumerator GatheringAmmo()
+    {
+        float speed = moveSpeed;
+        moveSpeed = 0;
+        canAct = false;
+        isSprinting = false;
+        if (arm.GetBool("Screen on") == true)
+        {
+            arm.SetBool("Screen on", false);
+        }
+        reloadImg.SetActive(true);
+        reloadBar.fillAmount = 0;
+        for (float  f = 0; f < 0.5f + 0.5f * (3 - currentAmmo); f += Time.fixedDeltaTime)
+        {
+            yield return new WaitForFixedUpdate();
+            reloadBar.fillAmount += 1 / (3 - currentAmmo) * Time.fixedDeltaTime;
+        }
+        reloadImg.SetActive(false);
+        currentAmmo = 3;
+        ammoText.text = currentAmmo.ToString();
+        canAct = true;
+        moveSpeed = speed;
+    }
+    IEnumerator Reloading(float reloadTime)
+    {
+        float speed = moveSpeed;
+        moveSpeed = 0;
+        canAct = false;
+        isSprinting = false;
+        if (arm.GetBool("Screen on") == true)
+        {
+            arm.SetBool("Screen on", false);
+        }
+        reloadImg.SetActive(true);
+        reloadBar.fillAmount = 0;
+        for (float f = 0; f < reloadTime; f += Time.fixedDeltaTime)
+        {
+            yield return new WaitForFixedUpdate();
+            reloadBar.fillAmount += 1 / reloadTime * Time.fixedDeltaTime;
+        }
+        reloadImg.SetActive(false);
+        currentAmmo--;
+        ammoText.text = currentAmmo.ToString();
+        canAct = true;
+        moveSpeed = speed;
     }
 }
