@@ -258,11 +258,11 @@ MonoBehaviour:
   turretRotate: {fileID: 3662227724702298914}
   barrelRotate: {fileID: 0}
   targetEnemy: {fileID: 0}
-  damage: 100
+  damage: 50
   rateOfFire: 0.5
   maxAmmo: 2
   currentAmmo: 0
-  range: 100
+  range: 80
   reloadTime: 8
   missileArray:
   - missile: {fileID: 0}

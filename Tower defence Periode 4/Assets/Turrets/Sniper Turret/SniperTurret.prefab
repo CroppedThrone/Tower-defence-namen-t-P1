@@ -989,7 +989,7 @@ MonoBehaviour:
   turretRotate: {fileID: 1045405101667701753}
   barrelRotate: {fileID: 7636169368347164947}
   targetEnemy: {fileID: 0}
-  damage: 80
+  damage: 60
   rateOfFire: 0.3
   maxAmmo: 30
   currentAmmo: 0

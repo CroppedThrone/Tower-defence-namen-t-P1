@@ -264,7 +264,7 @@ MonoBehaviour:
   currentHP: 0
   goldValue: 25
   playerGold: {fileID: 0}
-  damageToBase: 2
+  damageToBase: 4
   isStunned: 0
   deathExplosion: {fileID: 2187051736520110411, guid: ab8dce62a888a8c46b17b8f9760892f4, type: 3}
 --- !u!114 &7619898709688566783

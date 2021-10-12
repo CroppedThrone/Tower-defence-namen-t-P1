@@ -88,11 +88,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e081d26e62d142d4b93e49ee4bf073d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 350
   currentHP: 0
   goldValue: 1000
   playerGold: {fileID: 0}
-  damageToBase: 10
+  damageToBase: 20
   isStunned: 0
   deathExplosion: {fileID: 2187051736520110411, guid: ab8dce62a888a8c46b17b8f9760892f4, type: 3}
 --- !u!114 &3864364877477561296
