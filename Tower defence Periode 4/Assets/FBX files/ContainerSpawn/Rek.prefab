@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2620707140906456337}
   - component: {fileID: 1999394381569614806}
   - component: {fileID: 7303506002152484114}
+  - component: {fileID: 4195701384765665076}
   m_Layer: 0
   m_Name: Rek
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4195701384765665076
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3995084914496539457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2387717876462672297, guid: 1f8e540211fca4344bc582ecca1bca51, type: 3}

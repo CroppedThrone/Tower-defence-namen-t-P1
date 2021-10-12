@@ -21,6 +21,10 @@ public class PlayerControll : MonoBehaviour
     public int enemiesKilled;
     public int turretsBought;
 
+    public bool canGatherAmmo;
+    public int currentAmmo;
+    public float ammoGatheringTime;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -29,6 +33,20 @@ public class PlayerControll : MonoBehaviour
         GetMoney(0);
     }
 
+    void OnFire()
+    {
+        if (canGatherAmmo)
+        {
+            if (currentAmmo < 3)
+            {
+
+            }
+        }
+        else
+        {
+
+        }
+    }
     void OnDevKey()
     {
         GetMoney(1000);
@@ -101,5 +119,17 @@ public class PlayerControll : MonoBehaviour
         {
             isSprinting = false;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Base")
+        {
+
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        
     }
 }
