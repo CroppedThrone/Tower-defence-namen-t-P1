@@ -13,7 +13,7 @@ public class SettingsMenu : MonoBehaviour
     public int lastPressed;
     public GameObject drop;
   
-    public MapButton mapButton;
+    
     public Shop shop;
 
     void Start()
@@ -78,7 +78,7 @@ public class SettingsMenu : MonoBehaviour
 
             drop.SetActive(false);
             shop.lastPressed = 0;
-            mapButton.lastPressed = 0;
+
         }
         else
         {

@@ -378,6 +378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Missile
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c2fdc33906eb074aae791904c02df07, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c2fdc33906eb074aae791904c02df07, type: 3}
 --- !u!1 &78656659
@@ -551,7 +555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &96183374
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -6130,7 +6134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1788900131230882629, guid: 9bc07a3376ac59c4a81aff2846a5d5a5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bc07a3376ac59c4a81aff2846a5d5a5, type: 3}
@@ -6639,7 +6643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &630340725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6860,9 +6864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Volume
-
-'
+  m_Text: 
 --- !u!222 &754552753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7563,13 +7565,13 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FullScreen
+  m_Text: FULLSCREEN
 --- !u!222 &937813539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8393,7 +8395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1301043958
 Transform:
   m_ObjectHideFlags: 0
@@ -8989,7 +8991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1487935100
 Transform:
   m_ObjectHideFlags: 0
@@ -10648,6 +10650,10 @@ PrefabInstance:
     - target: {fileID: 4407053434205395967, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407053434205395967, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
