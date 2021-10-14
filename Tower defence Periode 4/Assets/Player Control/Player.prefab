@@ -2036,7 +2036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NO
+  m_Text: CANCEL
 --- !u!1 &5377297156434867886
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,13 +2919,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 60
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: ARE YOU SURE YOU WANT TO BUY THIS ITEM?
+  m_Text: READY FOR DEPLOYMENT?
 --- !u!1 &6261414903750848286
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,9 +5364,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'YES
-
-'
+  m_Text: DEPLOY
 --- !u!1 &8636641936184805508
 GameObject:
   m_ObjectHideFlags: 0
