@@ -105,20 +105,23 @@ public class TutorialControl : MonoBehaviour
     }
     void OnFire()
     {
-        if(tutStage == 1)
+        if (playerControll.canAct == true)
         {
-            if (playerControll.canGatherAmmo == true)
+            if (tutStage == 1)
             {
-                StartCoroutine(AmmoGathering());
-            }
-        }
-        else if(tutStage == 4)
-        {
-            if (Physics.Raycast(playerControll.playerCamera.position, playerControll.playerCamera.forward, out RaycastHit hit, 6))
-            {
-                if (hit.collider.GetComponentInParent<AttackTurretController>())
+                if (playerControll.canGatherAmmo == true)
                 {
-                    StartCoroutine(Reloadin());
+                    StartCoroutine(AmmoGathering());
+                }
+            }
+            else if (tutStage == 4)
+            {
+                if (Physics.Raycast(playerControll.playerCamera.position, playerControll.playerCamera.forward, out RaycastHit hit, 6))
+                {
+                    if (hit.collider.GetComponentInParent<AttackTurretController>())
+                    {
+                        StartCoroutine(Reloadin());
+                    }
                 }
             }
         }

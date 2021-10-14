@@ -16,7 +16,7 @@ public class PlayerControll : MonoBehaviour
     public Transform playerCamera;
     public Text moneyText;
     public Animator arm;
-    bool canAct = true;
+    public bool canAct = true;
 
     public int moneyEarned;
     public int enemiesKilled;
@@ -136,24 +136,27 @@ public class PlayerControll : MonoBehaviour
     }
     void OnFire()
     {
-        if (canGatherAmmo)
+        if (canAct == true)
         {
-            if (currentAmmo < 3)
+            if (canGatherAmmo)
             {
-                StartCoroutine(GatheringAmmo());
-            }
-        }
-        else
-        {
-            if (currentAmmo > 0)
-            {
-                RaycastHit hit;
-                if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f))
+                if (currentAmmo < 3)
                 {
-                    if (hit.collider.GetComponentInParent<AttackTurretController>())
+                    StartCoroutine(GatheringAmmo());
+                }
+            }
+            else
+            {
+                if (currentAmmo > 0)
+                {
+                    RaycastHit hit;
+                    if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f))
                     {
-                        StartCoroutine(hit.collider.GetComponentInParent<AttackTurretController>().Reload());
-                        StartCoroutine(Reloading(hit.collider.GetComponentInParent<AttackTurretController>().reloadTime));
+                        if (hit.collider.GetComponentInParent<AttackTurretController>())
+                        {
+                            StartCoroutine(hit.collider.GetComponentInParent<AttackTurretController>().Reload());
+                            StartCoroutine(Reloading(hit.collider.GetComponentInParent<AttackTurretController>().reloadTime));
+                        }
                     }
                 }
             }
