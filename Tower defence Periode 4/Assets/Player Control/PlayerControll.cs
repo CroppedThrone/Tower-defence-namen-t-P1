@@ -142,6 +142,7 @@ public class PlayerControll : MonoBehaviour
             {
                 if (currentAmmo < 3)
                 {
+                    canAct = false;
                     StartCoroutine(GatheringAmmo());
                 }
             }
@@ -154,6 +155,7 @@ public class PlayerControll : MonoBehaviour
                     {
                         if (hit.collider.GetComponentInParent<AttackTurretController>())
                         {
+                            canAct = false;
                             StartCoroutine(hit.collider.GetComponentInParent<AttackTurretController>().Reload());
                             StartCoroutine(Reloading(hit.collider.GetComponentInParent<AttackTurretController>().reloadTime));
                         }
@@ -166,7 +168,6 @@ public class PlayerControll : MonoBehaviour
     {
         float speed = moveSpeed;
         moveSpeed = 0;
-        canAct = false;
         isSprinting = false;
         if (arm.GetBool("Screen on") == true)
         {
