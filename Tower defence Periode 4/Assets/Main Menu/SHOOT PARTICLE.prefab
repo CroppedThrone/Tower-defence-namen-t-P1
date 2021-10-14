@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826216102055384783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00390625, y: -0.074, z: 0.008}
+  m_LocalPosition: {x: -0.00390625, y: -0.012, z: 0.008}
   m_LocalScale: {x: 1, y: 1, z: 1.08}
   m_Children: []
   m_Father: {fileID: 3826216102538999841}
@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826216102055384783}
   serializedVersion: 7
-  lengthInSec: 0.1
+  lengthInSec: 0.05
   simulationSpeed: 30
   stopAction: 0
   cullingMode: 0
@@ -4889,7 +4889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826216102538999844}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2543.9946, y: 1717.4606, z: -620.099}
+  m_LocalPosition: {x: 2543.9946, y: 1717.4606, z: -620.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3826216102055384776}
@@ -4905,7 +4905,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826216102538999844}
   serializedVersion: 7
-  lengthInSec: 0.1
+  lengthInSec: 0.5
   simulationSpeed: 30
   stopAction: 0
   cullingMode: 0
@@ -8734,7 +8734,7 @@ ParticleSystem:
       emitProbability: 1
   LightsModule:
     enabled: 1
-    ratio: 1
+    ratio: 0.5
     light: {fileID: 3826216102836697809}
     randomDistribution: 1
     color: 1
@@ -9765,7 +9765,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826216102836697814}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.057, y: 0.746, z: -1.962}
+  m_LocalPosition: {x: -0.057, y: 0.7, z: -44.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3826216102538999841}
@@ -9828,7 +9828,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: -119385340, z: 4.5904e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: -0.0000000016418653, z: 7.57e-43, w: 3.5e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0

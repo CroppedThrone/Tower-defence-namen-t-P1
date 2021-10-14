@@ -1834,6 +1834,7 @@ MonoBehaviour:
   playerCamera: {fileID: 4994850740663032480}
   moneyText: {fileID: 6261414904061900781}
   arm: {fileID: 3655147071722540927}
+  canAct: 1
   moneyEarned: 0
   enemiesKilled: 0
   turretsBought: 0
@@ -5721,23 +5722,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701217796618270811, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701217796618270811, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701217796626118627, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701217796626118627, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701217796626118627, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701217797680565984, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -5757,7 +5758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701217797680565988, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4701217797680565989, guid: b67f5dd694e44d344913da19de479bc0, type: 3}
       propertyPath: m_Pivot.x
@@ -5882,9 +5883,13 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 463665184521295395, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4407053433794620377, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4407053433794620378, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_IsActive
@@ -5988,7 +5993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4407053434739239137, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4407053434739239138, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_IsActive
@@ -5996,7 +6001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4407053435047475103, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4407053435250061612, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_IsActive
@@ -6004,7 +6009,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4407053435406651195, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659598896253304570, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5378676773132859948, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_Name
@@ -6020,7 +6029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5768324007865006890, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6261317960292591313, guid: 839d7a6c10bd6764cb635accb2d1055c, type: 3}
       propertyPath: m_IsActive
