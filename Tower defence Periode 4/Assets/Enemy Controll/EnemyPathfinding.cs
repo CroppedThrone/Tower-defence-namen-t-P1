@@ -8,7 +8,7 @@ public class EnemyPathfinding : MonoBehaviour
     public int waypointCounter;
     public float movespeed;
     Vector3 moveTo;
-    Vector2 deviation;
+    public Vector2 deviation;
     Rigidbody rb;
     bool canMove;
     public float height;
@@ -54,7 +54,7 @@ public class EnemyPathfinding : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         StartCoroutine(StartMoving());
     }
-    IEnumerator StartMoving()
+    public IEnumerator StartMoving()
     {
         yield return new WaitForSeconds(0.25f);
         moveTo = waypoints[0].position;
