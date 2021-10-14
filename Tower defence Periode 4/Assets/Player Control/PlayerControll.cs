@@ -142,7 +142,6 @@ public class PlayerControll : MonoBehaviour
             {
                 if (currentAmmo < 3)
                 {
-                    canAct = false;
                     StartCoroutine(GatheringAmmo());
                 }
             }
@@ -155,7 +154,6 @@ public class PlayerControll : MonoBehaviour
                     {
                         if (hit.collider.GetComponentInParent<AttackTurretController>())
                         {
-                            canAct = false;
                             StartCoroutine(hit.collider.GetComponentInParent<AttackTurretController>().Reload());
                             StartCoroutine(Reloading(hit.collider.GetComponentInParent<AttackTurretController>().reloadTime));
                         }
@@ -166,6 +164,7 @@ public class PlayerControll : MonoBehaviour
     }
     IEnumerator GatheringAmmo()
     {
+        canAct = false;
         float speed = moveSpeed;
         moveSpeed = 0;
         isSprinting = false;
@@ -188,6 +187,7 @@ public class PlayerControll : MonoBehaviour
     }
     IEnumerator Reloading(float reloadTime)
     {
+        canAct = false;
         float speed = moveSpeed;
         moveSpeed = 0;
         canAct = false;
