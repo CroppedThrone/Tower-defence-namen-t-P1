@@ -15,11 +15,11 @@ public class WaveController : MonoBehaviour
     public Text waveTimer;
     public Text waveTimerText;
 
-    void Start()
-    {
-        StartCoroutine(StartWave());
-    }
-    IEnumerator StartWave()
+    //void Start()
+    //{
+    //    StartCoroutine(StartWave());
+    //}
+    public IEnumerator StartWave()
     {
         for (int w = 0; w < waves.Length; w++)
         {

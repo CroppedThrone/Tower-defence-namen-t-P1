@@ -8,6 +8,10 @@ public class BasicTurretController : AttackTurretController
     public Transform barrelPoint;
     public GameObject barrelFlash;
 
+    public override void Start()
+    {
+        
+    }
     void Update()
     {
         if (isActive == true)
