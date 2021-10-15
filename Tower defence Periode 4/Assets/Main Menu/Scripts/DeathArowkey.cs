@@ -11,6 +11,8 @@ public class DeathArowkey : MonoBehaviour
     public GameObject ded;
     public bool myFunctionCalled;
 
+
+
     void Update()
     {
 
@@ -19,6 +21,7 @@ public class DeathArowkey : MonoBehaviour
             if (myFunctionCalled == false)
             {
                 myFunctionCalled = true;
+                Cursor.visible = false;
                 evt.SetSelectedGameObject(noo);
             }
           
