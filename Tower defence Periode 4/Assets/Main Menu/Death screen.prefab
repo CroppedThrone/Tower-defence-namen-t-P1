@@ -157,7 +157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: QUIT GAME
+  m_Text: QUIT TO MENU
 --- !u!1 &3076824771972802248
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -471,6 +471,7 @@ GameObject:
   - component: {fileID: 3076824772464622125}
   - component: {fileID: 3076824772464622126}
   - component: {fileID: 3076824772464622127}
+  - component: {fileID: 5903675298248052215}
   m_Layer: 5
   m_Name: Death screen
   m_TagString: Untagged
@@ -566,6 +567,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5903675298248052215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076824772464622096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9911b10c94a1c644c9dc8adfd25e7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evt: {fileID: 0}
+  noo: {fileID: 3076824771972802248}
+  ded: {fileID: 3076824772464622096}
+  myFunctionCalled: 0
 --- !u!1 &3076824772844497438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1066,7 @@ GameObject:
   - component: {fileID: 3076824773118124983}
   - component: {fileID: 3076824773118124984}
   - component: {fileID: 3076824773118124985}
-  - component: {fileID: 3076824773118124986}
+  - component: {fileID: 709152309183333483}
   m_Layer: 5
   m_Name: Exit Button
   m_TagString: Untagged
@@ -1128,7 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1159,9 +1176,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3076824773118124986}
-        m_TargetAssemblyTypeName: Exitbutton, Assembly-CSharp
-        m_MethodName: ExitButton
+      - m_Target: {fileID: 709152309183333483}
+        m_TargetAssemblyTypeName: Abort, Assembly-CSharp
+        m_MethodName: ButtonAbort
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1171,7 +1188,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3076824773118124986
+--- !u!114 &709152309183333483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1180,7 +1197,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3076824773118124988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbd3f92fe74345488792e56ebeb662c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d2686c8662932f4397e8cb86b24962e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3076824773259441581
