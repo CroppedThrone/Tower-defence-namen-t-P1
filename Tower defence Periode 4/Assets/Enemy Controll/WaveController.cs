@@ -14,6 +14,7 @@ public class WaveController : MonoBehaviour
     public Text waveCounter;
     public Text waveTimer;
     public Text waveTimerText;
+    public int wave;
 
     //void Start()
     //{
@@ -47,6 +48,7 @@ public class WaveController : MonoBehaviour
                 spawnedEnemy.transform.name = "enemy" + e.ToString();
                 yield return new WaitForSeconds(waves[w].enemySpawner[e].spawnDelay);
             }
+            wave++;
         }
         print("done");
     }

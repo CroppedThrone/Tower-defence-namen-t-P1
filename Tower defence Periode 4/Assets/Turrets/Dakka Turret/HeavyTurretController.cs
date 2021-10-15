@@ -47,6 +47,8 @@ public class HeavyTurretController : AttackTurretController
     {
         print(currentAmmo.ToString());
         Instantiate(barrelFlash, barrelPoint.position, barrelPoint.rotation);
+        gunAnimator.SetTrigger("Fire");
+        Instantiate(barrelFlash, barrelPoint.position, barrelPoint.rotation);
         RaycastHit hit;
         if (Physics.Raycast(barrelPoint.position, (targetEnemy.transform.position - barrelPoint.position), out hit, range))
         {
