@@ -15,11 +15,21 @@ public class WaveController : MonoBehaviour
     public Text waveTimer;
     public Text waveTimerText;
     public int wave;
+    bool skip;
 
-    //void Start()
-    //{
-    //    StartCoroutine(StartWave());
-    //}
+    void OnSkip()
+    {
+        if (skip == false)
+        {
+            skip = true;
+            StartCoroutine(Skip());
+        }
+    }
+    IEnumerator Skip()
+    {
+        yield return new WaitForSeconds(1f);
+        skip = false;
+    }
     public IEnumerator StartWave()
     {
         for (int w = 0; w < waves.Length; w++)
@@ -36,6 +46,10 @@ public class WaveController : MonoBehaviour
                     waveTimer.text = "0" + i.ToString();
                 }
                 yield return new WaitForSeconds(1);
+                if (skip == true)
+                {
+                    break;
+                }
             }
             waveTimerText.gameObject.SetActive(false);
             waveCounter.text = (w + 1).ToString();

@@ -15,7 +15,8 @@ public class TurretController : MonoBehaviour
     {
         if (collision.collider.tag == "Ground")
         {
-            Instantiate(dropSmoke, transform.position + transform.up * 0.1f, Quaternion.identity);
+            GameObject smoke = Instantiate(dropSmoke, transform.position + transform.up * 0.1f, Quaternion.identity);
+            smoke.GetComponent<ParticleSystem>().Play();
             StartCoroutine(TurretSetup());
             print("setup");
         }
