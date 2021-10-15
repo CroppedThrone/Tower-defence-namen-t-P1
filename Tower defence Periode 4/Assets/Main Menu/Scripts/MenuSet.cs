@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-public class SettingMenumain : MonoBehaviour
+
+public class MenuSet : MonoBehaviour
 {
     public AudioMixer audioMixer;
     Resolution[] resolutions;
     public Dropdown resolutionDropdown;
     public GameObject settingCanvas;
     public int lastPressed;
+
     void Start()
     {
         resolutions = Screen.resolutions;
@@ -59,13 +61,19 @@ public class SettingMenumain : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
-    public void SettingsButton()
+    public void ButtonSetting()
     {
+
+
+
+
         lastPressed++;
         if (lastPressed == 1)
         {
             settingCanvas.SetActive(true);
+
             
+
         }
         else
         {
@@ -73,6 +81,5 @@ public class SettingMenumain : MonoBehaviour
             settingCanvas.SetActive(false);
         }
     }
-
-
 }
+
