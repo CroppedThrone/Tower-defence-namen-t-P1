@@ -13,6 +13,7 @@ public class MissileController : MonoBehaviour
     bool isInFlight;
     int detectRadius = 5;
     public GameObject explosion;
+    public GameObject rocketSmoke;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +53,7 @@ public class MissileController : MonoBehaviour
         damage = turretDamage;
         transform.SetParent(null, true);
         StartCoroutine(InAir());
-
+        rocketSmoke.GetComponent<ParticleSystem>().Play(true);
     }
     IEnumerator InAir()
     {
