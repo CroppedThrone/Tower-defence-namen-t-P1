@@ -68,6 +68,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Skip",
+                    "type": "Button",
+                    "id": "92cb6a18-10f4-4534-9d45-1fa19a9c43fd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -299,6 +307,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "FuckGoBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "85b5f89a-18e5-42e4-93e2-551a98e905b1",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Skip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

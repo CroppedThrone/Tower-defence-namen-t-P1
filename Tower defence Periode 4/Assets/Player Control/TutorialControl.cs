@@ -12,10 +12,23 @@ public class TutorialControl : MonoBehaviour
     public GameObject[] exampleWave;
     public WaveController waveController;
     public GameObject showWave;
-    bool stageDelay;
     int moveAmount;
     int dead;
 
+    void OnSkip()
+    {
+        if (tutStage < 4 || tutStage == 5 || tutStage > 6)
+        {
+            if (tutStage == 1)
+            {
+                containerDoors.SetTrigger("Open Door");
+            }
+            if (tutStage >= 0)
+            {
+                ProgressTutorial();
+            }
+        }
+    }
     private void Start()
     {
         playerControll = GetComponent<PlayerControll>();
@@ -33,14 +46,6 @@ public class TutorialControl : MonoBehaviour
                     ProgressTutorial();
                     break;
                 }
-            }
-        }
-        else if (tutStage == 3||tutStage == 5||tutStage == 7||tutStage == 9||tutStage == 10)
-        {
-            if (stageDelay == false)
-            {
-                StartCoroutine(WaitForNextStage());
-                stageDelay = true;
             }
         }
         else if(tutStage == 6)
@@ -133,12 +138,6 @@ public class TutorialControl : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         ProgressTutorial();
-    }
-    IEnumerator WaitForNextStage()
-    {
-        yield return new WaitForSeconds(4);
-        ProgressTutorial();
-        stageDelay = false;
     }
     void OnOpenMenu()
     {
