@@ -5,7 +5,7 @@ using UnityEngine;
 public class TurretController : MonoBehaviour
 {
     public GameObject supplyBox;
-    public GameObject dropSmoke;
+    public ParticleSystem dropSmoke;
     public Animator animator;
     public Animator boxAnimator;
     public bool isActive;
@@ -15,8 +15,7 @@ public class TurretController : MonoBehaviour
     {
         if (collision.collider.tag == "Ground")
         {
-            GameObject smoke = Instantiate(dropSmoke, transform.position + transform.up * 0.1f, Quaternion.identity);
-            smoke.GetComponent<ParticleSystem>().Play();
+            dropSmoke.Play();
             StartCoroutine(TurretSetup());
             print("setup");
         }
@@ -27,6 +26,7 @@ public class TurretController : MonoBehaviour
         yield return new WaitForSeconds(0.45f);
         animator.SetTrigger("Setup");
         yield return new WaitForSeconds(2f);
+        Destroy(dropSmoke.gameObject);
         isActive = true;
         canShoot = true;
         yield return new WaitForSeconds(4f);
