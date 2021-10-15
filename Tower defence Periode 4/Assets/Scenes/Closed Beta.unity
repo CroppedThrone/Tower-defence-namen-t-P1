@@ -543,8 +543,6 @@ MonoBehaviour:
       spawnDelay: 0.2
     - enemyToSpawn: {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
       spawnDelay: 0.2
-    - enemyToSpawn: {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
-      spawnDelay: 0.2
   - enemySpawner:
     - enemyToSpawn: {fileID: 2920396616198637434, guid: b7d600faefe1f1841b4ade76fce31bdc, type: 3}
       spawnDelay: 0.5

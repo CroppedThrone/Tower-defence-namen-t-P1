@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e081d26e62d142d4b93e49ee4bf073d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 350
+  maxHP: 375
   currentHP: 0
   goldValue: 1000
   playerGold: {fileID: 0}
@@ -110,6 +110,7 @@ MonoBehaviour:
   waypoints: []
   waypointCounter: 0
   movespeed: 3
+  deviation: {x: 0, y: 0}
   height: -0.6
   turnspeed: 80
 --- !u!1 &1218557401261724472
