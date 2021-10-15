@@ -174,10 +174,10 @@ public class PlayerControll : MonoBehaviour
         }
         reloadImg.SetActive(true);
         reloadBar.fillAmount = 0;
-        for (float  f = 0; f < 0.5f + 0.5f * (3 - currentAmmo); f += Time.fixedDeltaTime)
+        for (float  f = 0; f < 0.5f + 0.5f * (3f - currentAmmo); f += Time.fixedDeltaTime)
         {
             yield return new WaitForFixedUpdate();
-            reloadBar.fillAmount += 1 / (3 - currentAmmo) * Time.fixedDeltaTime;
+            reloadBar.fillAmount += 1f / (0.5f + 0.5f * (3f - currentAmmo)) * Time.fixedDeltaTime;
         }
         reloadImg.SetActive(false);
         currentAmmo = 3;
@@ -201,7 +201,7 @@ public class PlayerControll : MonoBehaviour
         for (float f = 0; f < reloadTime; f += Time.fixedDeltaTime)
         {
             yield return new WaitForFixedUpdate();
-            reloadBar.fillAmount += 1 / reloadTime * Time.fixedDeltaTime;
+            reloadBar.fillAmount += 1f / reloadTime * Time.fixedDeltaTime;
         }
         reloadImg.SetActive(false);
         currentAmmo--;

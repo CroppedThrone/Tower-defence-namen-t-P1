@@ -92,7 +92,7 @@ public class MissileTurretController : AttackTurretController
         {
             missileArray[i].missile = Instantiate(missile, missileArray[i].spawnPoint.position, missileArray[i].spawnPoint.rotation, missileArray[i].spawnPoint);
         }
-        yield return new WaitForSeconds(reloadTimer);
+        yield return new WaitForSeconds(reloadTime - 1);
         gunAnimator.SetTrigger("Finish reload");
         yield return new WaitForSeconds(1.8f);
         loadedMissile = 0;
