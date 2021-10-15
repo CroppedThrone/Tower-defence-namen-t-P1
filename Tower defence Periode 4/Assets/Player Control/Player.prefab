@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Text: 'PRICE:
 
 
-    $500
+    $600
 
 '
 --- !u!1 &1421975821998967409
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Text: 'PRICE:
 
 
-    $1750
+    $1500
 
 '
 --- !u!1 &1736152542776232310
@@ -3967,7 +3967,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c77e89bad1e9fdb49987a5312add034c, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3977,7 +3977,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: SNIPER TURRET
 --- !u!1 &6261414904325417880
 GameObject:
@@ -4198,7 +4198,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c77e89bad1e9fdb49987a5312add034c, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4208,7 +4208,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: MISSILE TURRET
 --- !u!1 &6261414904636021442
 GameObject:
@@ -4741,7 +4741,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c77e89bad1e9fdb49987a5312add034c, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4751,8 +4751,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: DAKKA TURRET
+    m_LineSpacing: 1.5
+  m_Text: "DAKKA \nTURRET"
 --- !u!1 &6261414904820723873
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,7 +4930,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c77e89bad1e9fdb49987a5312add034c, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4940,8 +4940,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: BASIC TURRET
+    m_LineSpacing: 1.5
+  m_Text: "BASIC \nTURRET"
 --- !u!1 &6261414904923203886
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,7 +5009,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c77e89bad1e9fdb49987a5312add034c, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -5019,7 +5019,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: HACKER TURRET
 --- !u!1 &6312348581307859923
 GameObject:
@@ -5132,7 +5132,7 @@ MonoBehaviour:
   m_Text: 'PRICE:
 
 
-    $2000
+    $1200
 
 '
 --- !u!1 &7066052675519285137
