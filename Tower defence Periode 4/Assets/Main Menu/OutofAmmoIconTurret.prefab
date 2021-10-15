@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8810909238432599955}
   - component: {fileID: 5614151247104081974}
   - component: {fileID: 7641922032239932668}
+  - component: {fileID: 50872551861570463}
   m_Layer: 0
   m_Name: OutofAmmoIconTurret
   m_TagString: Untagged
@@ -81,3 +82,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &50872551861570463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8146294748538983721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68be1a2dcf4988d45814933298b9c6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

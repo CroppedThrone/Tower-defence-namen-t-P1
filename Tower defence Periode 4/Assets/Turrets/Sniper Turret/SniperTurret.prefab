@@ -991,6 +991,7 @@ MonoBehaviour:
   turretRotate: {fileID: 1045405101667701753}
   barrelRotate: {fileID: 7636169368347164947}
   targetEnemy: {fileID: 0}
+  error: {fileID: 3362447235148185309}
   damage: 60
   rateOfFire: 0.3
   maxAmmo: 30
@@ -1395,6 +1396,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1f699aa047d3c24a8ae3b1877e7ad20, type: 3}
+--- !u!1 &3362447235148185309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8146294748538983721, guid: e1f699aa047d3c24a8ae3b1877e7ad20, type: 3}
+  m_PrefabInstance: {fileID: 6891840156908366836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2729778815305786471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8810909238432599955, guid: e1f699aa047d3c24a8ae3b1877e7ad20, type: 3}

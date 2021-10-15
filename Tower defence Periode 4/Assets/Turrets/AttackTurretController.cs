@@ -8,6 +8,7 @@ public class AttackTurretController : TurretController
     public Transform turretRotate;
     public Transform barrelRotate;
     public GameObject targetEnemy;
+    public GameObject error;
 
     public int damage;
     public float rateOfFire;
@@ -53,6 +54,7 @@ public class AttackTurretController : TurretController
         isActive = false;
         animator.enabled = true;
         animator.SetTrigger("Power Down");
+        error.SetActive(true);
     }
     public virtual IEnumerator Reload()
     {
@@ -68,6 +70,7 @@ public class AttackTurretController : TurretController
         {
             yield return new WaitForSeconds(0.5f);
         }
+        error.SetActive(false);
         currentAmmo = maxAmmo;
         canShoot = true;
         isActive = true;

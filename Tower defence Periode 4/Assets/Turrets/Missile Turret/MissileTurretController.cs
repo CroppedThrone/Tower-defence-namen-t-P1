@@ -61,6 +61,7 @@ public class MissileTurretController : AttackTurretController
         else if (loadedMissile == 2 & currentAmmo == 1)
         {
             gunAnimator.SetTrigger("Start reload");
+            error.SetActive(true);
             canShoot = false;
             isActive = false;
         }
@@ -97,6 +98,7 @@ public class MissileTurretController : AttackTurretController
         yield return new WaitForSeconds(1.8f);
         loadedMissile = 0;
         currentAmmo = maxAmmo;
+        error.SetActive(false);
         canShoot = true;
         isActive = true;
     }
