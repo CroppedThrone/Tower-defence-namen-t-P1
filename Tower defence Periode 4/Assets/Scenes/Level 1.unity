@@ -2057,6 +2057,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2818945283338535593, guid: fc9ba230729847446b7f60ee013c0ec2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018302839769052235, guid: fc9ba230729847446b7f60ee013c0ec2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5770551835091615233, guid: fc9ba230729847446b7f60ee013c0ec2, type: 3}
       propertyPath: maxAmmo
       value: 75
@@ -4586,6 +4594,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2803641051329074355, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803641051329074355, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
+      propertyPath: MinDistance
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
       propertyPath: m_Name
       value: Drone

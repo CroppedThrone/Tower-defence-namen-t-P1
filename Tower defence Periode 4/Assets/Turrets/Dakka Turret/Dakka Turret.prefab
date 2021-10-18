@@ -269,6 +269,7 @@ Transform:
   - {fileID: 3510293473723272779}
   - {fileID: 857449422607009959}
   - {fileID: 7145641772369243880}
+  - {fileID: 6666248649873611191}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -338,6 +339,36 @@ MonoBehaviour:
   reloadTime: 3
   barrelPoint: {fileID: 6659154371910220240}
   barrelFlash: {fileID: 3826216102538999844, guid: ac59b5829f7189c47931b4903ac08996, type: 3}
+--- !u!1 &6474660637318109387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6666248649873611191}
+  m_Layer: 0
+  m_Name: AmmoGoBLew
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6666248649873611191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474660637318109387}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.423, y: 2.322, z: -0.988}
+  m_LocalScale: {x: 1.4285713, y: 1.4285713, z: 1.4285713}
+  m_Children: []
+  m_Father: {fileID: 4882378161176298818}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7537733186094080224
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,13 +819,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
---- !u!4 &3510293473723272779 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
-  m_PrefabInstance: {fileID: 3980522559444134304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4322543032526542065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
+  m_PrefabInstance: {fileID: 3980522559444134304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3510293473723272779 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
   m_PrefabInstance: {fileID: 3980522559444134304}
   m_PrefabAsset: {fileID: 0}
