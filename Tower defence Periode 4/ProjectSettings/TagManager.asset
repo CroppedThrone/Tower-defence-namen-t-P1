@@ -9,6 +9,7 @@ TagManager:
   - Turret
   - Path
   - Base
+  - StoneGone
   layers:
   - Default
   - TransparentFX
