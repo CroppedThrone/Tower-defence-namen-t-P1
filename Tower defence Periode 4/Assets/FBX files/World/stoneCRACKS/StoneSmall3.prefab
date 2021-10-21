@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3095783964712739771
+--- !u!1 &4031653472259321676
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 613344301310821054}
-  - component: {fileID: 5266720568240137013}
-  - component: {fileID: 986865085642018120}
-  - component: {fileID: 2381149884747117369}
-  - component: {fileID: 2681036070777000666}
+  - component: {fileID: 6949519922646887906}
+  - component: {fileID: 4521463360630913283}
+  - component: {fileID: 5033553884221356601}
+  - component: {fileID: 4259209561718981819}
+  - component: {fileID: 7004550196794960737}
+  - component: {fileID: 2958429930495175591}
   m_Layer: 0
-  m_Name: Barrel Rig
+  m_Name: StoneSmall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &613344301310821054
+--- !u!4 &6949519922646887906
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3095783964712739771}
-  m_LocalRotation: {x: -0, y: 0.8655738, z: -0, w: 0.5007814}
-  m_LocalPosition: {x: 6.36, y: -3.1800003, z: 95.29}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 4031653472259321676}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.236335, y: -55.174583, z: -137.77264}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 119.897, z: 0}
---- !u!33 &5266720568240137013
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4521463360630913283
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3095783964712739771}
-  m_Mesh: {fileID: 8108563764783910780, guid: 246f5438163aa364c962d541b096e519, type: 3}
---- !u!23 &986865085642018120
+  m_GameObject: {fileID: 4031653472259321676}
+  m_Mesh: {fileID: 6217936459748624344, guid: aa2530c8bb999f247a92697d27328deb, type: 3}
+--- !u!23 &5033553884221356601
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3095783964712739771}
+  m_GameObject: {fileID: 4031653472259321676}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 39b234d2a03315949bb352fe05720b57, type: 2}
+  - {fileID: 2100000, guid: 3bf90f8889cb701428aeaad81f21234a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,27 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2381149884747117369
+--- !u!64 &4259209561718981819
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3095783964712739771}
+  m_GameObject: {fileID: 4031653472259321676}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 8108563764783910780, guid: 246f5438163aa364c962d541b096e519, type: 3}
---- !u!54 &2681036070777000666
+  m_Mesh: {fileID: 6217936459748624344, guid: aa2530c8bb999f247a92697d27328deb, type: 3}
+--- !u!54 &7004550196794960737
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3095783964712739771}
+  m_GameObject: {fileID: 4031653472259321676}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -113,3 +114,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2958429930495175591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4031653472259321676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4e7b046a47c1e4bbd2f1de2ea999fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoke: {fileID: 7858207160268066481, guid: b7fffcba6d7976a4bb44dd7ef8007569, type: 3}
+  stone: {fileID: 6949519922646887906}
