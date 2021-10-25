@@ -875,11 +875,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenColour: {fileID: 2100000, guid: eb660c63dadd8714a899926fd9e04b0b, type: 2}
-  blueColour: {fileID: 0}
-  purpleColour: {fileID: 0}
+  blueColour: {fileID: 2100000, guid: eab3add60c66ff648a827c4013558a7c, type: 2}
+  purpleColour: {fileID: 2100000, guid: f7a92e9620aee6c468ff7c6bcfe86bfe, type: 2}
   itemRenderer: {fileID: 1428639957353526409}
-  greenToWhiteColour: {r: 1, g: 1, b: 1, a: 0}
   cubes: {fileID: 6372394471261431926}
+  myMaterial: {fileID: 2100000, guid: eb660c63dadd8714a899926fd9e04b0b, type: 2}
 --- !u!1 &6481647865416075135
 GameObject:
   m_ObjectHideFlags: 0

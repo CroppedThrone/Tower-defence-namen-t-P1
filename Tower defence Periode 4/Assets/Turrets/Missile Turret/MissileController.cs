@@ -14,6 +14,9 @@ public class MissileController : MonoBehaviour
     int detectRadius = 5;
     public GameObject explosion;
     public GameObject rocketSmoke;
+
+    public AudioSource missileGo;
+    public AudioSource missileLoop;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +57,8 @@ public class MissileController : MonoBehaviour
         transform.SetParent(null, true);
         StartCoroutine(InAir());
         rocketSmoke.GetComponent<ParticleSystem>().Play(true);
+        missileGo.Play();
+        missileLoop.Play();
     }
     IEnumerator InAir()
     {

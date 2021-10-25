@@ -16,6 +16,7 @@ public class WaveController : MonoBehaviour
     public Text waveTimerText;
     public int wave;
     bool skip;
+    public bool wavesFinished;
 
     void OnSkip()
     {
@@ -53,6 +54,7 @@ public class WaveController : MonoBehaviour
             }
             waveTimerText.gameObject.SetActive(false);
             waveCounter.text = (w + 1).ToString();
+            StartCoroutine(SecondWave(w));
             for (int e = 0; e < waves[w].enemySpawner.Length; e++)
             {
                 Vector3 actualDeviation = new Vector4(Random.Range(-spawnDeviation.x, spawnDeviation.x), 0, Random.Range(-spawnDeviation.y, spawnDeviation.y));
@@ -64,7 +66,11 @@ public class WaveController : MonoBehaviour
             }
             wave++;
         }
-        print("done");
+        wavesFinished = true;
+    }
+    public virtual IEnumerator SecondWave(int wave)
+    {
+        yield return null;
     }
 }
 

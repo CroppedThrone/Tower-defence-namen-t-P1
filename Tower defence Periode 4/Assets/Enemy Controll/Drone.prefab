@@ -284,7 +284,7 @@ MonoBehaviour:
   waypointCounter: 0
   movespeed: 10
   deviation: {x: 0, y: 0}
-  height: 3
+  height: 4
   turnspeed: 200
 --- !u!54 &5534357906609311409
 Rigidbody:

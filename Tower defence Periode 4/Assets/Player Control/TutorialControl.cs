@@ -12,6 +12,8 @@ public class TutorialControl : MonoBehaviour
     public GameObject[] exampleWave;
     public WaveController waveController;
     public GameObject showWave;
+    public WaveController waveManager;
+    bool tutWaveActive;
     int moveAmount;
     int dead;
 
@@ -50,29 +52,14 @@ public class TutorialControl : MonoBehaviour
         }
         else if(tutStage == 6)
         {
-            if (exampleWave[0].gameObject)
+            if (tutWaveActive == false)
             {
-                for (int i = 0; i < exampleWave.Length; i++)
-                {
-                    exampleWave[i].SetActive(true);
-                    StartCoroutine(exampleWave[i].GetComponent<EnemyPathfinding>().StartMoving());
-                    exampleWave[i].GetComponent<EnemyPathfinding>().deviation = new Vector2(1, 1);
-                }
+                StartCoroutine(TutWave());
+                tutWaveActive = true;
             }
-            else
+            else if (playerControll.enemiesKilled >= exampleWave.Length)
             {
-                dead = 0;
-                for (int i = 0; i < exampleWave.Length; i++)
-                {
-                    if (exampleWave[i] == null)
-                    {
-                        dead++;
-                    }
-                }
-                if (dead == exampleWave.Length)
-                {
-                    ProgressTutorial();
-                }
+                ProgressTutorial();
             }
         }
         else if (tutStage == 11)
@@ -153,5 +140,15 @@ public class TutorialControl : MonoBehaviour
         yield return new WaitForSeconds(5f);
         tutorialImages[12].SetActive(false);
         this.enabled = false;
+    }
+    IEnumerator TutWave()
+    {
+        for (int i = 0; i < exampleWave.Length; i++)
+        {
+            GameObject spawnedEnemy = Instantiate(exampleWave[i].gameObject, waveManager.spawnLocation.position + transform.up * exampleWave[i].GetComponent<EnemyPathfinding>().height, Quaternion.identity);
+            spawnedEnemy.GetComponent<EnemyBehaviour>().playerGold = playerControll;
+            spawnedEnemy.GetComponent<EnemyPathfinding>().FindPath(waveManager.pathWaypoints, waveManager.spawnDeviation);
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 }

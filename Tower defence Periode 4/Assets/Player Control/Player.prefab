@@ -1919,7 +1919,7 @@ MonoBehaviour:
   enemiesKilled: 0
   turretsBought: 0
   canGatherAmmo: 0
-  currentAmmo: 2
+  currentAmmo: 3
   ammoText: {fileID: 3178541123718482425}
   reloadImg: {fileID: 2132637048496263845}
   reloadBar: {fileID: 2132637049778860370}
