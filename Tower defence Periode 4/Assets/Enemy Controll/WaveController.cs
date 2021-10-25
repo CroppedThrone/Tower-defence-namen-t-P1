@@ -16,6 +16,7 @@ public class WaveController : MonoBehaviour
     public Text waveTimerText;
     public int wave;
     bool skip;
+    public bool wavesFinished;
 
     void OnSkip()
     {
@@ -65,7 +66,7 @@ public class WaveController : MonoBehaviour
             }
             wave++;
         }
-        print("done");
+        wavesFinished = true;
     }
     public virtual IEnumerator SecondWave(int wave)
     {
