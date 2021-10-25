@@ -8,28 +8,46 @@ public class HackTurretColour : MonoBehaviour
     [SerializeField]
     public Material greenColour;
     public Material blueColour;
-    public Material purpleColour;
-    public Renderer itemRenderer;
-    public GameObject cubes;
+    public Material magentaColour;
 
     public Material myMaterial;
-
+    public Color colorIDgreen;
+    public Color colorIDblue;
+    public Color colorIDmagenta;
 
 
 
     void Start()
     {
-        //itemRenderer = cubes.GetComponent<Renderer>();
+       greenColour.EnableKeyword("_EMISSION");
+        blueColour.EnableKeyword("_EMISSION");
+        magentaColour.EnableKeyword("_EMISSION");
+
+        colorIDgreen = Color.green;
+        colorIDblue = Color.blue;
+        colorIDmagenta = Color.magenta;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        StartCoroutine("BeginSignal");
+    }
+    IEnumerator BeginSignal()
+    {
+        while (true)
+        {
 
-       //myMaterial.color = Random.ColorHSV(0f, 1f, 1f, 0f, 0f, 0f);
-       //myMaterial.SetColor("_EmisionColor", Random.ColorHSV(0f, 1f, 1f, 0f, 0f, 0f));
-
-         myMaterial = GetComponent<Renderer>().material; myMaterial.SetColor("_EmissionColor", Color.red);
+            yield return new WaitForSeconds(2);
+            greenColour.SetColor("_EmissionColor", colorIDblue);
+            new WaitForSecondsRealtime(2);
+            greenColour.SetColor("_EmissionColor", colorIDmagenta);
+            new WaitForSecondsRealtime(2);
+            greenColour.SetColor("_EmissionColor", colorIDgreen);
+            new WaitForSecondsRealtime(2);
+        }
     }
 
 }
