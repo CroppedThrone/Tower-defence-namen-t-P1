@@ -1007,9 +1007,9 @@ MonoBehaviour:
   - {fileID: 759781415}
   - {fileID: 1398945288}
   - {fileID: 1241825867}
-  waveCounter: {fileID: 1889601696}
-  waveTimer: {fileID: 1082802111}
-  waveTimerText: {fileID: 979874280}
+  waveCounter: {fileID: 0}
+  waveTimer: {fileID: 0}
+  waveTimerText: {fileID: 0}
   wave: 0
   wavesFinished: 0
 --- !u!4 &42595349
@@ -8828,11 +8828,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5107270605370986841, guid: 977ae7d3d068b4947893b5bc964664ca, type: 3}
   m_PrefabInstance: {fileID: 586872983}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &587932824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4549751434585142748, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
-  m_PrefabInstance: {fileID: 904696793}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &588175434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14223,8 +14218,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4503566593591205666, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -560
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503566593591205666, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59.69995
+      value: 263.1
       objectReference: {fileID: 0}
     - target: {fileID: 4549751434585142748, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
       propertyPath: m_IsActive
@@ -15485,17 +15484,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7255022456103791845, guid: 042c875be8e6d62438fb6e91eb1659ca, type: 3}
   m_PrefabInstance: {fileID: 977241529}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &979874280 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7643945162776471475, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
-  m_PrefabInstance: {fileID: 904696793}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &980967467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21528,17 +21516,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8165694632095411816, guid: 33253b23531d35f4a88adf7f6d153e30, type: 3}
   m_PrefabInstance: {fileID: 1077572003}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1082802111 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7643945163450583698, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
-  m_PrefabInstance: {fileID: 904696793}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1086012367
 GameObject:
   m_ObjectHideFlags: 0
@@ -33755,7 +33732,7 @@ MonoBehaviour:
   - {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
   - {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
   waveController: {fileID: 42595348}
-  showWave: {fileID: 587932824}
+  showWave: {fileID: 0}
   waveManager: {fileID: 42595348}
 --- !u!1001 &1636258150
 PrefabInstance:
@@ -47069,17 +47046,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7255022456103791845, guid: 042c875be8e6d62438fb6e91eb1659ca, type: 3}
   m_PrefabInstance: {fileID: 1879254255}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1889601696 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7643945162967239369, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
-  m_PrefabInstance: {fileID: 904696793}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1892085545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3200588567854025546, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
