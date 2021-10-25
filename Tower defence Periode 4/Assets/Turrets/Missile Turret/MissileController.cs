@@ -45,6 +45,7 @@ public class MissileController : MonoBehaviour
         else if (isInFlight == true)
         {
             targetPos = target.transform.position;
+            //hier mag je code warner
         }
     }
     public void Launch(GameObject targetEnemy, int turretDamage)
