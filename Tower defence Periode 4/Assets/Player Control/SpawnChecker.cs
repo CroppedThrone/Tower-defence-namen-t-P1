@@ -14,7 +14,7 @@ public class SpawnChecker : MonoBehaviour
         Collider[] colliders = Physics.OverlapBox(transform.position + transform.forward * 2.5f, new Vector3(1.5f, 1, 1.5f), transform.rotation);
         foreach (Collider collider in colliders)
         {
-            if (collider.gameObject.tag != "Ground")
+            if (collider.gameObject.tag != "Ground" && collider.gameObject.tag != "Rubbish")
             {
                 objectsInArea++;
             }

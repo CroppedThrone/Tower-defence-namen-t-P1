@@ -578,6 +578,7 @@ MonoBehaviour:
   waveTimer: {fileID: 832413787}
   waveTimerText: {fileID: 832413787}
   wave: 0
+  wavesFinished: 0
 --- !u!1 &621207025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4994850739965496983, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
@@ -915,13 +916,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBar: {fileID: 1677579570}
-  gameOverScreen: {fileID: 0}
-  hud: {fileID: 0}
-  killText: {fileID: 0}
-  moneyText: {fileID: 0}
-  waveText: {fileID: 0}
   player: {fileID: 0}
   wave: {fileID: 0}
+  victorySceneNumber: 0
+  tracker: {fileID: 0}
 --- !u!1 &693382002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,6 +3130,42 @@ PrefabInstance:
       propertyPath: myMaterial
       value: 
       objectReference: {fileID: 2100000, guid: eb660c63dadd8714a899926fd9e04b0b, type: 2}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDblue.b
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDblue.g
+      value: 0.28042048
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDblue.r
+      value: 0.21813813
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDgreen.b
+      value: 0.28078803
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDgreen.g
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDgreen.r
+      value: 0.22579211
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDmagenta.b
+      value: 0.6251906
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDmagenta.g
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorIDmagenta.r
+      value: 0.69803923
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4166566b8181934eb92163a8682abbc, type: 3}
 --- !u!1 &1748807766

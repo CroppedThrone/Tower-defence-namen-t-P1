@@ -10,6 +10,7 @@ TagManager:
   - Path
   - Base
   - StoneGone
+  - Rubbish
   layers:
   - Default
   - TransparentFX
