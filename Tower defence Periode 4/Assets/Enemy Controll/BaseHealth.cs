@@ -28,6 +28,14 @@ public class BaseHealth : MonoBehaviour
             }
             if (enemiesLeft == 0)
             {
+                tracker.enemiesKilled = player.enemiesKilled;
+                tracker.goldEarned = player.moneyEarned;
+                tracker.turretsBought = player.turretsBought;
+                tracker.wavesSurvived = wave.wave;
+                tracker.totalEnemiesKilled += player.enemiesKilled;
+                tracker.totalGoldEarned += player.moneyEarned;
+                tracker.totalTurretsBought += player.turretsBought;
+                tracker.totalWavesSurvived += wave.wave;
                 SceneManager.LoadScene(victorySceneNumber);
             }
         }
