@@ -23,8 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinLevel1.unity
     guid: f96c436ed0b79904cb87e8e221c17ef3
-  - enabled: 0
-    path: Assets/Scenes/Closed Beta.unity
-    guid: c822647ebe43b1940a3c89be7baa5655
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: e86dc06c6c192ad4ea1eeac14aad6d4a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0c33a6ca7bc37794a9f2aa500b8c7c31, type: 2}
