@@ -24,7 +24,7 @@ public class PlayerControll : MonoBehaviour
 
     public bool canGatherAmmo;
     public int currentAmmo = 3;
-    public Text ammoText;
+    public GameObject[] ammoHeld;
     public GameObject reloadImg;
     public Image reloadBar;
     public GameObject interactDot;
@@ -35,7 +35,10 @@ public class PlayerControll : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         GetMoney(0);
-        ammoText.text = currentAmmo.ToString();
+        for (int i = 0; i < currentAmmo; i++)
+        {
+            ammoHeld[i].SetActive(true);
+        }
     }
 
     void OnDevKey()
@@ -194,7 +197,10 @@ public class PlayerControll : MonoBehaviour
         }
         reloadImg.SetActive(false);
         currentAmmo = 3;
-        ammoText.text = currentAmmo.ToString();
+        for (int i = 0; i < currentAmmo; i++)
+        {
+            ammoHeld[i].SetActive(true);
+        }
         canAct = true;
         moveSpeed = speed;
     }
@@ -218,7 +224,10 @@ public class PlayerControll : MonoBehaviour
         }
         reloadImg.SetActive(false);
         currentAmmo--;
-        ammoText.text = currentAmmo.ToString();
+        for (int i = 3; i > currentAmmo; i--)
+        {
+            ammoHeld[i-1].SetActive(false);
+        }
         canAct = true;
         moveSpeed = speed;
     }

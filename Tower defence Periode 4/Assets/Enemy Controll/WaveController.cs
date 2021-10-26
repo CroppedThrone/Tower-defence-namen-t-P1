@@ -13,7 +13,7 @@ public class WaveController : MonoBehaviour
     public Transform[] pathWaypoints;
     public Text waveCounter;
     public Text waveTimer;
-    public Text waveTimerText;
+    public Animator waveTimerAnimation;
     public int wave;
     bool skip;
     public bool wavesFinished;
@@ -35,7 +35,10 @@ public class WaveController : MonoBehaviour
     {
         for (int w = 0; w < waves.Length; w++)
         {
-            waveTimerText.gameObject.SetActive(true);
+            if (waveTimerAnimation.GetBool("Timer On") == false)
+            {
+                waveTimerAnimation.SetBool("Timer On", true);
+            }
             for (int i = 30; i > 0; i--)
             {
                 if (i > 9)
@@ -52,7 +55,7 @@ public class WaveController : MonoBehaviour
                     break;
                 }
             }
-            waveTimerText.gameObject.SetActive(false);
+            waveTimerAnimation.SetBool("Timer On", false);
             waveCounter.text = (w + 1).ToString();
             StartCoroutine(SecondWave(w));
             for (int e = 0; e < waves[w].enemySpawner.Length; e++)

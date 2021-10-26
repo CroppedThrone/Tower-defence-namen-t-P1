@@ -14,7 +14,7 @@ public class WaveControllerLVL2 : WaveController
     }
     IEnumerator BeginWaves()
     {
-        waveTimerText.gameObject.SetActive(true);
+        waveTimerAnimation.SetBool("Timer On", true);
         for (int i = 99; i > 30; i--)
         {
             waveTimer.text = i.ToString();
