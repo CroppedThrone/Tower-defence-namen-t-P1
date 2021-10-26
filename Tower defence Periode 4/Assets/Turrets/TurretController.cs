@@ -38,5 +38,9 @@ public class TurretController : MonoBehaviour
         {
             Destroy(other.gameObject.transform.parent.gameObject);
         }
+        else if(other.gameObject.GetComponentInParent<TurretImpactGoBrrr>())
+        {
+            other.gameObject.GetComponentInParent<TurretImpactGoBrrr>().TurretCrash();
+        }
     }
 }
