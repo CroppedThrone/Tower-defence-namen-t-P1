@@ -13,6 +13,7 @@ public class TutorialControl : MonoBehaviour
     public WaveController waveController;
     public GameObject showWave;
     public WaveController waveManager;
+    public GameObject[] tutArrow;
     bool tutWaveActive;
     int moveAmount;
     int dead;
@@ -80,6 +81,19 @@ public class TutorialControl : MonoBehaviour
         tutorialImages[tutStage].SetActive(false);
         tutStage++;
         tutorialImages[tutStage].SetActive(true);
+        if (tutStage == 1)
+        {
+            tutArrow[0].SetActive(true);
+        }
+        else if (tutStage == 2)
+        {
+            tutArrow[0].SetActive(false);
+            tutArrow[1].SetActive(true);
+        }
+        else if(tutStage == 5)
+        {
+            tutArrow[1].SetActive(false);
+        }
     }
     void OnMove()
     {

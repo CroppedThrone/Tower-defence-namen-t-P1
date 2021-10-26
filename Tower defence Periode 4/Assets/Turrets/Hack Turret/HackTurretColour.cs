@@ -10,7 +10,6 @@ public class HackTurretColour : MonoBehaviour
     public Material blueColour;
     public Material magentaColour;
 
-    public Material myMaterial;
     public Color colorIDgreen;
     public Color colorIDblue;
     public Color colorIDmagenta;
