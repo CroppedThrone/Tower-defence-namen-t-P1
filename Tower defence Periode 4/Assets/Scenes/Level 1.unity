@@ -1015,9 +1015,9 @@ MonoBehaviour:
   - {fileID: 759781415}
   - {fileID: 1398945288}
   - {fileID: 1241825867}
-  waveCounter: {fileID: 0}
-  waveTimer: {fileID: 0}
-  waveTimerText: {fileID: 0}
+  waveCounter: {fileID: 1736058914}
+  waveTimer: {fileID: 309276256}
+  waveTimerText: {fileID: 204884273}
   wave: 0
   wavesFinished: 0
 --- !u!4 &42595349
@@ -3543,6 +3543,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2722991074240670511, guid: 286d78209dedc7b4699dbfcf01fd09e0, type: 3}
   m_PrefabInstance: {fileID: 204275477}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &204884273 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7643945162776471475, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+  m_PrefabInstance: {fileID: 904696793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &208346721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2042718014751788643, guid: 088e088cad5c0cc46ac29980f685eddd, type: 3}
@@ -5197,6 +5208,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1271781410718084406, guid: 09eba29c9a6db7d40a234552e572b3df, type: 3}
   m_PrefabInstance: {fileID: 300844885}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &309276256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7643945163450583698, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+  m_PrefabInstance: {fileID: 904696793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &314202405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25973,6 +25995,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2042718014751788643, guid: 088e088cad5c0cc46ac29980f685eddd, type: 3}
   m_PrefabInstance: {fileID: 1577459133}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390004655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4549751434585142748, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+  m_PrefabInstance: {fileID: 904696793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1390330311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33857,7 +33884,7 @@ MonoBehaviour:
   - {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
   - {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
   waveController: {fileID: 42595348}
-  showWave: {fileID: 0}
+  showWave: {fileID: 1390004655}
   waveManager: {fileID: 42595348}
 --- !u!1001 &1636258150
 PrefabInstance:
@@ -35308,6 +35335,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2281780247984428274, guid: ed100ce9b04a37043917fca74b1d15fb, type: 3}
   m_PrefabInstance: {fileID: 1732308746}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1736058914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7643945162967239369, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+  m_PrefabInstance: {fileID: 904696793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1736391277
 PrefabInstance:
   m_ObjectHideFlags: 0
