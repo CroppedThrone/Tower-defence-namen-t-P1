@@ -34,6 +34,13 @@ public class TurretController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject.transform.parent.gameObject);
+        if (other.gameObject.GetComponentInParent<DropTurret>())
+        {
+            Destroy(other.gameObject.transform.parent.gameObject);
+        }
+        else if(other.gameObject.GetComponentInParent<TurretImpactGoBrrr>())
+        {
+            other.gameObject.GetComponentInParent<TurretImpactGoBrrr>().TurretCrash();
+        }
     }
 }
