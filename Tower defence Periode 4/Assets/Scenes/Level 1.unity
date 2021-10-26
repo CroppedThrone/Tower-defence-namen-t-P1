@@ -33980,8 +33980,8 @@ MonoBehaviour:
   containerDoors: {fileID: 28776711539751404}
   playerControll: {fileID: 0}
   exampleWave:
-  - {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
-  - {fileID: 2878375740890150407, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
+  - {fileID: 2878375740890150407, guid: 3f7693ee792fb3f4a9a2d9806e4414a3, type: 3}
+  - {fileID: 2878375740890150407, guid: 3f7693ee792fb3f4a9a2d9806e4414a3, type: 3}
   waveController: {fileID: 42595348}
   tutArrow:
   - {fileID: 1254007191}
@@ -41436,6 +41436,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2803641051329074355, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2803641051329074355, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
       propertyPath: MaxDistance
       value: 10
