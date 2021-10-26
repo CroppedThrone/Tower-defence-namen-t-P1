@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Text: 'PRICE:
 
 
-    $1500
+    $1750
 
 '
 --- !u!1 &1736152542776232310
@@ -4691,6 +4691,7 @@ MonoBehaviour:
   toPay: 0
   turretIndicator: {fileID: 3336553057568977095}
   check: {fileID: 8447139839853612884}
+  error: {fileID: 0}
 --- !u!1 &6261414904814205907
 GameObject:
   m_ObjectHideFlags: 0
