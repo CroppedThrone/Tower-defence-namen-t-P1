@@ -11,9 +11,8 @@ public class TutorialControl : MonoBehaviour
     public PlayerControll playerControll;
     public GameObject[] exampleWave;
     public WaveController waveController;
-    public GameObject showWave;
-    public WaveController waveManager;
     public GameObject[] tutArrow;
+    public Animator waveTimer;
     bool tutWaveActive;
     int moveAmount;
     int dead;
@@ -36,6 +35,7 @@ public class TutorialControl : MonoBehaviour
     {
         playerControll = GetComponent<PlayerControll>();
         tutorialImages[tutStage].SetActive(true);
+        waveTimer.SetBool("Timer On", false);
     }
     private void Update()
     {
@@ -149,7 +149,6 @@ public class TutorialControl : MonoBehaviour
     }
     IEnumerator EndTutorial()
     {
-        showWave.SetActive(true);
         StartCoroutine(waveController.StartWave());
         yield return new WaitForSeconds(5f);
         tutorialImages[12].SetActive(false);
@@ -159,9 +158,9 @@ public class TutorialControl : MonoBehaviour
     {
         for (int i = 0; i < exampleWave.Length; i++)
         {
-            GameObject spawnedEnemy = Instantiate(exampleWave[i].gameObject, waveManager.spawnLocation.position + transform.up * exampleWave[i].GetComponent<EnemyPathfinding>().height, Quaternion.identity);
+            GameObject spawnedEnemy = Instantiate(exampleWave[i].gameObject, waveController.spawnLocation.position + transform.up * exampleWave[i].GetComponent<EnemyPathfinding>().height, Quaternion.identity);
             spawnedEnemy.GetComponent<EnemyBehaviour>().playerGold = playerControll;
-            spawnedEnemy.GetComponent<EnemyPathfinding>().FindPath(waveManager.pathWaypoints, waveManager.spawnDeviation);
+            spawnedEnemy.GetComponent<EnemyPathfinding>().FindPath(waveController.pathWaypoints, waveController.spawnDeviation);
             yield return new WaitForSeconds(0.5f);
         }
     }
