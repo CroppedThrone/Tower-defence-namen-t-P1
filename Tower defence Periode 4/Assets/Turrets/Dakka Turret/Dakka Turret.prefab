@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 381116442208334981}
   - component: {fileID: 890768558654539504}
   - component: {fileID: 5476374719839460718}
-  - component: {fileID: 1590701814096039963}
   m_Layer: 0
   m_Name: MachineGunTurretBarrle
   m_TagString: Untagged
@@ -98,25 +97,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5681745643308455137, guid: fd9bd7b60ad12f7468013e292046f53f, type: 3}
---- !u!95 &1590701814096039963
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970000404397615538}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8bc04b2ecb23f5048971226ac95c4d62, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2858775307629733475
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +306,7 @@ MonoBehaviour:
   boxAnimator: {fileID: 2037682975379790345}
   isActive: 0
   canShoot: 0
-  gunAnimator: {fileID: 1590701814096039963}
+  gunAnimator: {fileID: 1464703220491194571}
   turretRotate: {fileID: 5337560911351823242}
   barrelRotate: {fileID: 5846133619077501172}
   targetEnemy: {fileID: 0}
@@ -507,6 +487,7 @@ GameObject:
   - component: {fileID: 6443508278104270895}
   - component: {fileID: 3537885820929927414}
   - component: {fileID: 4798689664453622167}
+  - component: {fileID: 1464703220491194571}
   m_Layer: 0
   m_Name: MachineGunTurretTop
   m_TagString: Untagged
@@ -592,6 +573,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1810570787507765097, guid: fd9bd7b60ad12f7468013e292046f53f, type: 3}
+--- !u!95 &1464703220491194571
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8113735754390869918}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8bc04b2ecb23f5048971226ac95c4d62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1832059119590793595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -819,13 +819,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
---- !u!1 &4322543032526542065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
-  m_PrefabInstance: {fileID: 3980522559444134304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3510293473723272779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
+  m_PrefabInstance: {fileID: 3980522559444134304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4322543032526542065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 71cf15bcb44ee324ab0dd4a3126d6fc1, type: 3}
   m_PrefabInstance: {fileID: 3980522559444134304}
   m_PrefabAsset: {fileID: 0}
