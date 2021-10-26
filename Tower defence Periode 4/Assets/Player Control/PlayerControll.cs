@@ -121,17 +121,19 @@ public class PlayerControll : MonoBehaviour
             {
                 isSprinting = false;
             }
+            interactDot.SetActive(false);
             RaycastHit hit;
-            Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f);
-            if (hit.collider.GetComponentInParent<AttackTurretController>() || canGatherAmmo == true)
+            if (canGatherAmmo == true)
             {
                 interactDot.SetActive(true);
             }
-            else
+            else if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f))
             {
-                interactDot.SetActive(false);
+                if (hit.collider.GetComponentInParent<AttackTurretController>())
+                {
+                    interactDot.SetActive(true);
+                }
             }
-            Physics.Raycast(transform.position, -transform.up, out hit, 1.5f);
         }
     }
 

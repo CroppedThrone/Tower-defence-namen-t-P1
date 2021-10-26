@@ -109,6 +109,7 @@ public class MissileTurretController : AttackTurretController
         animator.SetTrigger("Setup");
         yield return new WaitForSeconds(0.45f);
         gunAnimator.SetTrigger("Setup");
+        GetComponent<Rigidbody>().isKinematic = true;
         yield return new WaitForSeconds(2f);
         isActive = true;
         canShoot = true;
