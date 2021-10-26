@@ -4690,6 +4690,7 @@ MonoBehaviour:
   supplyBeacon: {fileID: 8369401146968833211, guid: e4e3281984e76e344884e56e2d60085d, type: 3}
   toPay: 0
   turretIndicator: {fileID: 3336553057568977095}
+  check: {fileID: 8447139839853612884}
 --- !u!1 &6261414904814205907
 GameObject:
   m_ObjectHideFlags: 0

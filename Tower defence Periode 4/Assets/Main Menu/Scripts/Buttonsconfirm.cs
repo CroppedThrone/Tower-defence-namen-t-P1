@@ -19,8 +19,10 @@ public class Buttonsconfirm : MonoBehaviour
     public GameObject supplyBeacon;
     public int toPay;
     public GameObject turretIndicator;
+    public SpawnChecker check;
+    public AudioSource error;
 
-    
+
     void Update()
     {
         
@@ -43,14 +45,24 @@ public class Buttonsconfirm : MonoBehaviour
 
     public void Yes()
     {
-        GameObject spawnedBeacon = Instantiate(supplyBeacon, player.transform.position + player.transform.forward * 2.5f, Quaternion.identity);
-        spawnedBeacon.GetComponent<DropTurret>().turretChoice = choice;
-        player.GetComponent<PlayerControll>().GetMoney(-toPay);
+        if (check.canSpawn==true)
+        {
+            GameObject spawnedBeacon = Instantiate(supplyBeacon, player.transform.position + player.transform.forward * 2.5f, Quaternion.identity);
+            spawnedBeacon.GetComponent<DropTurret>().turretChoice = choice;
+            player.GetComponent<PlayerControll>().GetMoney(-toPay);
         
-        conf.SetActive(false);
+            conf.SetActive(false);
         
-        shop.enabled = true;
+            shop.enabled = true;
 
+        }
+        else
+        {
+            conf.SetActive(false);
+            error.Play();
+        }
+
+        
         turretIndicator.SetActive(false);
         if (myFunctionCalled1 == false)
         {
