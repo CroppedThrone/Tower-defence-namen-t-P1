@@ -27,6 +27,7 @@ public class PlayerControll : MonoBehaviour
     public Text ammoText;
     public GameObject reloadImg;
     public Image reloadBar;
+    public GameObject interactDot;
 
     void Start()
     {
@@ -117,6 +118,17 @@ public class PlayerControll : MonoBehaviour
             {
                 isSprinting = false;
             }
+            RaycastHit hit;
+            Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f);
+            if (hit.collider.GetComponentInParent<AttackTurretController>() || canGatherAmmo == true)
+            {
+                interactDot.SetActive(true);
+            }
+            else
+            {
+                interactDot.SetActive(false);
+            }
+            Physics.Raycast(transform.position, -transform.up, out hit, 1.5f);
         }
     }
 
