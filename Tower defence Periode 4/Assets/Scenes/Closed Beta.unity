@@ -3143,6 +3143,14 @@ PrefabInstance:
       value: 0.21813813
       objectReference: {fileID: 0}
     - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorTimeblue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: magentaColour
+      value: 
+      objectReference: {fileID: 2100000, guid: f7a92e9620aee6c468ff7c6bcfe86bfe, type: 2}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
       propertyPath: colorIDgreen.b
       value: 0.28078803
       objectReference: {fileID: 0}
@@ -3155,6 +3163,10 @@ PrefabInstance:
       value: 0.22579211
       objectReference: {fileID: 0}
     - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorTimegreen
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
       propertyPath: colorIDmagenta.b
       value: 0.6251906
       objectReference: {fileID: 0}
@@ -3165,6 +3177,10 @@ PrefabInstance:
     - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
       propertyPath: colorIDmagenta.r
       value: 0.69803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885148935469421247, guid: b4166566b8181934eb92163a8682abbc, type: 3}
+      propertyPath: colorTimemagenta
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4166566b8181934eb92163a8682abbc, type: 3}
