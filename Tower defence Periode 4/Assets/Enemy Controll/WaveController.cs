@@ -35,6 +35,23 @@ public class WaveController : MonoBehaviour
     {
         for (int w = 0; w < waves.Length; w++)
         {
+            for (; ;)
+            {
+                int enemiesLeft = 0;
+                Collider[] colliders = Physics.OverlapSphere(transform.position, 1000);
+                foreach (Collider collider in colliders)
+                {
+                    if (collider.GetComponentInParent<EnemyBehaviour>())
+                    {
+                        enemiesLeft++;
+                    }
+                }
+                if (enemiesLeft == 0)
+                {
+                    break;
+                }
+                yield return new WaitForFixedUpdate();
+            }
             if (waveTimerAnimation.GetBool("Timer On") == false)
             {
                 waveTimerAnimation.SetBool("Timer On", true);

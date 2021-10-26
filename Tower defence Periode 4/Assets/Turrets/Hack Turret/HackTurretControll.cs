@@ -9,6 +9,7 @@ public class HackTurretControll : TurretController
     public float rateOfFire;
     public float StunDuration;
     public int range;
+    public AudioSource biem;
     private void Update()
     {
         if (isActive == true)
@@ -33,6 +34,7 @@ public class HackTurretControll : TurretController
     }
     IEnumerator AttemptHack()
     {
+        biem.Play();
         print("hack");
         StartCoroutine(targetEnemy.GetComponent<EnemyBehaviour>().Stun(StunDuration));
         yield return new WaitForSeconds(1f / rateOfFire);

@@ -45,6 +45,7 @@ public class AttackTurretController : TurretController
         isActive = true;
         canShoot = true;
         animator.enabled = false;
+        gunAnimator.enabled = true;
         yield return new WaitForSeconds(4f);
         Destroy(supplyBox);
     }
