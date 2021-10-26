@@ -319,7 +319,7 @@ MonoBehaviour:
   range: 25
   reloadTime: 3
   barrelPoint: {fileID: 6659154371910220240}
-  barrelFlash: {fileID: 3826216102538999844, guid: ac59b5829f7189c47931b4903ac08996, type: 3}
+  barrelFlash: {fileID: 3826216102538999844, guid: 893f1c87a701c80419b4bbb2610a82d1, type: 3}
 --- !u!82 &3039061856927981559
 AudioSource:
   m_ObjectHideFlags: 0
