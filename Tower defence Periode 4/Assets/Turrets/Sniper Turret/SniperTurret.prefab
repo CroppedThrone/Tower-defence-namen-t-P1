@@ -1018,7 +1018,7 @@ MonoBehaviour:
   boxAnimator: {fileID: 1323450061005027772}
   isActive: 0
   canShoot: 0
-  gunAnimator: {fileID: 0}
+  gunAnimator: {fileID: 1122892421538805282}
   turretRotate: {fileID: 1045405101667701753}
   barrelRotate: {fileID: 7636169368347164947}
   targetEnemy: {fileID: 0}
@@ -1268,7 +1268,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8949039062745670458}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9c7d4cb4a1e696d43ac99c8c54865eed, type: 2}
   m_CullingMode: 1

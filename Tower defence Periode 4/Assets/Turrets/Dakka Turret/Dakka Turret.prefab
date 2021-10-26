@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 381116442208334981}
   - component: {fileID: 890768558654539504}
   - component: {fileID: 5476374719839460718}
-  - component: {fileID: 7691236016702530847}
+  - component: {fileID: 1590701814096039963}
   m_Layer: 0
   m_Name: MachineGunTurretBarrle
   m_TagString: Untagged
@@ -98,7 +98,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5681745643308455137, guid: fd9bd7b60ad12f7468013e292046f53f, type: 3}
---- !u!95 &7691236016702530847
+--- !u!95 &1590701814096039963
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
   boxAnimator: {fileID: 2037682975379790345}
   isActive: 0
   canShoot: 0
-  gunAnimator: {fileID: 7691236016702530847}
+  gunAnimator: {fileID: 1590701814096039963}
   turretRotate: {fileID: 5337560911351823242}
   barrelRotate: {fileID: 5846133619077501172}
   targetEnemy: {fileID: 0}
