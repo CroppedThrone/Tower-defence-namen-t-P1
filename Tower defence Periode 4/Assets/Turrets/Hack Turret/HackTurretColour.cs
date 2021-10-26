@@ -10,10 +10,13 @@ public class HackTurretColour : MonoBehaviour
     public Material blueColour;
     public Material magentaColour;
 
-    public Material myMaterial;
     public Color colorIDgreen;
     public Color colorIDblue;
     public Color colorIDmagenta;
+
+    public float colorTimegreen;
+    public float colorTimeblue;
+    public float colorTimemagenta;
 
 
 
@@ -23,31 +26,27 @@ public class HackTurretColour : MonoBehaviour
         blueColour.EnableKeyword("_EMISSION");
         magentaColour.EnableKeyword("_EMISSION");
 
-        colorIDgreen = Color.green;
+        colorIDgreen = new Color32(120, 214, 150,255);
         colorIDblue = Color.blue;
         colorIDmagenta = Color.magenta;
 
 
+        StartCoroutine(BeginSignal(greenColour, colorTimegreen));
+        StartCoroutine(BeginSignal(blueColour, colorTimeblue));
+        StartCoroutine(BeginSignal(magentaColour, colorTimemagenta));
     }
+        
 
-    // Update is called once per frame
-    void Update()
-    {
-        StartCoroutine("BeginSignal");
-    }
-    IEnumerator BeginSignal()
-    {
+    IEnumerator BeginSignal(Material m, float colorTime) {
         while (true)
         {
 
-            yield return new WaitForSeconds(2);
-            greenColour.SetColor("_EmissionColor", colorIDblue);
-            new WaitForSecondsRealtime(2);
-            greenColour.SetColor("_EmissionColor", colorIDmagenta);
-            new WaitForSecondsRealtime(2);
-            greenColour.SetColor("_EmissionColor", colorIDgreen);
-            new WaitForSecondsRealtime(2);
+            m.SetColor("_EmissionColor", colorIDblue);
+            yield return new WaitForSeconds(colorTime);
+            m.SetColor("_EmissionColor", colorIDmagenta);
+            yield return new WaitForSeconds(colorTime);
+            m.SetColor("_EmissionColor", colorIDgreen);
+            yield return new WaitForSeconds(colorTime);
         }
     }
-
 }
