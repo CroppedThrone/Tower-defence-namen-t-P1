@@ -684,6 +684,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4533439453018624728, guid: 1607f787b2cf2a046a5305c5f9d3114f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533439453018624728, guid: 1607f787b2cf2a046a5305c5f9d3114f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -695,7 +699,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 1607f787b2cf2a046a5305c5f9d3114f, type: 3}
 --- !u!1 &446509663 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1092349164480869623, guid: 1607f787b2cf2a046a5305c5f9d3114f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3979893255615593617, guid: 1607f787b2cf2a046a5305c5f9d3114f, type: 3}
   m_PrefabInstance: {fileID: 446509662}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &446509664
@@ -708,7 +712,7 @@ Animator:
   m_GameObject: {fileID: 446509663}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 124a7e4381c91d94a86f06d00a52fa4f, type: 2}
+  m_Controller: {fileID: 9100000, guid: abfb6852ef66b5d4eaa8ac82872df5b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
