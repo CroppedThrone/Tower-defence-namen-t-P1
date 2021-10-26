@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8854187833643608762}
   - component: {fileID: 1136777870256797050}
   - component: {fileID: 5001745242442873623}
-  - component: {fileID: 394456500312919144}
   m_Layer: 0
   m_Name: RainPIpeSide
   m_TagString: Untagged
@@ -82,17 +81,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &394456500312919144
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2794896659555478098}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 51180337095486717, guid: 246f5438163aa364c962d541b096e519, type: 3}

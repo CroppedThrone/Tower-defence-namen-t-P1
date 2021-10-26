@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TurretImpactGoBrrr : MonoBehaviour
 {
+    public AudioSource aaaah;
+    public ParticleSystem smoke;
     public void TurretCrash()
     {
         Collider[] colliders = GetComponentsInChildren<Collider>();
@@ -12,5 +14,7 @@ public class TurretImpactGoBrrr : MonoBehaviour
             collider.enabled = false;
         }
         GetComponent<Animator>().SetTrigger("Crash");
+        aaaah.Play();
+        smoke.Play();
     }
 }
