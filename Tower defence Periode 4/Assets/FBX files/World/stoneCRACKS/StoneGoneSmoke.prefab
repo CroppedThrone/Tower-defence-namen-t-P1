@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7858207160268066483}
   - component: {fileID: 7858207160268066482}
   - component: {fileID: 2036496386504364307}
+  - component: {fileID: 4786200965583639666}
   m_Layer: 0
   m_Name: StoneGoneSmoke
   m_TagString: Untagged
@@ -4932,3 +4933,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4786200965583639666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7858207160268066481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e7d36e193fa9c4fa7e2cdca46bb599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 2.5
