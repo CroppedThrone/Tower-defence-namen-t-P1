@@ -172,6 +172,7 @@ public class PlayerControll : MonoBehaviour
                     }
                 }
             }
+            //hier kan je werken
         }
     }
     IEnumerator GatheringAmmo()
