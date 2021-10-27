@@ -175,7 +175,6 @@ GameObject:
   - component: {fileID: 983556047891497381}
   - component: {fileID: 265412567032256273}
   - component: {fileID: 434922527612098618}
-  - component: {fileID: 879821049942172038}
   m_Layer: 0
   m_Name: Boston DYNAMICS robot
   m_TagString: Enemy
@@ -254,7 +253,7 @@ MonoBehaviour:
   playerGold: {fileID: 0}
   damageToBase: 10
   isStunned: 0
-  deathExplosion: {fileID: 2187051736520110411, guid: ab8dce62a888a8c46b17b8f9760892f4, type: 3}
+  deathExplosion: {fileID: 2187051736520110411, guid: d0948979f50ab284d85d48b37a641c9c, type: 3}
 --- !u!54 &265412567032256273
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -282,102 +281,6 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: b05f1cbc4a37a36449e1b7d2c882cdd7, type: 2}
   m_audioClip: {fileID: 8300000, guid: ec71ee3c26cf9b64386996c143a6b129, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 0.3
-  MaxDistance: 10
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &879821049942172038
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2920396616198637434}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: b05f1cbc4a37a36449e1b7d2c882cdd7, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 28ab4d228d802024694051ae274d5e01, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
