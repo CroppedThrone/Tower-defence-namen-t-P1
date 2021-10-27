@@ -5,16 +5,16 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class TextBrr : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class TextBrrButKey : MonoBehaviour, ISelectHandler
 {
 
     public Text theText;
     
-    public void OnPointerEnter(PointerEventData eventData)
+    public void OnselectEnter(PointerEventData eventData)
     {
         theText.color = Color.white;
     }
-    public void OnPointerExit(PointerEventData eventData)
+    public void OnselectExit(PointerEventData eventData)
     {
         theText.color = new Color32(74, 74, 73, 255);
     }
