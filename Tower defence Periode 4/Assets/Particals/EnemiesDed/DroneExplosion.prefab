@@ -9924,6 +9924,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParticalMoney
       objectReference: {fileID: 0}
+    - target: {fileID: 609453884497295304, guid: 5998a781a7efcfe42a6587e9bb2a3315, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 609453884497295304, guid: 5998a781a7efcfe42a6587e9bb2a3315, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5998a781a7efcfe42a6587e9bb2a3315, type: 3}
 --- !u!4 &1597864053142158841 stripped
