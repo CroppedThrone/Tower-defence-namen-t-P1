@@ -13,7 +13,7 @@ public class LevelSel : MonoBehaviour
     {
         if (tracker.levelsUnlocked < 1)
         {
-            level2.text = "Locked";
+            level2.text = "LOCKED";
         }
     }
     public void ButtonLevel1()

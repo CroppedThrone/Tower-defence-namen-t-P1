@@ -20,7 +20,7 @@ public class TextBrrButKey : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     void IDeselectHandler.OnDeselect(BaseEventData eventData)
     {
-        theText.color = new Color32(74, 74, 73, 255);
+        theText.color = new Color32(173, 173, 173, 255);
     }
     
 
