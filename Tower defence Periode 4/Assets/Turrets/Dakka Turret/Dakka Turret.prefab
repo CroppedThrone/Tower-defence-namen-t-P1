@@ -313,8 +313,8 @@ MonoBehaviour:
   targetEnemy: {fileID: 0}
   error: {fileID: 7521499533842494546}
   damage: 1
-  rateOfFire: 20
-  maxAmmo: 150
+  rateOfFire: 25
+  maxAmmo: 190
   currentAmmo: 0
   range: 25
   reloadTime: 3
