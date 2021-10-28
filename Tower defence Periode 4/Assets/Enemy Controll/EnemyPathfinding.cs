@@ -10,12 +10,12 @@ public class EnemyPathfinding : MonoBehaviour
     Vector3 moveTo;
     public Vector2 deviation;
     bool canMove;
-    public int height;
+    public float height;
     public int turnspeed;
     
     void FixedUpdate()
     {
-        int currentHeight = height;
+        float currentHeight = height;
         if (canMove == true)
         {
             {
@@ -56,11 +56,12 @@ public class EnemyPathfinding : MonoBehaviour
     public IEnumerator StartMoving()
     {
         yield return new WaitForSeconds(0.25f);
+        GetComponent<Rigidbody>().useGravity = false;
         moveTo = waypoints[0].position;
         moveTo.x += Random.Range(-deviation.x, deviation.x);
         moveTo.y = transform.position.y;
         moveTo.z += Random.Range(-deviation.y, deviation.y);
-        height = (int)transform.position.y;
+        height = transform.position.y;
         canMove = true;
     }
 }

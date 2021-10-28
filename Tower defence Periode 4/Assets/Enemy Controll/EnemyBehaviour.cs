@@ -13,6 +13,7 @@ public class EnemyBehaviour : MonoBehaviour
     public bool isStunned;
     public GameObject deathExplosion;
     bool canTakeDamage = true;
+    public GameObject targetingCenter;
 
     private void Start()
     {

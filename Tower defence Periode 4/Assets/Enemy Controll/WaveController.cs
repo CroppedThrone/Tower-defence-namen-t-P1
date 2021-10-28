@@ -56,7 +56,7 @@ public class WaveController : MonoBehaviour
             {
                 waveTimerAnimation.SetBool("Timer On", true);
             }
-            for (int i = 30; i > 0; i--)
+            for (int i = 60; i > 0; i--)
             {
                 if (i > 9)
                 {

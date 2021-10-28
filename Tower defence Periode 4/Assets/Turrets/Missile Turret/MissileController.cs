@@ -33,7 +33,7 @@ public class MissileController : MonoBehaviour
                 {
                     if (collider.transform.parent.GetComponent<EnemyBehaviour>())
                     {
-                        target = collider.transform.parent.gameObject;
+                        target = collider.transform.parent.GetComponentInParent<EnemyBehaviour>().targetingCenter;
                         detectRadius = 5;
                         return;
                     }

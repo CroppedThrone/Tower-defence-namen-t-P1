@@ -30,7 +30,7 @@ public class AttackTurretController : TurretController
             {
                 if (collider.transform.parent.GetComponent<EnemyBehaviour>())
                 {
-                    targetEnemy = collider.transform.parent.gameObject;
+                    targetEnemy = collider.transform.GetComponentInParent<EnemyBehaviour>().targetingCenter;
                     return;
                 }
             }
