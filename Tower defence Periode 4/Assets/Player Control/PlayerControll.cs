@@ -27,6 +27,7 @@ public class PlayerControll : MonoBehaviour
     public GameObject[] ammoHeld;
     public GameObject reloadImg;
     public Image reloadBar;
+    public Animator reloadAnimation;
     public GameObject interactDot;
     public GameObject menuActivate;
 
@@ -207,6 +208,7 @@ public class PlayerControll : MonoBehaviour
             arm.SetBool("Screen on", false);
         }
         reloadImg.SetActive(true);
+        reloadAnimation.speed = 1f / (0.5f + 0.5f * (3f - currentAmmo));
         reloadBar.fillAmount = 0;
         for (float  f = 0; f < 0.5f + 0.5f * (3f - currentAmmo); f += Time.fixedDeltaTime)
         {
@@ -234,6 +236,7 @@ public class PlayerControll : MonoBehaviour
             arm.SetBool("Screen on", false);
         }
         reloadImg.SetActive(true);
+        reloadAnimation.speed = 1f / reloadTime;
         reloadBar.fillAmount = 0;
         for (float f = 0; f < reloadTime; f += Time.fixedDeltaTime)
         {
