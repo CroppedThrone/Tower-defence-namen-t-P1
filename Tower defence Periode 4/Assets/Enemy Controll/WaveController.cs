@@ -14,6 +14,7 @@ public class WaveController : MonoBehaviour
     public Text waveCounter;
     public Text waveTimer;
     public Animator waveTimerAnimation;
+    public Animator eToSkip;
     public int wave;
     bool skip;
     public bool wavesFinished;
@@ -56,6 +57,7 @@ public class WaveController : MonoBehaviour
             {
                 waveTimerAnimation.SetBool("Timer On", true);
             }
+            eToSkip.SetBool("Show Skip", true);
             for (int i = 60; i > 0; i--)
             {
                 if (i > 9)
@@ -73,6 +75,7 @@ public class WaveController : MonoBehaviour
                 }
             }
             waveTimerAnimation.SetBool("Timer On", false);
+            eToSkip.SetBool("Show Skip", false);
             waveCounter.text = (w + 1).ToString();
             StartCoroutine(SecondWave(w));
             for (int e = 0; e < waves[w].enemySpawner.Length; e++)
