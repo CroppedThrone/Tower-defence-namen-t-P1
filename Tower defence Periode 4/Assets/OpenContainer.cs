@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OpenContainer : MonoBehaviour
 {
+    
+    public AudioSource containerClosing;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,5 +15,6 @@ public class OpenContainer : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         GetComponent<Animator>().SetTrigger("Open Door");
+        containerClosing.Play();
     }
 }
