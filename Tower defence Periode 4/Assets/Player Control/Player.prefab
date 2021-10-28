@@ -1960,6 +1960,7 @@ MonoBehaviour:
   reloadImg: {fileID: 2132637048496263845}
   reloadBar: {fileID: 2132637049778860370}
   interactDot: {fileID: 1947315150247605525}
+  menuActivate: {fileID: 6261414904751823605}
 --- !u!1 &4994850740663032483
 GameObject:
   m_ObjectHideFlags: 0

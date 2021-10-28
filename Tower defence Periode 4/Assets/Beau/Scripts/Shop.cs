@@ -48,50 +48,51 @@ public class Shop : MonoBehaviour
 
     void Update()
     {
-        currentSelected = EventSystem.current.currentSelectedGameObject;
-        if (drop == true)
+        if (EventSystem.current)
         {
-
-
-            if (currentSelected.name == "Basic Turret")
+            currentSelected = EventSystem.current.currentSelectedGameObject;
+            if (drop == true)
             {
-                starter.SetActive(true);
-            }
-            else
-            {
-                starter.SetActive(false);
-            }
-            if (currentSelected.name == "Sniper Turret")
-            {
-                sniper.SetActive(true);
-            }
-            else
-            {
-                sniper.SetActive(false);
-            }
-            if (currentSelected.name == "Hacker Turret")
-            {
-                hacker.SetActive(true);
-            }
-            else
-            {
-                hacker.SetActive(false);
-            }
-            if (currentSelected.name == "Machine Gun Turret")
-            {
-                dakka.SetActive(true);
-            }
-            else
-            {
-                dakka.SetActive(false);
-            }
-            if (currentSelected.name == "Missile Turret")
-            {
-                missle.SetActive(true);
-            }
-            else
-            {
-                missle.SetActive(false);
+                if (currentSelected.name == "Basic Turret")
+                {
+                    starter.SetActive(true);
+                }
+                else
+                {
+                    starter.SetActive(false);
+                }
+                if (currentSelected.name == "Sniper Turret")
+                {
+                    sniper.SetActive(true);
+                }
+                else
+                {
+                    sniper.SetActive(false);
+                }
+                if (currentSelected.name == "Hacker Turret")
+                {
+                    hacker.SetActive(true);
+                }
+                else
+                {
+                    hacker.SetActive(false);
+                }
+                if (currentSelected.name == "Machine Gun Turret")
+                {
+                    dakka.SetActive(true);
+                }
+                else
+                {
+                    dakka.SetActive(false);
+                }
+                if (currentSelected.name == "Missile Turret")
+                {
+                    missle.SetActive(true);
+                }
+                else
+                {
+                    missle.SetActive(false);
+                }
             }
         }
 

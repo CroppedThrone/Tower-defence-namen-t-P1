@@ -28,6 +28,7 @@ public class PlayerControll : MonoBehaviour
     public GameObject reloadImg;
     public Image reloadBar;
     public GameObject interactDot;
+    public GameObject menuActivate;
 
     void Start()
     {
@@ -39,6 +40,7 @@ public class PlayerControll : MonoBehaviour
         {
             ammoHeld[i].SetActive(true);
         }
+        menuActivate.SetActive(false);
     }
 
     void OnDevKey()
@@ -81,10 +83,14 @@ public class PlayerControll : MonoBehaviour
             if (arm.GetBool("Screen on") == true)
             {
                 arm.SetBool("Screen on", false);
+                menuActivate.SetActive(false);
+
             }
             else
             {
                 arm.SetBool("Screen on", true);
+                menuActivate.SetActive(true);
+
             }
         }
     }
