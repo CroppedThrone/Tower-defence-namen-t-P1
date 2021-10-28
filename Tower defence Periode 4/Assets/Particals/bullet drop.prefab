@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5271044699371665551}
   - component: {fileID: 5271044699371665552}
   - component: {fileID: 5271044699371665553}
+  - component: {fileID: -2744412108171137285}
   m_Layer: 0
   m_Name: bullet drop
   m_TagString: Untagged
@@ -48,7 +49,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -4805,3 +4806,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-2744412108171137285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5271044699371665554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e7d36e193fa9c4fa7e2cdca46bb599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 3

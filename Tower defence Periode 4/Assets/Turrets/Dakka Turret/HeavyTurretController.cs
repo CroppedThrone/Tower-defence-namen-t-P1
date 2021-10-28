@@ -6,6 +6,8 @@ public class HeavyTurretController : AttackTurretController
 {
     public Transform barrelPoint;
     public GameObject barrelFlash;
+    public Transform bulletPoint;
+    public GameObject bulletDrop;
 
     void Update()
     {
@@ -47,6 +49,7 @@ public class HeavyTurretController : AttackTurretController
     {
         print(currentAmmo.ToString());
         Instantiate(barrelFlash, barrelPoint.position, barrelPoint.rotation);
+        Instantiate(bulletDrop, bulletPoint.position, bulletPoint.rotation);
         gunAnimator.SetTrigger("Fire");
         Instantiate(barrelFlash, barrelPoint.position, barrelPoint.rotation);
         RaycastHit hit;

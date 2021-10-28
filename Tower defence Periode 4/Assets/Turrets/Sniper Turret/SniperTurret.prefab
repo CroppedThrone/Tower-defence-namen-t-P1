@@ -935,13 +935,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6355171697189644172}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.968, z: -0.873}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.483, y: 0.158, z: -0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6173537763934461336}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 7636169368347164947}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &6838468986174539554
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +978,6 @@ Transform:
   - {fileID: 8950036902457597501}
   - {fileID: 8930996810226455755}
   - {fileID: 2729778815305786471}
-  - {fileID: 5275313567693774874}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -1033,6 +1032,8 @@ MonoBehaviour:
   reloadTime: 5
   barrelPoint: {fileID: 4886794317215699068}
   barrelFlash: {fileID: 3826216102538999844, guid: 4aee8198fd2bd67408bae977d6551515, type: 3}
+  bulletPoint: {fileID: 5275313567693774874}
+  bulletDrop: {fileID: 5271044699371665554, guid: 6b37bb4cf12020249afbcfdef36fe064, type: 3}
 --- !u!54 &3144353662277667157
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1222,7 +1223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8950036902457597501
 Transform:
   m_ObjectHideFlags: 0
@@ -1292,6 +1293,7 @@ Transform:
   - {fileID: 5068675528276616213}
   - {fileID: 8298452689458278893}
   - {fileID: 5336753487780225019}
+  - {fileID: 5275313567693774874}
   m_Father: {fileID: 1045405101667701753}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
