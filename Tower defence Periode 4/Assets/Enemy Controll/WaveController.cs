@@ -56,8 +56,8 @@ public class WaveController : MonoBehaviour
             if (waveTimerAnimation.GetBool("Timer On") == false)
             {
                 waveTimerAnimation.SetBool("Timer On", true);
-                eToSkip.SetBool("Show Skip", true);
             }
+            eToSkip.SetBool("Show Skip", true);
             for (int i = 60; i > 0; i--)
             {
                 if (i > 9)
