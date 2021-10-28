@@ -43316,6 +43316,10 @@ PrefabInstance:
       propertyPath: playerGold
       value: 
       objectReference: {fileID: 1631750254}
+    - target: {fileID: 5974987245987554284, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
+      propertyPath: deathExplosion
+      value: 
+      objectReference: {fileID: 490993944177469333, guid: c3a1e21991ca73f42a63c75f59015589, type: 3}
     - target: {fileID: 7619898709688566783, guid: 517a4b6b19d2371448acce03400408d9, type: 3}
       propertyPath: height
       value: 0
