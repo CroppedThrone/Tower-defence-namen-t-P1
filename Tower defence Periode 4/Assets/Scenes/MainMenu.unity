@@ -1615,6 +1615,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 998320786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1892,6 +1893,11 @@ VideoPlayer:
   m_GameObject: {fileID: 1232382007}
   m_Enabled: 1
   m_VideoClip: {fileID: 32900000, guid: 62406cb4cfb792742bf7a4c0c272afb9, type: 3}
+=======
+  m_GameObject: {fileID: 1232382007}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: a12ea4b40a0f0b441a8bfc9d87cb6f0e, type: 3}
+>>>>>>> 1519e4edc2df6466b8f6f5ec6a90fc9086f53010
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1904,12 +1910,14 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
