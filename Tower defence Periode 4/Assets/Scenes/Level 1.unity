@@ -35689,6 +35689,7 @@ MonoBehaviour:
   - {fileID: 1254007191}
   - {fileID: 1931378192}
   waveTimer: {fileID: 904696794}
+  containerdoorsound: {fileID: 3635017399644607763}
 --- !u!1001 &1636258150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53750,7 +53751,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -102.019
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 400126407429528702, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
 --- !u!4 &3635017399644607760 stripped
 Transform:
@@ -53765,6 +53767,11 @@ Transform:
 --- !u!4 &3635017399644607762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 174624645938708955, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
+  m_PrefabInstance: {fileID: 3635017399644607759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3635017399644607763 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 30790850081611052, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
   m_PrefabInstance: {fileID: 3635017399644607759}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &3665896452784161727
