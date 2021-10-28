@@ -13,6 +13,7 @@ public class TutorialControl : MonoBehaviour
     public WaveController waveController;
     public GameObject[] tutArrow;
     public Animator waveTimer;
+    public Animator eToSkip;
     public AudioSource containerdoorsound;
     bool tutWaveActive;
     int moveAmount;
@@ -38,6 +39,7 @@ public class TutorialControl : MonoBehaviour
         playerControll = GetComponent<PlayerControll>();
         tutorialImages[tutStage].SetActive(true);
         waveTimer.SetBool("Timer On", false);
+        eToSkip.SetBool("Show Skip", false);
     }
     private void Update()
     {

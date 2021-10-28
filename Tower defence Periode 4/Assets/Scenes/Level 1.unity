@@ -1018,6 +1018,7 @@ MonoBehaviour:
   waveCounter: {fileID: 1736058914}
   waveTimer: {fileID: 309276256}
   waveTimerAnimation: {fileID: 904696794}
+  eToSkip: {fileID: 904696795}
   wave: 0
   wavesFinished: 0
 --- !u!4 &42595349
@@ -15285,11 +15286,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9066299441389525319, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a0204b57714713c41b8f22dbfcceeb1b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
 --- !u!95 &904696794 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9083615408828620593, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
+  m_PrefabInstance: {fileID: 904696793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &904696795 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6510942319840645836, guid: 5c6ef9eebcfae49408410b743589f17c, type: 3}
   m_PrefabInstance: {fileID: 904696793}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &904696798 stripped
@@ -35689,6 +35699,7 @@ MonoBehaviour:
   - {fileID: 1254007191}
   - {fileID: 1931378192}
   waveTimer: {fileID: 904696794}
+  eToSkip: {fileID: 904696795}
   containerdoorsound: {fileID: 3635017399644607763}
 --- !u!1001 &1636258150
 PrefabInstance:
