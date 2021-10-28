@@ -3343,7 +3343,7 @@ MonoBehaviour:
   missle: {fileID: 8706436683329741952}
   hacker: {fileID: 3731379319018470978}
   drop: {fileID: 6261414904636021442}
-  lastPressed: 1
+  lastPressed: 0
   currentSelected: {fileID: 0}
   setting: {fileID: 6261414904637310134}
   settingsMenu: {fileID: 6261414904637310128}
@@ -3510,7 +3510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conff: {fileID: 6261414904768430443}
   player: {fileID: 4994850739965496983}
-  cost: 500
+  cost: 600
   choice: 0
   noMoney: {fileID: 7465149818690885036}
   turretIndicator: {fileID: 3336553057568977095}
