@@ -9,6 +9,7 @@ public class AttackTurretController : TurretController
     public Transform barrelRotate;
     public GameObject targetEnemy;
     public GameObject error;
+    public AudioSource errorSound;
 
     public int damage;
     public float rateOfFire;
@@ -55,6 +56,7 @@ public class AttackTurretController : TurretController
         isActive = false;
         animator.enabled = true;
         animator.SetTrigger("Power Down");
+        errorSound.Play();
         error.SetActive(true);
     }
     public virtual IEnumerator Reload()
