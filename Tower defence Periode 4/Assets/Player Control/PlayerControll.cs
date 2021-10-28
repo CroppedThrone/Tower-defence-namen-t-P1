@@ -155,18 +155,15 @@ public class PlayerControll : MonoBehaviour
     {
         if (canAct == true)
         {
-            if (canGatherAmmo)
+            if (canGatherAmmo && currentAmmo < 3)
             {
-                if (currentAmmo < 3)
-                {
-                    StartCoroutine(GatheringAmmo());
-                }
+                StartCoroutine(GatheringAmmo());
             }
             else
             {
+                RaycastHit hit;
                 if (currentAmmo > 0)
                 {
-                    RaycastHit hit;
                     if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f))
                     {
                         if (hit.collider.GetComponentInParent<AttackTurretController>())
@@ -176,8 +173,21 @@ public class PlayerControll : MonoBehaviour
                         }
                     }
                 }
+                if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f))
+                {
+                    if (hit.collider.tag == "Banjo")
+                    {
+                        if (hit.collider.GetComponent<AudioSource>().isPlaying == true)
+                        {
+                            hit.collider.GetComponent<AudioSource>().Stop();
+                        }
+                        else
+                        {
+                            hit.collider.GetComponent<AudioSource>().Play();
+                        }
+                    }
+                }
             }
-            //hier kan je werken
         }
     }
     IEnumerator GatheringAmmo()

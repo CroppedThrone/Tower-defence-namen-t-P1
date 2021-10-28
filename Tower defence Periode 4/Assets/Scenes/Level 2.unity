@@ -51172,10 +51172,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 120.363
       objectReference: {fileID: 0}
-    - target: {fileID: 3428244398284490410, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3608528256574106852, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
       propertyPath: m_Name
       value: ContainerSpawn
