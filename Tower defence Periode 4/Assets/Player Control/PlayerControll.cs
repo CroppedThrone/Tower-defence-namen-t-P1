@@ -129,7 +129,7 @@ public class PlayerControll : MonoBehaviour
             }
             else if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, 5f))
             {
-                if (hit.collider.GetComponentInParent<AttackTurretController>())
+                if (hit.collider.GetComponentInParent<AttackTurretController>() || hit.collider.tag == "Banjo")
                 {
                     interactDot.SetActive(true);
                 }
