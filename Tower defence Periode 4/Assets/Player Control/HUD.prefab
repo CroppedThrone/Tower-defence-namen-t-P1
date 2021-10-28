@@ -830,7 +830,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5230041739410407019}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1603,8 +1603,8 @@ RectTransform:
   - {fileID: 1662843866970097901}
   - {fileID: 7844640683157746304}
   - {fileID: 6227315938392347343}
-  - {fileID: 8644948384365104871}
   - {fileID: 5582102825783436134}
+  - {fileID: 8644948384365104871}
   - {fileID: 7339793692067951203}
   - {fileID: 3276453414927788848}
   - {fileID: 5649317916084452037}
@@ -6427,6 +6427,7 @@ GameObject:
   - component: {fileID: 5582102825783436134}
   - component: {fileID: 860263621196052929}
   - component: {fileID: 6013828833889975789}
+  - component: {fileID: 3093330080967373262}
   m_Layer: 5
   m_Name: E
   m_TagString: Untagged
@@ -6447,7 +6448,7 @@ RectTransform:
   m_Children:
   - {fileID: 3086679577877691326}
   m_Father: {fileID: 5230041739410407019}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6492,6 +6493,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &3093330080967373262
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6688195488032667755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6757491520461565431
 GameObject:
   m_ObjectHideFlags: 0
@@ -8441,14 +8461,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4407053434205395963}
     m_Modifications:
-    - target: {fileID: 3773225577985936481, guid: 08a970e929387694082ff1bb46f7b57c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3773225577985936495, guid: 08a970e929387694082ff1bb46f7b57c, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5792228048681551085, guid: 08a970e929387694082ff1bb46f7b57c, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0

@@ -1024,7 +1024,6 @@ MonoBehaviour:
   barrelRotate: {fileID: 7636169368347164947}
   targetEnemy: {fileID: 0}
   error: {fileID: 3362447235148185309}
-  errorSound: {fileID: 614743982760552724}
   damage: 60
   rateOfFire: 0.3
   maxAmmo: 30

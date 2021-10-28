@@ -13,8 +13,6 @@ public class TutorialControl : MonoBehaviour
     public WaveController waveController;
     public GameObject[] tutArrow;
     public Animator waveTimer;
-    public Animator eToSkip;
-    public AudioSource containerdoorsound;
     bool tutWaveActive;
     int moveAmount;
     int dead;
@@ -26,7 +24,6 @@ public class TutorialControl : MonoBehaviour
             if (tutStage == 1)
             {
                 containerDoors.SetTrigger("Open Door");
-                containerdoorsound.Play();
             }
             if (tutStage >= 0)
             {
@@ -39,7 +36,6 @@ public class TutorialControl : MonoBehaviour
         playerControll = GetComponent<PlayerControll>();
         tutorialImages[tutStage].SetActive(true);
         waveTimer.SetBool("Timer On", false);
-        eToSkip.SetBool("Show Skip", false);
     }
     private void Update()
     {
@@ -138,7 +134,6 @@ public class TutorialControl : MonoBehaviour
         yield return new WaitForSeconds(2);
         ProgressTutorial();
         containerDoors.SetTrigger("Open Door");
-        containerdoorsound.Play();
     }
     IEnumerator Reloadin()
     {
