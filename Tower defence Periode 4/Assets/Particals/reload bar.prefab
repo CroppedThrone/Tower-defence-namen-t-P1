@@ -159,7 +159,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5792228048681551084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,6 +455,10 @@ PrefabInstance:
     - target: {fileID: 8879856960868208648, guid: fccc3e830dd28ce4d99129d1a446795f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879856960868208650, guid: fccc3e830dd28ce4d99129d1a446795f, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fccc3e830dd28ce4d99129d1a446795f, type: 3}
