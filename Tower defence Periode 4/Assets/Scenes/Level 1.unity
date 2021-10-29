@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e1ddaffb5f8169a48b0ef116d70bdfef, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: bc7764b19690db2468857ecd0eae81b2, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -244,9 +244,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c1e5fb3216f7cbc4b8793c85f1aaf8f0, type: 2}
+    - target: {fileID: -757567458891305153, guid: a3b167dc883ea4441925d4394849d5f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a3b167dc883ea4441925d4394849d5f4, type: 3}
       propertyPath: m_Name
       value: DamWorldLineTurretPlace
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a3b167dc883ea4441925d4394849d5f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114698226243648963, guid: a3b167dc883ea4441925d4394849d5f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b167dc883ea4441925d4394849d5f4, type: 3}
@@ -1121,6 +1133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockLongBroky (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7217656140742091087, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
 --- !u!4 &43664693 stripped
@@ -1431,6 +1447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockLongBroky (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7217656140742091087, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
 --- !u!4 &65798283 stripped
@@ -1456,7 +1476,7 @@ GameObject:
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &70308671
 Transform:
@@ -1466,8 +1486,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70308670}
   m_LocalRotation: {x: 0.59291536, y: -0.3852939, z: 0.3852939, w: 0.59291536}
-  m_LocalPosition: {x: 116.55, y: 15.13, z: -17.46}
-  m_LocalScale: {x: 2.2135, y: 1, z: 1.4311916}
+  m_LocalPosition: {x: 116.4194, y: 15.13, z: -17.7538}
+  m_LocalScale: {x: 1.8867171, y: 1, z: 1.4311916}
   m_Children:
   - {fileID: 4163650675741277060}
   m_Father: {fileID: 7098636170546533519}
@@ -2057,6 +2077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockSlope (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7780396607012288120, guid: 8e8907b370fbd584892269ad097c825c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8907b370fbd584892269ad097c825c, type: 3}
 --- !u!4 &106938943 stripped
@@ -2577,7 +2601,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &162294892
 Transform:
@@ -2940,6 +2964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 3602196802434921560, guid: 7f77d4781a77ac0428a6b93a4d297b20, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7427516524528936835, guid: 7f77d4781a77ac0428a6b93a4d297b20, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3289,6 +3317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockSlope (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7780396607012288120, guid: 8e8907b370fbd584892269ad097c825c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8907b370fbd584892269ad097c825c, type: 3}
 --- !u!4 &179476222 stripped
@@ -3306,6 +3338,10 @@ PrefabInstance:
     - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_Name
       value: SandBagBarricade (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
@@ -3683,6 +3719,10 @@ PrefabInstance:
     - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_Name
       value: StoneBlockLong
+      objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
@@ -5021,6 +5061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagBarricade (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -5460,6 +5504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockLong (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -5724,6 +5772,10 @@ PrefabInstance:
     - target: {fileID: 7217656140742091087, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
       propertyPath: m_Name
       value: StoneBlockLongBroky
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217656140742091087, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
@@ -6513,7 +6565,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &379604539
 Transform:
@@ -7127,6 +7179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockSlope (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7780396607012288120, guid: 8e8907b370fbd584892269ad097c825c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8907b370fbd584892269ad097c825c, type: 3}
 --- !u!4 &445106705 stripped
@@ -7393,6 +7449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockLong (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -7516,6 +7576,10 @@ PrefabInstance:
     - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_Name
       value: SandBagBarricade (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
@@ -8123,6 +8187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagBarricade (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8188,6 +8256,10 @@ PrefabInstance:
     - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_Name
       value: StoneBlockLong (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
@@ -8533,7 +8605,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &525315710
 Transform:
@@ -9175,6 +9247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagBarricade (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -9292,6 +9368,10 @@ PrefabInstance:
     - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
       propertyPath: m_Name
       value: StoneBlockTall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
@@ -9501,6 +9581,10 @@ PrefabInstance:
     - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_Name
       value: StoneBlockLong (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
@@ -10649,6 +10733,10 @@ PrefabInstance:
     - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
       propertyPath: m_Name
       value: StoneBlockTall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
@@ -13022,6 +13110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagBarricade (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -13083,6 +13175,10 @@ PrefabInstance:
     - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_Name
       value: SandBagBarricade (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
@@ -14590,7 +14686,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &889452864
 Transform:
@@ -15586,6 +15682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockTall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
 --- !u!4 &906598962 stripped
@@ -16128,6 +16228,10 @@ PrefabInstance:
     - target: {fileID: 639261176611468416, guid: cae5d2acf2965574ea3147bd80357c76, type: 3}
       propertyPath: m_Name
       value: Lamps (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 639261176611468416, guid: cae5d2acf2965574ea3147bd80357c76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6143568392732551444, guid: cae5d2acf2965574ea3147bd80357c76, type: 3}
       propertyPath: m_RootOrder
@@ -16948,6 +17052,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6919192968854254544, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -5241568132678732617, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -16988,6 +17096,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Path
       objectReference: {fileID: 0}
+    - target: {fileID: -3398655777298578189, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -309339304615218666, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -17004,6 +17116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DamWorldTowerDef
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1235356849815791994, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -17015,6 +17131,10 @@ PrefabInstance:
     - target: {fileID: 2049815273513121826, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049815273513121826, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2598488494727885935, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17032,6 +17152,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Path
       objectReference: {fileID: 0}
+    - target: {fileID: 3548658865882659223, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7841265091099251282, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -17040,6 +17164,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 7841265091099251282, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8218239797425708973, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -17047,6 +17175,10 @@ PrefabInstance:
     - target: {fileID: 8218239797425708973, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218239797425708973, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 947e77962e4808b47a05c5b72858d3d5, type: 3}
@@ -17121,6 +17253,10 @@ PrefabInstance:
     - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
       propertyPath: m_Name
       value: StoneBlockTall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
@@ -17369,7 +17505,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1044493575
 Transform:
@@ -22614,6 +22750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockTall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
 --- !u!4 &1065186971 stripped
@@ -23528,6 +23668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockTall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
 --- !u!4 &1122941273 stripped
@@ -23550,7 +23694,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1125217725
 Transform:
@@ -23577,19 +23721,19 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.76792455, g: 1, b: 0.9925657, a: 1}
   m_Intensity: 1
   m_Range: 8.75
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0.01
+    m_NormalBias: 0
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -23617,7 +23761,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -25088,7 +25232,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2918584171875205455, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 2918584171875205455, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25133,6 +25277,10 @@ PrefabInstance:
     - target: {fileID: 7217656140742091087, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
       propertyPath: m_Name
       value: StoneBlockLongBroky (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217656140742091087, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ed220f502a3204f9efd8b46bcee6f4, type: 3}
@@ -25492,6 +25640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagBarricade (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -25709,6 +25861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3602196802434921560, guid: 7f77d4781a77ac0428a6b93a4d297b20, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7427516524528936835, guid: 7f77d4781a77ac0428a6b93a4d297b20, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -25770,6 +25926,10 @@ PrefabInstance:
     - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_Name
       value: StoneBlockLong (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
@@ -26831,6 +26991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3602196802434921560, guid: 7f77d4781a77ac0428a6b93a4d297b20, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7427516524528936835, guid: 7f77d4781a77ac0428a6b93a4d297b20, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -27209,7 +27373,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1358305208
 Transform:
@@ -27236,19 +27400,19 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.76792455, g: 1, b: 0.9925657, a: 1}
   m_Intensity: 1
   m_Range: 8.75
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0.01
+    m_NormalBias: 0
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -27276,7 +27440,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -27775,6 +27939,10 @@ PrefabInstance:
     - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_Name
       value: StoneBlockLong (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
@@ -28514,9 +28682,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockLong (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28575,6 +28747,10 @@ PrefabInstance:
     - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_Name
       value: SandBagBarricade (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
@@ -29640,6 +29816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockLong (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -29832,7 +30012,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1558494162
 Transform:
@@ -35115,6 +35295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandBagBarricade (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -35426,7 +35610,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1629905680
 Transform:
@@ -36543,6 +36727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockTall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
 --- !u!4 &1677668788 stripped
@@ -36811,6 +36999,10 @@ PrefabInstance:
     - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_Name
       value: SandBagBarricade (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
@@ -37261,6 +37453,10 @@ PrefabInstance:
     - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_Name
       value: SandBagBarricade (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
@@ -43027,6 +43223,10 @@ PrefabInstance:
     - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_Name
       value: SandBagBarricade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281469576786376661, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7946366989324922223, guid: 127cf4590e653034291ef5cb64519c18, type: 3}
       propertyPath: m_RootOrder
@@ -49226,7 +49426,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1892894592
 Transform:
@@ -49572,7 +49772,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1906496341
 Transform:
@@ -50536,6 +50736,10 @@ PrefabInstance:
     - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_Name
       value: StoneBlockLong (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 391364392567839037, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6085315001649544054, guid: fec74ca1c270ec143861f2755efc58ca, type: 3}
       propertyPath: m_RootOrder
@@ -52340,7 +52544,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!108 &2133330329
 Light:
@@ -52364,8 +52568,8 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0
-    m_NormalBias: 0.4
+    m_Bias: 0.1
+    m_NormalBias: 0
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -52393,7 +52597,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -52618,6 +52822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlockTall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2191388004248220745, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64e87eaa2cc2ea8438c21cb5d0727809, type: 3}
 --- !u!4 &2145514962 stripped
@@ -52769,7 +52977,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &481010276401157139
 MeshCollider:
@@ -52855,6 +53063,10 @@ PrefabInstance:
     - target: {fileID: 3941021241981955000, guid: 2e19dbe430ffd1646a3f7cb9d7c8b6be, type: 3}
       propertyPath: m_Name
       value: Radioantenne
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941021241981955000, guid: 2e19dbe430ffd1646a3f7cb9d7c8b6be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e19dbe430ffd1646a3f7cb9d7c8b6be, type: 3}
@@ -52977,7 +53189,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &1777379948826492919
 MeshCollider:
@@ -53064,7 +53276,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!33 &2072431327781553565
 MeshFilter:
@@ -53137,6 +53349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laptop
       objectReference: {fileID: 0}
+    - target: {fileID: 3465099871968355680, guid: e5ec478556211de4eab4bcbc55594853, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ec478556211de4eab4bcbc55594853, type: 3}
 --- !u!23 &2366912292002668199
@@ -53204,6 +53420,10 @@ PrefabInstance:
     - target: {fileID: 3831409768849363541, guid: 6af16c1bf126dd14fa4cf2239e7480d8, type: 3}
       propertyPath: m_Name
       value: Radio
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831409768849363541, guid: 6af16c1bf126dd14fa4cf2239e7480d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8493391701469193587, guid: 6af16c1bf126dd14fa4cf2239e7480d8, type: 3}
       propertyPath: m_RootOrder
@@ -53462,6 +53682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamps
       objectReference: {fileID: 0}
+    - target: {fileID: 639261176611468416, guid: cae5d2acf2965574ea3147bd80357c76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6143568392732551444, guid: cae5d2acf2965574ea3147bd80357c76, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -53571,7 +53795,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &3089984924830959028
 MeshCollider:
@@ -53618,7 +53842,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &3345616123719198827
 MeshCollider:
@@ -53713,6 +53937,10 @@ PrefabInstance:
     - target: {fileID: 3608528256574106852, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
       propertyPath: m_Name
       value: ContainerSpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608528256574106852, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4005299694491910922, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
       propertyPath: m_Convex
@@ -53822,7 +54050,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &3665896452784161728
 MeshCollider:
@@ -53855,7 +54083,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &3914302653982851580
 MeshCollider:
@@ -53932,7 +54160,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &4151789938937521126
 MeshCollider:
@@ -53978,7 +54206,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!199 &4163650675741277082
 ParticleSystemRenderer:
@@ -58979,7 +59207,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &4407018705457643452
 MeshCollider:
@@ -59012,7 +59240,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &4415403205010669149
 MeshCollider:
@@ -59094,6 +59322,10 @@ PrefabInstance:
     - target: {fileID: 5240952627629593934, guid: 0e194ff5c049d7c4ca7892ce038c2134, type: 3}
       propertyPath: m_Name
       value: Tabel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240952627629593934, guid: 0e194ff5c049d7c4ca7892ce038c2134, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6403004833410836810, guid: 0e194ff5c049d7c4ca7892ce038c2134, type: 3}
       propertyPath: m_RootOrder
@@ -59357,7 +59589,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &5746380458155704994
 MeshCollider:
@@ -59501,7 +59733,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &6180096554026984973
 MeshCollider:
@@ -59564,7 +59796,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1001 &6588687169172834632
 PrefabInstance:
@@ -59664,7 +59896,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &6682501420067346760
 MeshCollider:
@@ -59740,6 +59972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rek
       objectReference: {fileID: 0}
+    - target: {fileID: 3995084914496539457, guid: 137e61bcd8d437d49b695f1d48bd806d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 137e61bcd8d437d49b695f1d48bd806d, type: 3}
 --- !u!1 &6955015083510436381
@@ -59759,7 +59995,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &6955015083510436382
 MeshCollider:
@@ -59814,7 +60050,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &7098287044635394003
 MeshCollider:
@@ -59978,7 +60214,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &7622548322629848630
 MeshCollider:
@@ -60011,7 +60247,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &7736887237214127833
 MeshCollider:
@@ -60126,7 +60362,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &8214476073131253376
 MeshCollider:
@@ -60200,7 +60436,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &8317342396810657294
 MeshCollider:
@@ -60241,7 +60477,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &8445966064465443179
 MeshCollider:
@@ -60364,7 +60600,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &9008106041513347896
 MeshCollider:
