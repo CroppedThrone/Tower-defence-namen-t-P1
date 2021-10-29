@@ -1033,7 +1033,7 @@ MonoBehaviour:
   barrelPoint: {fileID: 4886794317215699068}
   barrelFlash: {fileID: 3826216102538999844, guid: 4aee8198fd2bd67408bae977d6551515, type: 3}
   bulletPoint: {fileID: 5275313567693774874}
-  bulletDrop: {fileID: 5271044699371665554, guid: 6b37bb4cf12020249afbcfdef36fe064, type: 3}
+  bulletDrop: {fileID: 5271044699371665554, guid: 7ebd22541d9c31d409672406293ebfed, type: 3}
 --- !u!54 &3144353662277667157
 Rigidbody:
   m_ObjectHideFlags: 0
