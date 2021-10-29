@@ -287,7 +287,7 @@ MonoBehaviour:
   movespeed: 10
   deviation: {x: 0, y: 0}
   height: 3
-  turnspeed: 200
+  turnspeed: 210
 --- !u!54 &5534357906609311409
 Rigidbody:
   m_ObjectHideFlags: 0
