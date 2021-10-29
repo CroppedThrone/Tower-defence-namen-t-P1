@@ -43,6 +43,7 @@ public class AttackTurretController : TurretController
         yield return new WaitForSeconds(0.45f);
         animator.SetTrigger("Setup");
         yield return new WaitForSeconds(2f);
+        Destroy(dropSmoke.gameObject);
         isActive = true;
         canShoot = true;
         animator.enabled = false;

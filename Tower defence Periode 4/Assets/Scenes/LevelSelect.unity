@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 16676317}
   - component: {fileID: 16676316}
   - component: {fileID: 16676315}
+  - component: {fileID: 16676318}
+  - component: {fileID: 16676319}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,6 +208,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16676318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16676314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a955a37765ea44781e395047f2a66d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 11400000, guid: 0d71ba87ca40e2c42919a0de2286af48, type: 2}
+  level2: {fileID: 1943712468}
+--- !u!114 &16676319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16676314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 31e4edc02076fe94d81fa2ee7d2b63ba, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &217695442
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,8 +578,6 @@ GameObject:
   - component: {fileID: 353014165}
   - component: {fileID: 353014164}
   - component: {fileID: 353014163}
-  - component: {fileID: 353014167}
-  - component: {fileID: 353014168}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -631,33 +675,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &353014167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353014162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a955a37765ea44781e395047f2a66d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tracker: {fileID: 11400000, guid: 0d71ba87ca40e2c42919a0de2286af48, type: 2}
-  level2: {fileID: 1943712468}
---- !u!114 &353014168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353014162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63a1e1e16b7267b469c76b97e2bd9897, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
 --- !u!1 &448373735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1134,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 353014167}
+      - m_Target: {fileID: 16676318}
         m_TargetAssemblyTypeName: LevelSel, Assembly-CSharp
         m_MethodName: ButtonLevel1
         m_Mode: 1
@@ -1636,7 +1653,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 353014167}
+      - m_Target: {fileID: 16676318}
         m_TargetAssemblyTypeName: LevelSel, Assembly-CSharp
         m_MethodName: ButtonLevel2
         m_Mode: 1

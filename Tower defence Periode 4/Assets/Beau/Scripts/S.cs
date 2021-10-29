@@ -19,7 +19,10 @@ public class S : MonoBehaviour
         kills.text = Tracker.enemiesKilled.ToString();
         bought.text = Tracker.turretsBought.ToString();
         waves.text = Tracker.wavesSurvived.ToString();
-
+        if (Tracker.levelsUnlocked == 0)
+        {
+            Tracker.levelsUnlocked++;
+        }
     }
 
 
