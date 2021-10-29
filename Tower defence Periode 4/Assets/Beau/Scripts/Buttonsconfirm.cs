@@ -21,7 +21,7 @@ public class Buttonsconfirm : MonoBehaviour
     public GameObject turretIndicator;
     public SpawnChecker check;
     public AudioSource error;
-
+    public AudioSource money;
 
     void Update()
     {
@@ -54,6 +54,7 @@ public class Buttonsconfirm : MonoBehaviour
             conf.SetActive(false);
         
             shop.enabled = true;
+            money.Play();
 
         }
         else
