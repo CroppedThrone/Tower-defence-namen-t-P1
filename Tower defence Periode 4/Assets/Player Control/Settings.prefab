@@ -974,7 +974,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: HIGH
       m_Image: {fileID: 0}
-    - m_Text: MEDIUW
+    - m_Text: MEDIUM
       m_Image: {fileID: 0}
     - m_Text: LOW
       m_Image: {fileID: 0}
@@ -2263,7 +2263,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &4701217797680565987
 MonoBehaviour:
   m_ObjectHideFlags: 0
