@@ -11,18 +11,14 @@ public class S : MonoBehaviour
     public Text bought;
     public Text waves;
 
-    public ProgressTracker Tracker;
+    public ProgressTracker tracker;
     // Start is called before the first frame update
     void Start()
     {
-        money.text = Tracker.goldEarned.ToString();
-        kills.text = Tracker.enemiesKilled.ToString();
-        bought.text = Tracker.turretsBought.ToString();
-        waves.text = Tracker.wavesSurvived.ToString();
-        if (Tracker.levelsUnlocked == 0)
-        {
-            Tracker.levelsUnlocked++;
-        }
+        money.text = tracker.goldEarned.ToString();
+        kills.text = tracker.enemiesKilled.ToString();
+        bought.text = tracker.turretsBought.ToString();
+        waves.text = tracker.wavesSurvived.ToString();
     }
 
 

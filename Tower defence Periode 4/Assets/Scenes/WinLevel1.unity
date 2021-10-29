@@ -865,6 +865,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1970852303158800707, guid: 200fbfdbdeb336949847d42a7c7ad9f0, type: 3}
+      propertyPath: tracker
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d71ba87ca40e2c42919a0de2286af48, type: 2}
+    - target: {fileID: 1970852303158800707, guid: 200fbfdbdeb336949847d42a7c7ad9f0, type: 3}
+      propertyPath: progressLevels
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6968336979100954953, guid: 200fbfdbdeb336949847d42a7c7ad9f0, type: 3}
       propertyPath: m_Name
       value: Stats
@@ -1398,7 +1406,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2b7701109c6f741b4c64c484974fcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracker: {fileID: 11400000, guid: 0d71ba87ca40e2c42919a0de2286af48, type: 2}
 --- !u!114 &2101473561
 MonoBehaviour:
   m_ObjectHideFlags: 0

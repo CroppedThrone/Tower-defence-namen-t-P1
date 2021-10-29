@@ -36,6 +36,7 @@ public class BaseHealth : MonoBehaviour
                 tracker.totalGoldEarned += player.moneyEarned;
                 tracker.totalTurretsBought += player.turretsBought;
                 tracker.totalWavesSurvived += wave.wave;
+                tracker.levelsUnlocked++;
                 SceneManager.LoadScene(victorySceneNumber);
             }
         }
