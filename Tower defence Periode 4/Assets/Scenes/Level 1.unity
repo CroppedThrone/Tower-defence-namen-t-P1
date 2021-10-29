@@ -53802,7 +53802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &3635017399644607763 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 30790850081611052, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5295960083062694679, guid: 7005bf1afcfc1774087e0fb782104c10, type: 3}
   m_PrefabInstance: {fileID: 3635017399644607759}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &3665896452784161727
